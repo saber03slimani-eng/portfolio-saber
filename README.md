@@ -1,0 +1,6486 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Installez la dernière version de PowerShell pour de nouvelles fonctionnalités et améliorations ! https://aka.ms/PSWindows
+
+PS C:\Users\pro> claude
+╭─── Claude Code v2.1.126 ─────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                    │ Tips for getting started                                        │
+│           Welcome back Abdellah Loulanti!          │ Run /init to create a CLAUDE.md file with instructions for Cla… │
+│                                                    │ Note: You have launched claude in your home directory. For the… │
+│                       ▐▛███▜▌                      │ ─────────────────────────────────────────────────────────────── │
+│                      ▝▜█████▛▘                     │ What's new                                                      │
+│                        ▘▘ ▝▝                       │ The `/model` picker now lists models from your gateway's `/v1/… │
+│    Sonnet 4.6 · Claude Pro ·                       │ - Added `claude project purge [path]` to delete all Claude Cod… │
+│    abdellahloulanti234@gmail.com's Organization    │ `--dangerously-skip-permissions` now bypasses prompts for writ… │
+│                    C:\Users\pro                    │ /release-notes for more                                         │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+> You are a senior full-stack developer and UX designer.
+
+  Your task is to build a professional personal portfolio website from the provided PDF files (CV and Portfolio in
+  French).
+
+  ## INPUT
+  I will provide:
+  - A CV (PDF, in French)
+  - A Portfolio (PDF, in French)
+
+  ## GOAL
+  Transform both documents into a modern, elegant, and fully responsive website that I can deploy and share as a link.
+
+  ## REQUIREMENTS
+
+  ### 1. Content Extraction
+  - Extract all relevant content from the PDFs
+  - Rewrite/structure it in clean, professional French
+  - Do NOT copy raw PDF layout — rebuild it properly
+
+  ### 2. Website Structure
+  Create a clean structure with sections:
+  - Hero (Name, title, short intro)
+  - About me
+  - Skills (categorized)
+  - Experience (timeline format)
+  - Projects / Portfolio (with descriptions)
+  - Education
+  - Contact section (email + optional links)
+
+  ### 3. Design
+  - Modern, minimal, premium look
+  - Use a clean font (Google Fonts)
+  - Good spacing, hierarchy, and readability
+  - Subtle animations (hover, transitions)
+  - Mobile-first responsive design
+
+  ### 4. Tech Stack
+  - Pure HTML + CSS + JavaScript (no frameworks unless necessary)
+  - Clean and well-structured code
+  - Use semantic HTML5
+  - Optimize performance (fast loading)
+
+  ### 5. SEO & Metadata
+  - Add proper meta tags
+  - Title, description, Open Graph (for sharing links)
+  - Clean URL structure
+
+  ### 6. Deployment
+  Provide clear instructions to deploy the site and get a public link using:
+  - GitHub Pages
+  OR
+  - Netlify
+
+  Include:
+  - Step-by-step deployment guide
+  - How to upload files
+  - How to get a shareable link
+
+  ### 7. Output Format
+  - Provide all code (HTML, CSS, JS)
+  - Clearly separate files
+  - Include instructions to run locally
+  - Include deployment steps
+
+  ### 8. Security & Clean Code
+  - No unsafe scripts
+  - No external unknown dependencies
+  - Clean, readable, commented code
+
+  ## IMPORTANT
+  - The result must look like a real professional portfolio, not a basic template
+  - Prioritize design quality and clarity
+  - The final result should be something I can send as a link in email
+
+  Wait for me to upload the PDFs before starting.Nom: Saber Slimani
+  Titre: Technicien Spécialisé en Électronique & Maintenance Industrielle
+
+  Contact:
+  Email: saber03slimani@gmail.com
+  Téléphone: +212 658 497 932
+  Adresse: Tétouan, Maroc
+
+  ---
+
+  ## À propos
+
+  Électronicien en maintenance industrielle avec plus de 3 ans d’expérience dans le diagnostic, la réparation et la
+  mise en service d’équipements industriels complexes.
+
+  Spécialisé dans les variateurs de fréquence (ABB, Siemens, Schneider, Danfoss, Allen-Bradley) ainsi que dans les
+  systèmes automatisés et servo-drives.
+  Intervient directement sur site auprès de multiples entreprises industrielles avec une forte capacité d’analyse et de
+   résolution rapide des pannes.
+
+  Taux élevé de diagnostic efficace dès la première intervention (≈80%).
+
+  ---
+
+  ## Compétences
+
+  ### Électronique industrielle
+  - Diagnostic et réparation de cartes électroniques (PCB)
+  - Analyse de pannes complexes (défauts cachés, courts-circuits, instabilités)
+  - Travail sur composants CMS (SMD)
+
+  ### Variateurs & Automation
+  - Mise en service et paramétrage de variateurs de fréquence
+  - Maintenance de servo-drives et systèmes de commande
+  - Intervention sur automates et systèmes de sécurité (PILZ PNOZ)
+
+  ### Électrotechnique
+  - Lecture et interprétation de schémas électriques
+  - Maintenance d’armoires électriques et machines industrielles
+
+  ### Méthodologie & Qualité
+  - Diagnostic structuré et analyse technique avancée
+  - Tests fonctionnels et validation après intervention
+  - Utilisation d’instruments de mesure professionnels
+
+  ---
+
+  ## Expérience Professionnelle
+
+  ### Électronicien en maintenance industrielle
+  STE MR3E SARL – Tanger | 2022 – 2026
+
+  - Intervention technique mobile dans plusieurs entreprises industrielles au Maroc
+  - Diagnostic, maintenance et réparation de variateurs de fréquence (ABB, Siemens, Schneider, Danfoss…)
+  - Réparation de cartes électroniques et systèmes de commande
+  - Maintenance d’alimentations industrielles et modules d’automatisation
+  - Analyse rapide des pannes avec un taux de résolution initiale de 80 %
+  - Tests fonctionnels et contrôle qualité après intervention
+  - Conseil technique et analyse des besoins clients sur site
+
+  ---
+
+  ### Technicien de maintenance (Stage)
+  Motherson SMRC HM – Tanger | 2022
+
+  - Maintenance de machines industrielles, robots et armoires électriques
+  - Diagnostic et résolution de pannes techniques
+  - Travail en équipe dans un environnement industriel structuré
+
+  ---
+
+  ## Projets & Réalisations Techniques
+
+  ### Diagnostic complexe – Défaut caché (Servo Lenze)
+  - Identification d’un défaut non visible malgré mesures normales
+  - Remplacement ciblé de composants critiques
+  - Remise en service complète après analyse approfondie
+
+  ---
+
+  ### Réparation Servo Drive PROMATECH
+  - Détection d’un court-circuit sur régulateur LM1085
+  - Remplacement préventif de plusieurs composants
+  - Tests en charge validant la stabilité du système
+
+  ---
+
+  ### Intervention sur variateur – arrêt de production
+  - Identification d’un court-circuit causé par un corps étranger
+  - Remplacement complet du variateur
+  - Redémarrage rapide de la production
+
+  ---
+
+  ### Système de sécurité PILZ PNOZ
+  - Diagnostic d’un défaut système
+  - Réparation et recâblage complet
+  - Remise en service sécurisée
+
+  ---
+
+  ### Réparation alimentation industrielle
+  - Analyse d’une tension instable
+  - Remplacement de condensateurs défectueux
+  - Stabilisation complète du système
+
+  ---
+
+  ### Réparation cartes électroniques & microcontrôleurs
+  - Diagnostic et remplacement de composants critiques
+  - Réparation PCB (pistes, soudures, composants)
+  - Tests et validation avant remise en service
+
+  ---
+
+  ## Outils & Instruments
+
+  - Multimètre professionnel
+  - Pinces ampèremétriques
+  - Testeurs de circuits intégrés (analogiques & numériques)
+  - Oscilloscope
+  - Outils de soudure de précision
+
+  ---
+
+  ## Formation
+
+  Technicien Spécialisé en Électromécanique des Systèmes Automatisés
+  ISTA – Fnideq | 2020 – 2022
+
+  Baccalauréat Sciences Physiques
+  Lycée Kadi Ayad – Tétouan | 2020
+
+  ---
+
+  ## Langues
+
+  - Arabe : langue maternelle
+  - Français : intermédiaire
+  - Anglais : très bon niveau
+
+  ---
+
+  ## Permis
+
+  Permis B
+
+  ---
+
+  ## Note finale
+
+  Ce portfolio représente une partie de mon expérience.
+  D’autres projets et interventions peuvent être présentés sur demande.
+
+● I have all the content needed. Let me build the complete portfolio now — creating the directory and all three files.
+
+● Bash(mkdir -p "C:\Users\pro\portfolio-saber" && echo "Directory created")
+  ⎿  Directory created
+
+● Write(portfolio-saber\index.html)
+  ⎿  Error writing file
+
+  Searched for 1 pattern, read 1 file, listed 1 directory (ctrl+o to expand)
+
+● The directory already has existing files. Let me read them before writing.
+
+  Read 3 files (ctrl+o to expand)
+
+● Good, the files exist but appear to be from a previous session. Now I'll write all three complete files with the full
+  premium design.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Overwrite file
+ portfolio-saber\index.html
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+    3  <head>
+    4    <meta charset="UTF-8" />
+    5    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    6 -  <meta name="description" content="Portfolio de Saber Slimani – Technicien Spécialisé en Électronique & Mainten
+      -ance Industrielle avec plus de 3 ans d'expérience sur variateurs de fréquence, servo-drives et réparation de car
+      -tes électroniques." />
+    7 -  <meta name="keywords" content="Saber Slimani, électronique industrielle, maintenance industrielle, variateurs
+      -de fréquence, ABB, Siemens, Schneider, Danfoss, Allen-Bradley, Tanger, Maroc, PCB, servo-drive" />
+    6 +  <meta name="description" content="Portfolio de Saber Slimani — Technicien Spécialisé en Électronique & Mainten
+      +ance Industrielle. Expert en variateurs de fréquence ABB, Siemens, Schneider, diagnostic PCB et systèmes automat
+      +isés. Tétouan, Maroc." />
+    7 +  <meta name="keywords" content="Saber Slimani, électronique industrielle, maintenance industrielle, variateurs
+      +de fréquence, ABB, Siemens, Schneider Electric, Danfoss, Allen-Bradley, servo drive, diagnostic PCB, Tétouan, Ma
+      +roc" />
+    8    <meta name="author" content="Saber Slimani" />
+    9    <meta name="robots" content="index, follow" />
+   10
+   11    <!-- Open Graph -->
+   12 -  <meta property="og:title" content="Saber Slimani — Technicien Électronique & Maintenance Industrielle" />
+   13 -  <meta property="og:description" content="Portfolio professionnel de Saber Slimani, expert en variateurs de fré
+      -quence, réparation PCB et systèmes automatisés. Tanger, Maroc." />
+   12    <meta property="og:type" content="website" />
+   13 +  <meta property="og:title" content="Saber Slimani | Technicien Électronique & Maintenance Industrielle" />
+   14 +  <meta property="og:description" content="Portfolio professionnel — Expert en maintenance industrielle & électr
+      +onique avec +3 ans d'expérience terrain. 80 % de résolution dès la première intervention." />
+   15 +  <meta property="og:url" content="https://saberslimani.github.io" />
+   16    <meta property="og:locale" content="fr_FR" />
+   17
+   17 -  <title>Saber Slimani | Électronique & Maintenance Industrielle</title>
+   18 +  <!-- Twitter Card -->
+   19 +  <meta name="twitter:card" content="summary_large_image" />
+   20 +  <meta name="twitter:title" content="Saber Slimani | Technicien Électronique & Maintenance Industrielle" />
+   21 +  <meta name="twitter:description" content="Expert en maintenance industrielle, variateurs de fréquence et diagn
+      +ostic PCB — Tétouan, Maroc." />
+   22
+   23 +  <title>Saber Slimani | Technicien Électronique &amp; Maintenance Industrielle</title>
+   24 +
+   25    <!-- Google Fonts -->
+   26    <link rel="preconnect" href="https://fonts.googleapis.com" />
+   27    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   22 -  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@
+      -400;500;600;700;800&display=swap" rel="stylesheet" />
+   28 +  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:w
+      +ght@400;500;600;700;800&display=swap" rel="stylesheet" />
+   29
+   30    <link rel="stylesheet" href="styles.css" />
+   31  </head>
+   32  <body>
+   33
+   28 -  <!-- ══════════════════════════════
+   29 -       NAVIGATION
+   30 -  ══════════════════════════════ -->
+   31 -  <nav id="navbar">
+   32 -    <div class="nav-inner">
+   33 -      <a href="#hero" class="nav-logo">SS</a>
+   34 -      <ul class="nav-links" id="navLinks">
+   35 -        <li><a href="#about">À propos</a></li>
+   36 -        <li><a href="#skills">Compétences</a></li>
+   37 -        <li><a href="#experience">Expérience</a></li>
+   38 -        <li><a href="#projects">Projets</a></li>
+   39 -        <li><a href="#education">Formation</a></li>
+   40 -        <li><a href="#contact" class="nav-cta">Contact</a></li>
+   34 +  <!-- NAVIGATION -->
+   35 +  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+   36 +    <div class="nav-container">
+   37 +      <a href="#home" class="nav-logo" aria-label="Accueil — Saber Slimani">SS</a>
+   38 +      <ul class="nav-menu" id="nav-menu">
+   39 +        <li><a href="#home"       class="nav-link">Accueil</a></li>
+   40 +        <li><a href="#about"      class="nav-link">À propos</a></li>
+   41 +        <li><a href="#skills"     class="nav-link">Compétences</a></li>
+   42 +        <li><a href="#experience" class="nav-link">Expérience</a></li>
+   43 +        <li><a href="#projects"   class="nav-link">Projets</a></li>
+   44 +        <li><a href="#education"  class="nav-link">Formation</a></li>
+   45 +        <li><a href="#contact"    class="nav-link nav-cta">Contact</a></li>
+   46        </ul>
+   42 -      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+   47 +      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+   48          <span></span><span></span><span></span>
+   49        </button>
+   50      </div>
+   51    </nav>
+   52
+   48 -  <!-- ══════════════════════════════
+   49 -       HERO
+   50 -  ══════════════════════════════ -->
+   51 -  <section id="hero">
+   52 -    <div class="hero-bg" aria-hidden="true">
+   53 -      <div class="hero-grid"></div>
+   54 -      <div class="hero-glow"></div>
+   55 -      <div class="hero-glow-2"></div>
+   56 -    </div>
+   53 +  <!-- HERO -->
+   54 +  <section id="home" class="hero">
+   55 +    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+   56 +    <div class="hero-glow" aria-hidden="true"></div>
+   57
+   58      <div class="hero-content">
+   59 -      <div class="hero-badge reveal">
+   60 -        <span class="pulse-dot"></span>
+   61 -        Disponible pour nouvelles missions
+   59 +      <div class="hero-badge">
+   60 +        <span class="badge-dot" aria-hidden="true"></span>
+   61 +        Disponible pour missions &amp; interventions
+   62        </div>
+   63
+   64 -      <h1 class="hero-name reveal">
+   64 +      <h1 class="hero-name">
+   65          <span class="name-first">Saber</span>
+   66          <span class="name-last">Slimani</span>
+   67        </h1>
+   68
+   69 -      <p class="hero-title reveal">
+   70 -        Technicien Spécialisé en<br />
+   71 -        <strong>Électronique &amp; Maintenance Industrielle</strong>
+   69 +      <p class="hero-title">
+   70 +        Technicien Spécialisé en&nbsp;
+   71 +        <span class="typed-wrap"><span class="typed-text"></span><span class="cursor" aria-hidden="true"></span>
+      +</span>
+   72        </p>
+   73
+   74 -      <p class="hero-description reveal">
+   75 -        Plus de 3 ans d'expérience dans le diagnostic, la réparation et la mise en service d'équipements industr
+      -iels complexes. Intervention mobile multi-sites au Maroc.
+   74 +      <p class="hero-desc">
+   75 +        Expert en diagnostic et maintenance d'équipements industriels complexes.<br />
+   76 +        <strong>80 % de résolution dès la première intervention</strong> — partout au Maroc.
+   77        </p>
+   78
+   78 -      <div class="hero-stats reveal">
+   79 -        <div class="stat-item">
+   80 -          <span class="stat-val" data-target="3">0</span><span class="stat-plus">+</span>
+   81 -          <span class="stat-label">Années d'expérience</span>
+   79 +      <div class="hero-actions">
+   80 +        <a href="#projects" class="btn btn-primary">Voir mes réalisations</a>
+   81 +        <a href="#contact"  class="btn btn-ghost">Me contacter</a>
+   82 +      </div>
+   83 +
+   84 +      <div class="hero-stats">
+   85 +        <div class="stat">
+   86 +          <span class="stat-num" data-target="3" data-suffix="+">3+</span>
+   87 +          <span class="stat-label">Ans d'expérience</span>
+   88          </div>
+   83 -        <div class="stat-sep"></div>
+   84 -        <div class="stat-item">
+   85 -          <span class="stat-val" data-target="80">0</span><span class="stat-plus">%</span>
+   86 -          <span class="stat-label">Taux de résolution initiale</span>
+   89 +        <div class="stat-sep" aria-hidden="true"></div>
+   90 +        <div class="stat">
+   91 +          <span class="stat-num" data-target="80" data-suffix="%">80%</span>
+   92 +          <span class="stat-label">Résolution 1ère interv.</span>
+   93          </div>
+   88 -        <div class="stat-sep"></div>
+   89 -        <div class="stat-item">
+   90 -          <span class="stat-val" data-target="6">0</span><span class="stat-plus">+</span>
+   91 -          <span class="stat-label">Projets techniques clés</span>
+   94 +        <div class="stat-sep" aria-hidden="true"></div>
+   95 +        <div class="stat">
+   96 +          <span class="stat-num" data-target="5" data-suffix="+">5+</span>
+   97 +          <span class="stat-label">Marques maîtrisées</span>
+   98          </div>
+   99        </div>
+   94 -
+   95 -      <div class="hero-ctas reveal">
+   96 -        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+   97 -        <a href="#contact" class="btn btn-outline">Me contacter</a>
+   98 -      </div>
+  100      </div>
+  101
+  101 -    <div class="hero-scroll" aria-hidden="true">
+  102 -      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  103 -    </div>
+  102 +    <a href="#about" class="hero-scroll" aria-label="Défiler vers le bas">
+  103 +      <div class="scroll-mouse"><span></span></div>
+  104 +    </a>
+  105    </section>
+  106
+  106 -  <!-- ══════════════════════════════
+  107 -       ABOUT
+  108 -  ══════════════════════════════ -->
+  109 -  <section id="about">
+  107 +  <!-- ABOUT -->
+  108 +  <section id="about" class="section about">
+  109      <div class="container">
+  111 -      <header class="section-head reveal">
+  112 -        <span class="section-tag">Profil</span>
+  113 -        <h2>À propos de moi</h2>
+  114 -      </header>
+  110 +      <div class="section-header">
+  111 +        <span class="section-tag">À propos</span>
+  112 +        <h2 class="section-title">Qui suis-je ?</h2>
+  113 +      </div>
+  114
+  115        <div class="about-grid">
+  117 -        <div class="about-left reveal">
+  116 +        <div class="about-body">
+  117            <p class="about-lead">
+  119 -            Électronicien en maintenance industrielle avec plus de <strong>3 ans d'expérience</strong> dans le d
+      -iagnostic, la réparation et la mise en service d'équipements industriels complexes.
+  118 +            Électronicien en maintenance industrielle avec plus de <strong>3 ans d'expérience</strong> sur le te
+      +rrain, spécialisé dans le diagnostic, la réparation et la mise en service d'équipements industriels complexes.
+  119            </p>
+  121 -          <p class="about-body">
+  122 -            Spécialisé dans les <strong>variateurs de fréquence</strong> (ABB, Siemens, Schneider, Danfoss, Alle
+      -n-Bradley) ainsi que dans les systèmes automatisés et servo-drives. J'interviens directement sur site auprès de
+      -multiples entreprises industrielles avec une forte capacité d'analyse et de résolution rapide des pannes.
+  120 +          <p>
+  121 +            Je suis spécialisé dans les <strong>variateurs de fréquence</strong> des grandes marques (ABB, Sieme
+      +ns, Schneider, Danfoss, Allen-Bradley) ainsi que dans les systèmes automatisés et servo-drives. J'interviens dir
+      +ectement sur site auprès de nombreuses entreprises industrielles à travers le Maroc.
+  122            </p>
+  124 -          <p class="about-body">
+  125 -            Mon approche structurée me permet d'atteindre un <strong>taux de diagnostic efficace d'environ 80 %
+      -dès la première intervention</strong>, réduisant significativement les arrêts de production et les coûts de main
+      -tenance pour mes clients.
+  123 +          <p>
+  124 +            Ma valeur ajoutée : une <strong>analyse rapide et structurée</strong> qui me permet de résoudre envi
+      +ron 80 % des pannes dès la première intervention — minimisant les temps d'arrêt et les coûts opérationnels pour
+      +mes clients.
+  125            </p>
+  127 -          <div class="about-chips">
+  128 -            <span>Variateurs VFD</span><span>ABB</span><span>Siemens</span>
+  129 -            <span>Schneider</span><span>Danfoss</span><span>Allen-Bradley</span>
+  130 -            <span>Servo-drives</span><span>PILZ PNOZ</span><span>PCB Repair</span>
+  131 -            <span>CMS / SMD</span>
+  126 +
+  127 +          <div class="about-tags">
+  128 +            <span class="tag">Intervention mobile</span>
+  129 +            <span class="tag">Diagnostic avancé</span>
+  130 +            <span class="tag">Variateurs de fréquence</span>
+  131 +            <span class="tag">Servo-drives</span>
+  132 +            <span class="tag">Réparation PCB</span>
+  133 +            <span class="tag">Automatisation</span>
+  134 +            <span class="tag">Sécurité industrielle</span>
+  135            </div>
+  136          </div>
+  137
+  135 -        <div class="about-right reveal">
+  138 +        <div class="about-sidebar">
+  139            <div class="info-card">
+  137 -            <div class="info-row">
+  138 -              <span class="info-ico">📍</span>
+  139 -              <div>
+  140 -                <span class="info-lbl">Localisation</span>
+  141 -                <span class="info-val">Tétouan, Maroc</span>
+  140 +            <p class="info-card-label">Informations</p>
+  141 +            <ul class="info-list">
+  142 +              <li>
+  143 +                <span class="info-ico" aria-hidden="true">📍</span>
+  144 +                <div>
+  145 +                  <span class="info-key">Localisation</span>
+  146 +                  <span class="info-val">Tétouan, Maroc</span>
+  147 +                </div>
+  148 +              </li>
+  149 +              <li>
+  150 +                <span class="info-ico" aria-hidden="true">✉️</span>
+  151 +                <div>
+  152 +                  <span class="info-key">Email</span>
+  153 +                  <a href="mailto:saber03slimani@gmail.com" class="info-val info-link">saber03slimani@gmail.com<
+      +/a>
+  154 +                </div>
+  155 +              </li>
+  156 +              <li>
+  157 +                <span class="info-ico" aria-hidden="true">📱</span>
+  158 +                <div>
+  159 +                  <span class="info-key">Téléphone</span>
+  160 +                  <a href="tel:+212658497932" class="info-val info-link">+212 658 497 932</a>
+  161 +                </div>
+  162 +              </li>
+  163 +              <li>
+  164 +                <span class="info-ico" aria-hidden="true">🚗</span>
+  165 +                <div>
+  166 +                  <span class="info-key">Permis</span>
+  167 +                  <span class="info-val">Permis B</span>
+  168 +                </div>
+  169 +              </li>
+  170 +            </ul>
+  171 +
+  172 +            <div class="lang-block">
+  173 +              <p class="lang-title">Langues</p>
+  174 +              <div class="lang-item">
+  175 +                <span class="lang-name">Arabe</span>
+  176 +                <div class="lang-track"><div class="lang-fill" data-w="100"></div></div>
+  177 +                <span class="lang-lvl">Natif</span>
+  178                </div>
+  143 -            </div>
+  144 -            <div class="info-row">
+  145 -              <span class="info-ico">✉️</span>
+  146 -              <div>
+  147 -                <span class="info-lbl">Email</span>
+  148 -                <a href="mailto:saber03slimani@gmail.com" class="info-val info-link">saber03slimani@gmail.com</a
+      ->
+  179 +              <div class="lang-item">
+  180 +                <span class="lang-name">Français</span>
+  181 +                <div class="lang-track"><div class="lang-fill" data-w="60"></div></div>
+  182 +                <span class="lang-lvl">Intermédiaire</span>
+  183                </div>
+  150 -            </div>
+  151 -            <div class="info-row">
+  152 -              <span class="info-ico">📞</span>
+  153 -              <div>
+  154 -                <span class="info-lbl">Téléphone</span>
+  155 -                <a href="tel:+212658497932" class="info-val info-link">+212 658 497 932</a>
+  184 +              <div class="lang-item">
+  185 +                <span class="lang-name">Anglais</span>
+  186 +                <div class="lang-track"><div class="lang-fill" data-w="80"></div></div>
+  187 +                <span class="lang-lvl">Très bon</span>
+  188                </div>
+  189              </div>
+  158 -            <div class="info-row">
+  159 -              <span class="info-ico">🚗</span>
+  160 -              <div>
+  161 -                <span class="info-lbl">Mobilité</span>
+  162 -                <span class="info-val">Permis B — Mobile multi-sites</span>
+  163 -              </div>
+  164 -            </div>
+  190            </div>
+  166 -
+  167 -          <div class="lang-card">
+  168 -            <h4 class="lang-title">Langues</h4>
+  169 -            <div class="lang-row">
+  170 -              <span class="lang-name">Arabe</span>
+  171 -              <div class="lang-track"><div class="lang-bar" data-width="100"></div></div>
+  172 -              <span class="lang-lvl">Natif</span>
+  173 -            </div>
+  174 -            <div class="lang-row">
+  175 -              <span class="lang-name">Anglais</span>
+  176 -              <div class="lang-track"><div class="lang-bar" data-width="80"></div></div>
+  177 -              <span class="lang-lvl">Très bon</span>
+  178 -            </div>
+  179 -            <div class="lang-row">
+  180 -              <span class="lang-name">Français</span>
+  181 -              <div class="lang-track"><div class="lang-bar" data-width="60"></div></div>
+  182 -              <span class="lang-lvl">Intermédiaire</span>
+  183 -            </div>
+  184 -          </div>
+  191          </div>
+  192        </div>
+  193      </div>
+  194    </section>
+  195
+  190 -  <!-- ══════════════════════════════
+  191 -       SKILLS
+  192 -  ══════════════════════════════ -->
+  193 -  <section id="skills">
+  196 +  <!-- SKILLS -->
+  197 +  <section id="skills" class="section skills">
+  198      <div class="container">
+  195 -      <header class="section-head reveal">
+  196 -        <span class="section-tag">Expertise</span>
+  197 -        <h2>Compétences Techniques</h2>
+  198 -      </header>
+  199 +      <div class="section-header">
+  200 +        <span class="section-tag">Compétences</span>
+  201 +        <h2 class="section-title">Expertise technique</h2>
+  202 +      </div>
+  203
+  204        <div class="skills-grid">
+  205 +
+  206          <div class="skill-card reveal">
+  202 -          <div class="skill-card-icon">⚡</div>
+  207 +          <div class="sk-icon" aria-hidden="true">⚡</div>
+  208            <h3>Électronique Industrielle</h3>
+  204 -          <ul>
+  205 -            <li>Diagnostic et réparation de cartes électroniques (PCB)</li>
+  206 -            <li>Analyse de pannes complexes — défauts cachés, courts-circuits, instabilités</li>
+  207 -            <li>Travail sur composants CMS / SMD</li>
+  208 -            <li>Réparation de pistes, reprises de soudures de précision</li>
+  209 +          <ul class="sk-list">
+  210 +            <li>Diagnostic et réparation de cartes PCB</li>
+  211 +            <li>Analyse de pannes complexes &amp; défauts cachés</li>
+  212 +            <li>Soudure et composants CMS (SMD)</li>
+  213 +            <li>Courts-circuits, instabilités, défauts intermittents</li>
+  214            </ul>
+  215          </div>
+  216 +
+  217          <div class="skill-card reveal">
+  212 -          <div class="skill-card-icon">🔄</div>
+  213 -          <h3>Variateurs &amp; Automatisation</h3>
+  214 -          <ul>
+  215 -            <li>Mise en service et paramétrage de variateurs de fréquence</li>
+  216 -            <li>Maintenance de servo-drives et systèmes de commande</li>
+  217 -            <li>Intervention sur automates industriels</li>
+  218 +          <div class="sk-icon" aria-hidden="true">🔄</div>
+  219 +          <h3>Variateurs &amp; Automation</h3>
+  220 +          <ul class="sk-list">
+  221 +            <li>Mise en service et paramétrage variateurs</li>
+  222 +            <li>Maintenance servo-drives</li>
+  223              <li>Systèmes de sécurité PILZ PNOZ</li>
+  224 +            <li>Modules d'automatisation et commande</li>
+  225            </ul>
+  226 +          <div class="brand-row">
+  227 +            <span class="brand-chip">ABB</span>
+  228 +            <span class="brand-chip">Siemens</span>
+  229 +            <span class="brand-chip">Schneider</span>
+  230 +            <span class="brand-chip">Danfoss</span>
+  231 +            <span class="brand-chip">Allen-Bradley</span>
+  232 +          </div>
+  233          </div>
+  234 +
+  235          <div class="skill-card reveal">
+  222 -          <div class="skill-card-icon">🔌</div>
+  236 +          <div class="sk-icon" aria-hidden="true">🔌</div>
+  237            <h3>Électrotechnique</h3>
+  224 -          <ul>
+  238 +          <ul class="sk-list">
+  239              <li>Lecture et interprétation de schémas électriques</li>
+  226 -            <li>Maintenance d'armoires électriques industrielles</li>
+  227 -            <li>Câblage et recâblage de systèmes</li>
+  228 -            <li>Maintenance d'alimentations industrielles</li>
+  240 +            <li>Maintenance d'armoires électriques</li>
+  241 +            <li>Machines industrielles et alimentations</li>
+  242 +            <li>Câblage et recâblage industriel</li>
+  243            </ul>
+  244          </div>
+  245 +
+  246          <div class="skill-card reveal">
+  232 -          <div class="skill-card-icon">📊</div>
+  233 -          <h3>Méthodologie &amp; Qualité</h3>
+  234 -          <ul>
+  235 -            <li>Diagnostic structuré et analyse technique avancée</li>
+  236 -            <li>Tests fonctionnels et validation après intervention</li>
+  237 -            <li>Utilisation d'instruments de mesure professionnels</li>
+  238 -            <li>Conseil technique et analyse des besoins clients</li>
+  247 +          <div class="sk-icon" aria-hidden="true">🛠️</div>
+  248 +          <h3>Instruments &amp; Mesure</h3>
+  249 +          <ul class="sk-list">
+  250 +            <li>Multimètre professionnel</li>
+  251 +            <li>Oscilloscope</li>
+  252 +            <li>Pinces ampèremétriques</li>
+  253 +            <li>Testeurs CI (analogiques &amp; numériques)</li>
+  254 +            <li>Station de soudure de précision</li>
+  255            </ul>
+  256          </div>
+  241 -      </div>
+  257
+  243 -      <!-- Instruments -->
+  244 -      <div class="subsection reveal">
+  245 -        <h3 class="subsection-title">Instruments &amp; Outils</h3>
+  246 -        <div class="tools-flex">
+  247 -          <div class="tool-pill"><span>📏</span>Multimètre professionnel</div>
+  248 -          <div class="tool-pill"><span>🔌</span>Pinces ampèremétriques</div>
+  249 -          <div class="tool-pill"><span>🔬</span>Testeurs circuits intégrés</div>
+  250 -          <div class="tool-pill"><span>📡</span>Oscilloscope</div>
+  251 -          <div class="tool-pill"><span>🔧</span>Outils de soudure de précision</div>
+  258 +        <div class="skill-card reveal">
+  259 +          <div class="sk-icon" aria-hidden="true">📋</div>
+  260 +          <h3>Méthodologie &amp; Qualité</h3>
+  261 +          <ul class="sk-list">
+  262 +            <li>Diagnostic structuré et analyse avancée</li>
+  263 +            <li>Tests fonctionnels et validation post-intervention</li>
+  264 +            <li>Contrôle qualité et documentation</li>
+  265 +            <li>Conseil technique client sur site</li>
+  266 +          </ul>
+  267          </div>
+  253 -      </div>
+  268
+  255 -      <!-- Brands -->
+  256 -      <div class="subsection reveal">
+  257 -        <h3 class="subsection-title">Marques maîtrisées</h3>
+  258 -        <div class="brands-flex">
+  259 -          <span class="brand">ABB</span>
+  260 -          <span class="brand">Siemens</span>
+  261 -          <span class="brand">Schneider</span>
+  262 -          <span class="brand">Danfoss</span>
+  263 -          <span class="brand">Allen-Bradley</span>
+  264 -          <span class="brand">Lenze</span>
+  265 -          <span class="brand">PILZ</span>
+  266 -          <span class="brand">PROMATECH</span>
+  267 -        </div>
+  269        </div>
+  270      </div>
+  271    </section>
+  272
+  272 -  <!-- ══════════════════════════════
+  273 -       EXPERIENCE
+  274 -  ══════════════════════════════ -->
+  275 -  <section id="experience">
+  273 +  <!-- EXPERIENCE -->
+  274 +  <section id="experience" class="section experience">
+  275      <div class="container">
+  277 -      <header class="section-head reveal">
+  278 -        <span class="section-tag">Parcours</span>
+  279 -        <h2>Expérience Professionnelle</h2>
+  280 -      </header>
+  276 +      <div class="section-header">
+  277 +        <span class="section-tag">Expérience</span>
+  278 +        <h2 class="section-title">Parcours professionnel</h2>
+  279 +      </div>
+  280
+  281        <div class="timeline">
+  283 -        <!-- Job 1 -->
+  282 +
+  283          <div class="tl-item reveal">
+  285 -          <div class="tl-marker">
+  284 +          <div class="tl-marker" aria-hidden="true">
+  285              <div class="tl-dot"></div>
+  286              <div class="tl-line"></div>
+  287            </div>
+  288            <div class="tl-card">
+  289              <div class="tl-head">
+  290                <div>
+  292 -                <h3 class="tl-role">Électronicien en Maintenance Industrielle</h3>
+  293 -                <p class="tl-company">STE MR3E SARL — Tanger</p>
+  291 +                <h3>Électronicien en maintenance industrielle</h3>
+  292 +                <p class="tl-company">STE MR3E SARL — Tanger, Maroc</p>
+  293                </div>
+  295 -              <span class="tl-period">2022 – 2026</span>
+  294 +              <span class="tl-date">2022 – 2026</span>
+  295              </div>
+  297 -            <ul class="tl-tasks">
+  296 +            <ul class="tl-list">
+  297                <li>Intervention technique mobile dans plusieurs entreprises industrielles au Maroc</li>
+  299 -              <li>Diagnostic, maintenance et réparation de variateurs de fréquence (ABB, Siemens, Schneider, Dan
+      -foss…)</li>
+  300 -              <li>Réparation de cartes électroniques et systèmes de commande</li>
+  298 +              <li>Diagnostic, maintenance et réparation de variateurs de fréquence (ABB, Siemens, Schneider, Dan
+      +foss, Allen-Bradley…)</li>
+  299 +              <li>Réparation de cartes électroniques, servo-drives et systèmes de commande</li>
+  300                <li>Maintenance d'alimentations industrielles et modules d'automatisation</li>
+  302 -              <li>Taux de résolution à la première intervention : <strong>≈ 80 %</strong></li>
+  303 -              <li>Tests fonctionnels et contrôle qualité après chaque intervention</li>
+  304 -              <li>Conseil technique et analyse des besoins clients sur site</li>
+  301 +              <li>Taux de résolution initiale de <strong>80 %</strong> dès la première intervention</li>
+  302 +              <li>Tests fonctionnels, contrôle qualité et documentation après chaque intervention</li>
+  303 +              <li>Conseil technique et analyse des besoins clients directement sur site</li>
+  304              </ul>
+  306 -            <div class="tl-chips">
+  307 -              <span>Variateurs VFD</span><span>PCB Repair</span>
+  308 -              <span>Servo-drives</span><span>Intervention terrain</span>
+  309 -            </div>
+  305            </div>
+  306          </div>
+  307
+  313 -        <!-- Job 2 -->
+  308          <div class="tl-item reveal">
+  315 -          <div class="tl-marker">
+  309 +          <div class="tl-marker" aria-hidden="true">
+  310              <div class="tl-dot"></div>
+  311            </div>
+  312            <div class="tl-card">
+  313              <div class="tl-head">
+  314                <div>
+  321 -                <h3 class="tl-role">
+  322 -                  Technicien de Maintenance
+  323 -                  <span class="badge-stage">Stage</span>
+  324 -                </h3>
+  325 -                <p class="tl-company">Motherson SMRC HM — Tanger</p>
+  315 +                <h3>Technicien de maintenance</h3>
+  316 +                <p class="tl-company">Motherson SMRC HM — Tanger, Maroc</p>
+  317 +                <span class="tl-badge">Stage</span>
+  318                </div>
+  327 -              <span class="tl-period">2022</span>
+  319 +              <span class="tl-date">2022</span>
+  320              </div>
+  329 -            <ul class="tl-tasks">
+  330 -              <li>Maintenance préventive et corrective de machines industrielles</li>
+  331 -              <li>Intervention sur robots et armoires électriques</li>
+  332 -              <li>Diagnostic et résolution de pannes techniques en équipe</li>
+  333 -              <li>Travail dans un environnement industriel structuré à fort volume de production</li>
+  321 +            <ul class="tl-list">
+  322 +              <li>Maintenance de machines industrielles, robots et armoires électriques</li>
+  323 +              <li>Diagnostic et résolution de pannes techniques dans un environnement structuré</li>
+  324 +              <li>Collaboration en équipe dans un cadre industriel multi-postes</li>
+  325              </ul>
+  335 -            <div class="tl-chips">
+  336 -              <span>Maintenance</span><span>Robots industriels</span><span>Armoires électriques</span>
+  337 -            </div>
+  326            </div>
+  327          </div>
+  328 +
+  329        </div>
+  330      </div>
+  331    </section>
+  332
+  344 -  <!-- ══════════════════════════════
+  345 -       PROJECTS
+  346 -  ══════════════════════════════ -->
+  347 -  <section id="projects">
+  333 +  <!-- PROJECTS -->
+  334 +  <section id="projects" class="section projects">
+  335      <div class="container">
+  349 -      <header class="section-head reveal">
+  336 +      <div class="section-header">
+  337          <span class="section-tag">Réalisations</span>
+  351 -        <h2>Projets &amp; Interventions Clés</h2>
+  352 -        <p class="section-sub">Sélection de missions techniques complexes résolues avec succès</p>
+  353 -      </header>
+  338 +        <h2 class="section-title">Projets &amp; Interventions</h2>
+  339 +        <p class="section-sub">Sélection de cas techniques résolus sur le terrain</p>
+  340 +      </div>
+  341
+  342        <div class="projects-grid">
+  356 -        <article class="proj-card reveal">
+  357 -          <span class="proj-num">01</span>
+  358 -          <div class="proj-icon">🎯</div>
+  359 -          <h3>Diagnostic Complexe — Défaut Caché (Servo Lenze)</h3>
+  360 -          <p>Identification d'un défaut non visible malgré des mesures apparemment normales. Analyse approfondie
+      - par composant, remplacement ciblé des éléments critiques et remise en service complète du servo-drive.</p>
+  343 +
+  344 +        <div class="proj-card reveal">
+  345 +          <div class="proj-top">
+  346 +            <span class="proj-emoji" aria-hidden="true">🧠</span>
+  347 +            <span class="proj-cat">Servo Drive</span>
+  348 +          </div>
+  349 +          <h3>Défaut caché — Servo Lenze</h3>
+  350 +          <p>Identification d'un défaut non visible malgré des mesures apparemment normales. Analyse approfondie
+      + ayant conduit au remplacement ciblé de composants critiques et à la remise en service complète du système.</p>
+  351            <div class="proj-tags">
+  362 -            <span>Lenze</span><span>Servo-drive</span><span>Diagnostic avancé</span>
+  352 +            <span>Servo Lenze</span><span>Diagnostic avancé</span><span>Analyse PCB</span>
+  353            </div>
+  364 -        </article>
+  354 +        </div>
+  355
+  366 -        <article class="proj-card reveal">
+  367 -          <span class="proj-num">02</span>
+  368 -          <div class="proj-icon">⚡</div>
+  369 -          <h3>Réparation Servo Drive PROMATECH</h3>
+  370 -          <p>Détection d'un court-circuit sur le régulateur LM1085. Remplacement préventif de plusieurs composan
+      -ts fragilisés. Validation complète par tests en charge confirmant la stabilité totale du système.</p>
+  356 +        <div class="proj-card reveal">
+  357 +          <div class="proj-top">
+  358 +            <span class="proj-emoji" aria-hidden="true">⚡</span>
+  359 +            <span class="proj-cat">Servo Drive</span>
+  360 +          </div>
+  361 +          <h3>Servo Drive PROMATECH — LM1085</h3>
+  362 +          <p>Détection d'un court-circuit sur le régulateur LM1085. Remplacement préventif de plusieurs composan
+      +ts associés. Tests en charge complets validant la stabilité et la fiabilité du système.</p>
+  363            <div class="proj-tags">
+  372 -            <span>PROMATECH</span><span>LM1085</span><span>Test en charge</span>
+  364 +            <span>PROMATECH</span><span>LM1085</span><span>Court-circuit</span>
+  365            </div>
+  374 -        </article>
+  366 +        </div>
+  367
+  376 -        <article class="proj-card reveal">
+  377 -          <span class="proj-num">03</span>
+  378 -          <div class="proj-icon">🏭</div>
+  379 -          <h3>Arrêt de Production — Variateur Court-circuit</h3>
+  380 -          <p>Identification rapide d'un court-circuit causé par un corps étranger dans le variateur. Remplacemen
+      -t complet de l'unité et remise en service express pour minimiser l'arrêt de la ligne de production.</p>
+  368 +        <div class="proj-card reveal">
+  369 +          <div class="proj-top">
+  370 +            <span class="proj-emoji" aria-hidden="true">🏭</span>
+  371 +            <span class="proj-cat">Variateur</span>
+  372 +          </div>
+  373 +          <h3>Arrêt de production — Corps étranger</h3>
+  374 +          <p>Identification rapide d'un court-circuit causé par un corps étranger dans le variateur. Remplacemen
+      +t complet de l'unité et redémarrage de la ligne de production dans les délais les plus courts.</p>
+  375            <div class="proj-tags">
+  382 -            <span>VFD</span><span>Court-circuit</span><span>Urgence production</span>
+  376 +            <span>Variateur</span><span>Urgence</span><span>Redémarrage rapide</span>
+  377            </div>
+  384 -        </article>
+  378 +        </div>
+  379
+  386 -        <article class="proj-card reveal">
+  387 -          <span class="proj-num">04</span>
+  388 -          <div class="proj-icon">🛡️</div>
+  389 -          <h3>Système de Sécurité PILZ PNOZ</h3>
+  390 -          <p>Diagnostic d'un défaut critique sur un module de sécurité PILZ PNOZ. Réparation complète avec recâb
+      -lage intégral et remise en service sécurisée, avec validation de toutes les fonctions de sécurité.</p>
+  380 +        <div class="proj-card reveal">
+  381 +          <div class="proj-top">
+  382 +            <span class="proj-emoji" aria-hidden="true">🛡️</span>
+  383 +            <span class="proj-cat">Sécurité industrielle</span>
+  384 +          </div>
+  385 +          <h3>Système de sécurité PILZ PNOZ</h3>
+  386 +          <p>Diagnostic d'un défaut sur un système de sécurité PILZ PNOZ. Réparation complète, recâblage et remi
+      +se en service sécurisée conforme aux normes de sécurité industrielles en vigueur.</p>
+  387            <div class="proj-tags">
+  392 -            <span>PILZ PNOZ</span><span>Sécurité machine</span><span>Recâblage</span>
+  388 +            <span>PILZ PNOZ</span><span>Sécurité</span><span>Recâblage</span>
+  389            </div>
+  394 -        </article>
+  390 +        </div>
+  391
+  396 -        <article class="proj-card reveal">
+  397 -          <span class="proj-num">05</span>
+  398 -          <div class="proj-icon">🔋</div>
+  399 -          <h3>Réparation Alimentation Industrielle</h3>
+  400 -          <p>Analyse d'une tension instable provoquant des dysfonctionnements intermittents. Identification et r
+      -emplacement des condensateurs défectueux. Stabilisation complète avec vérification sur toutes les plages de tens
+      -ion.</p>
+  392 +        <div class="proj-card reveal">
+  393 +          <div class="proj-top">
+  394 +            <span class="proj-emoji" aria-hidden="true">🔋</span>
+  395 +            <span class="proj-cat">Alimentation</span>
+  396 +          </div>
+  397 +          <h3>Alimentation industrielle instable</h3>
+  398 +          <p>Analyse et diagnostic d'une tension instable sur alimentation industrielle. Identification et rempl
+      +acement des condensateurs défectueux. Stabilisation totale et vérifiée du système.</p>
+  399            <div class="proj-tags">
+  402 -            <span>Alimentation</span><span>Condensateurs</span><span>Stabilisation</span>
+  400 +            <span>Alimentation</span><span>Condensateurs</span><span>Tension instable</span>
+  401            </div>
+  404 -        </article>
+  402 +        </div>
+  403
+  406 -        <article class="proj-card reveal">
+  407 -          <span class="proj-num">06</span>
+  408 -          <div class="proj-icon">🔬</div>
+  409 -          <h3>Réparation PCB &amp; Microcontrôleurs</h3>
+  410 -          <p>Diagnostic et remplacement de composants critiques sur cartes électroniques industrielles. Réparati
+      -on de pistes, reprises de soudures et remplacement de composants CMS. Tests rigoureux avant remise en service.</
+      -p>
+  404 +        <div class="proj-card reveal">
+  405 +          <div class="proj-top">
+  406 +            <span class="proj-emoji" aria-hidden="true">🖥️</span>
+  407 +            <span class="proj-cat">PCB / Microcontrôleurs</span>
+  408 +          </div>
+  409 +          <h3>Réparation cartes électroniques</h3>
+  410 +          <p>Diagnostic et remplacement de composants critiques sur cartes électroniques et microcontrôleurs. Ré
+      +paration PCB (pistes, soudures, composants CMS). Validation complète avant remise en service.</p>
+  411            <div class="proj-tags">
+  412 -            <span>PCB Repair</span><span>CMS / SMD</span><span>Microcontrôleurs</span>
+  412 +            <span>PCB Repair</span><span>Microcontrôleurs</span><span>Soudure SMD</span>
+  413            </div>
+  414 -        </article>
+  414 +        </div>
+  415 +
+  416        </div>
+  417
+  417 -      <p class="projects-note reveal">
+  418 -        <span>💡</span>
+  419 -        D'autres projets et interventions peuvent être présentés sur demande.
+  420 -      </p>
+  418 +      <p class="proj-note">✶ D'autres projets et interventions sont disponibles sur demande.</p>
+  419      </div>
+  420    </section>
+  421
+  424 -  <!-- ══════════════════════════════
+  425 -       EDUCATION
+  426 -  ══════════════════════════════ -->
+  427 -  <section id="education">
+  422 +  <!-- EDUCATION -->
+  423 +  <section id="education" class="section education">
+  424      <div class="container">
+  429 -      <header class="section-head reveal">
+  425 +      <div class="section-header">
+  426          <span class="section-tag">Formation</span>
+  431 -        <h2>Parcours Académique</h2>
+  432 -      </header>
+  427 +        <h2 class="section-title">Parcours académique</h2>
+  428 +      </div>
+  429
+  430        <div class="edu-grid">
+  431 +
+  432          <div class="edu-card reveal">
+  436 -          <div class="edu-top">
+  437 -            <span class="edu-year">2020 – 2022</span>
+  438 -            <span class="edu-ico">🎓</span>
+  439 -          </div>
+  433 +          <div class="edu-year">2020 – 2022</div>
+  434 +          <div class="edu-ico" aria-hidden="true">🎓</div>
+  435            <h3>Technicien Spécialisé en Électromécanique des Systèmes Automatisés</h3>
+  436            <p class="edu-school">ISTA — Fnideq</p>
+  442 -          <p class="edu-desc">Formation spécialisée en électromécanique industrielle, systèmes automatisés, main
+      -tenance préventive et électronique appliquée. Travaux pratiques sur équipements industriels réels.</p>
+  437 +          <p class="edu-desc">Formation approfondie en électromécanique, automatisation industrielle, maintenanc
+      +e de systèmes automatisés et programmation d'automates industriels.</p>
+  438          </div>
+  439
+  440          <div class="edu-card reveal">
+  446 -          <div class="edu-top">
+  447 -            <span class="edu-year">2020</span>
+  448 -            <span class="edu-ico">📚</span>
+  449 -          </div>
+  441 +          <div class="edu-year">2020</div>
+  442 +          <div class="edu-ico" aria-hidden="true">📚</div>
+  443            <h3>Baccalauréat Sciences Physiques</h3>
+  444            <p class="edu-school">Lycée Kadi Ayad — Tétouan</p>
+  452 -          <p class="edu-desc">Sciences physiques, mathématiques et chimie. Base solide pour la compréhension et
+      -l'analyse des phénomènes électriques, électroniques et mécaniques.</p>
+  445 +          <p class="edu-desc">Formation scientifique rigoureuse avec spécialisation en physique, chimie et mathé
+      +matiques — socle solide pour l'électronique et l'électrotechnique.</p>
+  446          </div>
+  447 +
+  448        </div>
+  449      </div>
+  450    </section>
+  451
+  458 -  <!-- ══════════════════════════════
+  459 -       CONTACT
+  460 -  ══════════════════════════════ -->
+  461 -  <section id="contact">
+  452 +  <!-- CONTACT -->
+  453 +  <section id="contact" class="section contact">
+  454      <div class="container">
+  463 -      <header class="section-head reveal">
+  455 +      <div class="section-header">
+  456          <span class="section-tag">Contact</span>
+  465 -        <h2>Me Contacter</h2>
+  466 -        <p class="section-sub">Disponible pour missions, interventions ou opportunités professionnelles</p>
+  467 -      </header>
+  457 +        <h2 class="section-title">Travaillons ensemble</h2>
+  458 +        <p class="section-sub">Disponible pour missions, interventions et collaborations industrielles</p>
+  459 +      </div>
+  460
+  461        <div class="contact-grid">
+  470 -        <div class="contact-cards reveal">
+  471 -          <a href="mailto:saber03slimani@gmail.com" class="contact-card">
+  472 -            <div class="cc-icon">✉️</div>
+  473 -            <div class="cc-body">
+  462 +        <div class="contact-cards">
+  463 +          <a href="mailto:saber03slimani@gmail.com" class="cc-card">
+  464 +            <span class="cc-ico" aria-hidden="true">✉️</span>
+  465 +            <div>
+  466                <span class="cc-label">Email</span>
+  475 -              <span class="cc-value">saber03slimani@gmail.com</span>
+  467 +              <span class="cc-val">saber03slimani@gmail.com</span>
+  468              </div>
+  477 -            <span class="cc-arrow">→</span>
+  469 +            <span class="cc-arrow" aria-hidden="true">→</span>
+  470            </a>
+  479 -          <a href="tel:+212658497932" class="contact-card">
+  480 -            <div class="cc-icon">📞</div>
+  481 -            <div class="cc-body">
+  471 +          <a href="tel:+212658497932" class="cc-card">
+  472 +            <span class="cc-ico" aria-hidden="true">📱</span>
+  473 +            <div>
+  474                <span class="cc-label">Téléphone</span>
+  483 -              <span class="cc-value">+212 658 497 932</span>
+  475 +              <span class="cc-val">+212 658 497 932</span>
+  476              </div>
+  485 -            <span class="cc-arrow">→</span>
+  477 +            <span class="cc-arrow" aria-hidden="true">→</span>
+  478            </a>
+  487 -          <div class="contact-card no-action">
+  488 -            <div class="cc-icon">📍</div>
+  489 -            <div class="cc-body">
+  479 +          <div class="cc-card cc-static">
+  480 +            <span class="cc-ico" aria-hidden="true">📍</span>
+  481 +            <div>
+  482                <span class="cc-label">Localisation</span>
+  491 -              <span class="cc-value">Tétouan, Maroc</span>
+  483 +              <span class="cc-val">Tétouan, Maroc</span>
+  484              </div>
+  485            </div>
+  486 +          <div class="cc-card cc-static">
+  487 +            <span class="cc-ico" aria-hidden="true">🟢</span>
+  488 +            <div>
+  489 +              <span class="cc-label">Statut</span>
+  490 +              <span class="cc-val">Disponible pour missions</span>
+  491 +            </div>
+  492 +          </div>
+  493          </div>
+  494
+  496 -        <div class="contact-cta reveal">
+  497 -          <div class="cta-box">
+  498 -            <h3>Prêt pour votre prochain projet ?</h3>
+  499 -            <p>
+  500 -              Que ce soit pour une intervention sur site, une réparation d'équipement industriel, une mise en se
+      -rvice ou une mission de maintenance, je suis disponible pour répondre à vos besoins.
+  501 -            </p>
+  502 -            <a href="mailto:saber03slimani@gmail.com" class="btn btn-primary">
+  503 -              Envoyer un message
+  495 +        <div class="contact-pitch">
+  496 +          <div class="pitch-card">
+  497 +            <h3>Besoin d'un expert en maintenance industrielle ?</h3>
+  498 +            <p>Panne urgente, mise en service, maintenance préventive ou diagnostic complexe — j'interviens rapi
+      +dement sur votre site avec les outils et l'expertise nécessaires.</p>
+  499 +            <ul class="pitch-list">
+  500 +              <li><span class="pitch-check" aria-hidden="true">✓</span> Intervention sur site, partout au Maroc<
+      +/li>
+  501 +              <li><span class="pitch-check" aria-hidden="true">✓</span> Réponse rapide sous 24h</li>
+  502 +              <li><span class="pitch-check" aria-hidden="true">✓</span> Expérience multi-secteurs industriels</l
+      +i>
+  503 +              <li><span class="pitch-check" aria-hidden="true">✓</span> 80 % de résolution dès la première visit
+      +e</li>
+  504 +            </ul>
+  505 +            <a href="mailto:saber03slimani@gmail.com" class="btn btn-primary btn-lg">
+  506 +              Envoyer un message →
+  507              </a>
+  508            </div>
+  509          </div>
+ ...
+  511      </div>
+  512    </section>
+  513
+  511 -  <!-- ══════════════════════════════
+  512 -       FOOTER
+  513 -  ══════════════════════════════ -->
+  514 -  <footer>
+  514 +  <!-- FOOTER -->
+  515 +  <footer class="footer">
+  516      <div class="container">
+  517        <div class="footer-inner">
+  517 -        <p class="footer-name">Saber Slimani</p>
+  517        <div class="footer-inner">
+  517 -        <p class="footer-name">Saber Slimani</p>
+  Ce portfolio représente une partie de mon expérience.
+  D’autres projets et interventions peuvent être présentés sur demande.
+
+● I have all the content needed. Let me build the complete portfolio now — creating the directory and all three files.
+
+● Bash(mkdir -p "C:\Users\pro\portfolio-saber" && echo "Directory created")
+  ⎿  Directory created
+
+● Write(portfolio-saber\index.html)
+  ⎿  Error writing file
+
+  Searched for 1 pattern, read 1 file, listed 1 directory (ctrl+o to expand)
+
+● The directory already has existing files. Let me read them before writing.
+
+  Read 3 files (ctrl+o to expand)
+
+● Good, the files exist but appear to be from a previous session. Now I'll write all three complete files with the full
+  premium design.
+
+● Write(portfolio-saber\index.html)
+  ⎿  Added 339 lines, removed 325 lines
+        3  <head>
+        4    <meta charset="UTF-8" />
+        5    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        6 -  <meta name="description" content="Portfolio de Saber Slimani – Technicien Spécialisé en Électronique
+          - & Maintenance Industrielle avec plus de 3 ans d'expérience sur variateurs de fréquence, servo-drives
+          -et réparation de cartes électroniques." />
+        7 -  <meta name="keywords" content="Saber Slimani, électronique industrielle, maintenance industrielle, v
+          -ariateurs de fréquence, ABB, Siemens, Schneider, Danfoss, Allen-Bradley, Tanger, Maroc, PCB, servo-dri
+          -ve" />
+        6 +  <meta name="description" content="Portfolio de Saber Slimani — Technicien Spécialisé en Électronique
+          + & Maintenance Industrielle. Expert en variateurs de fréquence ABB, Siemens, Schneider, diagnostic PCB
+          + et systèmes automatisés. Tétouan, Maroc." />
+        7 +  <meta name="keywords" content="Saber Slimani, électronique industrielle, maintenance industrielle, v
+          +ariateurs de fréquence, ABB, Siemens, Schneider Electric, Danfoss, Allen-Bradley, servo drive, diagnos
+          +tic PCB, Tétouan, Maroc" />
+        8    <meta name="author" content="Saber Slimani" />
+        9    <meta name="robots" content="index, follow" />
+       10
+       11    <!-- Open Graph -->
+       12 -  <meta property="og:title" content="Saber Slimani — Technicien Électronique & Maintenance Industriell
+          -e" />
+       13 -  <meta property="og:description" content="Portfolio professionnel de Saber Slimani, expert en variate
+          -urs de fréquence, réparation PCB et systèmes automatisés. Tanger, Maroc." />
+       12    <meta property="og:type" content="website" />
+       13 +  <meta property="og:title" content="Saber Slimani | Technicien Électronique & Maintenance Industriell
+          +e" />
+       14 +  <meta property="og:description" content="Portfolio professionnel — Expert en maintenance industriell
+          +e & électronique avec +3 ans d'expérience terrain. 80 % de résolution dès la première intervention." /
+          +>
+       15 +  <meta property="og:url" content="https://saberslimani.github.io" />
+       16    <meta property="og:locale" content="fr_FR" />
+       17
+       17 -  <title>Saber Slimani | Électronique & Maintenance Industrielle</title>
+       18 +  <!-- Twitter Card -->
+       19 +  <meta name="twitter:card" content="summary_large_image" />
+       20 +  <meta name="twitter:title" content="Saber Slimani | Technicien Électronique & Maintenance Industriel
+          +le" />
+       21 +  <meta name="twitter:description" content="Expert en maintenance industrielle, variateurs de fréquenc
+          +e et diagnostic PCB — Tétouan, Maroc." />
+       22
+       23 +  <title>Saber Slimani | Technicien Électronique &amp; Maintenance Industrielle</title>
+       24 +
+       25    <!-- Google Fonts -->
+       26    <link rel="preconnect" href="https://fonts.googleapis.com" />
+       27    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       22 -  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Gro
+          -tesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+       28 +  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space
+          ++Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+       29
+       30    <link rel="stylesheet" href="styles.css" />
+       31  </head>
+       32  <body>
+       33
+       28 -  <!-- ══════════════════════════════
+       29 -       NAVIGATION
+       30 -  ══════════════════════════════ -->
+       31 -  <nav id="navbar">
+       32 -    <div class="nav-inner">
+       33 -      <a href="#hero" class="nav-logo">SS</a>
+       34 -      <ul class="nav-links" id="navLinks">
+       35 -        <li><a href="#about">À propos</a></li>
+       36 -        <li><a href="#skills">Compétences</a></li>
+       37 -        <li><a href="#experience">Expérience</a></li>
+       38 -        <li><a href="#projects">Projets</a></li>
+       39 -        <li><a href="#education">Formation</a></li>
+       40 -        <li><a href="#contact" class="nav-cta">Contact</a></li>
+       34 +  <!-- NAVIGATION -->
+       35 +  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+       36 +    <div class="nav-container">
+       37 +      <a href="#home" class="nav-logo" aria-label="Accueil — Saber Slimani">SS</a>
+       38 +      <ul class="nav-menu" id="nav-menu">
+       39 +        <li><a href="#home"       class="nav-link">Accueil</a></li>
+       40 +        <li><a href="#about"      class="nav-link">À propos</a></li>
+       41 +        <li><a href="#skills"     class="nav-link">Compétences</a></li>
+       42 +        <li><a href="#experience" class="nav-link">Expérience</a></li>
+       43 +        <li><a href="#projects"   class="nav-link">Projets</a></li>
+       44 +        <li><a href="#education"  class="nav-link">Formation</a></li>
+       45 +        <li><a href="#contact"    class="nav-link nav-cta">Contact</a></li>
+       46        </ul>
+       42 -      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+       47 +      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+       48          <span></span><span></span><span></span>
+       49        </button>
+       50      </div>
+       51    </nav>
+       52
+       48 -  <!-- ══════════════════════════════
+       49 -       HERO
+       50 -  ══════════════════════════════ -->
+       51 -  <section id="hero">
+       52 -    <div class="hero-bg" aria-hidden="true">
+       53 -      <div class="hero-grid"></div>
+       54 -      <div class="hero-glow"></div>
+       55 -      <div class="hero-glow-2"></div>
+       56 -    </div>
+       53 +  <!-- HERO -->
+       54 +  <section id="home" class="hero">
+       55 +    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+       56 +    <div class="hero-glow" aria-hidden="true"></div>
+       57
+       58      <div class="hero-content">
+       59 -      <div class="hero-badge reveal">
+       60 -        <span class="pulse-dot"></span>
+       61 -        Disponible pour nouvelles missions
+       59 +      <div class="hero-badge">
+       60 +        <span class="badge-dot" aria-hidden="true"></span>
+       61 +        Disponible pour missions &amp; interventions
+       62        </div>
+       63
+       64 -      <h1 class="hero-name reveal">
+       64 +      <h1 class="hero-name">
+       65          <span class="name-first">Saber</span>
+       66          <span class="name-last">Slimani</span>
+       67        </h1>
+       68
+       69 -      <p class="hero-title reveal">
+       70 -        Technicien Spécialisé en<br />
+       71 -        <strong>Électronique &amp; Maintenance Industrielle</strong>
+       69 +      <p class="hero-title">
+       70 +        Technicien Spécialisé en&nbsp;
+       71 +        <span class="typed-wrap"><span class="typed-text"></span><span class="cursor" aria-hidden="tru
+          +e"></span></span>
+       72        </p>
+       73
+       74 -      <p class="hero-description reveal">
+       75 -        Plus de 3 ans d'expérience dans le diagnostic, la réparation et la mise en service d'équipemen
+          -ts industriels complexes. Intervention mobile multi-sites au Maroc.
+       74 +      <p class="hero-desc">
+       75 +        Expert en diagnostic et maintenance d'équipements industriels complexes.<br />
+       76 +        <strong>80 % de résolution dès la première intervention</strong> — partout au Maroc.
+       77        </p>
+       78
+       78 -      <div class="hero-stats reveal">
+       79 -        <div class="stat-item">
+       80 -          <span class="stat-val" data-target="3">0</span><span class="stat-plus">+</span>
+       81 -          <span class="stat-label">Années d'expérience</span>
+       79 +      <div class="hero-actions">
+       80 +        <a href="#projects" class="btn btn-primary">Voir mes réalisations</a>
+       81 +        <a href="#contact"  class="btn btn-ghost">Me contacter</a>
+       82 +      </div>
+       83 +
+       84 +      <div class="hero-stats">
+       85 +        <div class="stat">
+       86 +          <span class="stat-num" data-target="3" data-suffix="+">3+</span>
+       87 +          <span class="stat-label">Ans d'expérience</span>
+       88          </div>
+       83 -        <div class="stat-sep"></div>
+       84 -        <div class="stat-item">
+       85 -          <span class="stat-val" data-target="80">0</span><span class="stat-plus">%</span>
+       86 -          <span class="stat-label">Taux de résolution initiale</span>
+       89 +        <div class="stat-sep" aria-hidden="true"></div>
+       90 +        <div class="stat">
+       91 +          <span class="stat-num" data-target="80" data-suffix="%">80%</span>
+       92 +          <span class="stat-label">Résolution 1ère interv.</span>
+       93          </div>
+       88 -        <div class="stat-sep"></div>
+       89 -        <div class="stat-item">
+       90 -          <span class="stat-val" data-target="6">0</span><span class="stat-plus">+</span>
+       91 -          <span class="stat-label">Projets techniques clés</span>
+       94 +        <div class="stat-sep" aria-hidden="true"></div>
+       95 +        <div class="stat">
+       96 +          <span class="stat-num" data-target="5" data-suffix="+">5+</span>
+       97 +          <span class="stat-label">Marques maîtrisées</span>
+       98          </div>
+       99        </div>
+       94 -
+       95 -      <div class="hero-ctas reveal">
+       96 -        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+       97 -        <a href="#contact" class="btn btn-outline">Me contacter</a>
+       98 -      </div>
+      100      </div>
+      101
+      101 -    <div class="hero-scroll" aria-hidden="true">
+      102 -      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      103 -    </div>
+      102 +    <a href="#about" class="hero-scroll" aria-label="Défiler vers le bas">
+      103 +      <div class="scroll-mouse"><span></span></div>
+      104 +    </a>
+      105    </section>
+      106
+      106 -  <!-- ══════════════════════════════
+      107 -       ABOUT
+      108 -  ══════════════════════════════ -->
+      109 -  <section id="about">
+      107 +  <!-- ABOUT -->
+      108 +  <section id="about" class="section about">
+      109      <div class="container">
+      111 -      <header class="section-head reveal">
+      112 -        <span class="section-tag">Profil</span>
+      113 -        <h2>À propos de moi</h2>
+      114 -      </header>
+      110 +      <div class="section-header">
+      111 +        <span class="section-tag">À propos</span>
+      112 +        <h2 class="section-title">Qui suis-je ?</h2>
+      113 +      </div>
+      114
+      115        <div class="about-grid">
+      117 -        <div class="about-left reveal">
+      116 +        <div class="about-body">
+      117            <p class="about-lead">
+      119 -            Électronicien en maintenance industrielle avec plus de <strong>3 ans d'expérience</strong>
+          - dans le diagnostic, la réparation et la mise en service d'équipements industriels complexes.
+      118 +            Électronicien en maintenance industrielle avec plus de <strong>3 ans d'expérience</strong>
+          + sur le terrain, spécialisé dans le diagnostic, la réparation et la mise en service d'équipements indu
+          +striels complexes.
+      119            </p>
+      121 -          <p class="about-body">
+      122 -            Spécialisé dans les <strong>variateurs de fréquence</strong> (ABB, Siemens, Schneider, Dan
+          -foss, Allen-Bradley) ainsi que dans les systèmes automatisés et servo-drives. J'interviens directement
+          - sur site auprès de multiples entreprises industrielles avec une forte capacité d'analyse et de résolu
+          -tion rapide des pannes.
+      120 +          <p>
+      121 +            Je suis spécialisé dans les <strong>variateurs de fréquence</strong> des grandes marques (
+          +ABB, Siemens, Schneider, Danfoss, Allen-Bradley) ainsi que dans les systèmes automatisés et servo-driv
+          +es. J'interviens directement sur site auprès de nombreuses entreprises industrielles à travers le Maro
+          +c.
+      122            </p>
+      124 -          <p class="about-body">
+      125 -            Mon approche structurée me permet d'atteindre un <strong>taux de diagnostic efficace d'env
+          -iron 80 % dès la première intervention</strong>, réduisant significativement les arrêts de production
+          -et les coûts de maintenance pour mes clients.
+      123 +          <p>
+      124 +            Ma valeur ajoutée : une <strong>analyse rapide et structurée</strong> qui me permet de rés
+          +oudre environ 80 % des pannes dès la première intervention — minimisant les temps d'arrêt et les coûts
+          + opérationnels pour mes clients.
+      125            </p>
+      127 -          <div class="about-chips">
+      128 -            <span>Variateurs VFD</span><span>ABB</span><span>Siemens</span>
+      129 -            <span>Schneider</span><span>Danfoss</span><span>Allen-Bradley</span>
+      130 -            <span>Servo-drives</span><span>PILZ PNOZ</span><span>PCB Repair</span>
+      131 -            <span>CMS / SMD</span>
+      126 +
+      127 +          <div class="about-tags">
+      128 +            <span class="tag">Intervention mobile</span>
+      129 +            <span class="tag">Diagnostic avancé</span>
+      130 +            <span class="tag">Variateurs de fréquence</span>
+      131 +            <span class="tag">Servo-drives</span>
+      132 +            <span class="tag">Réparation PCB</span>
+      133 +            <span class="tag">Automatisation</span>
+      134 +            <span class="tag">Sécurité industrielle</span>
+      135            </div>
+      136          </div>
+      137
+      135 -        <div class="about-right reveal">
+      138 +        <div class="about-sidebar">
+      139            <div class="info-card">
+      137 -            <div class="info-row">
+      138 -              <span class="info-ico">📍</span>
+      139 -              <div>
+      140 -                <span class="info-lbl">Localisation</span>
+      141 -                <span class="info-val">Tétouan, Maroc</span>
+      140 +            <p class="info-card-label">Informations</p>
+      141 +            <ul class="info-list">
+      142 +              <li>
+      143 +                <span class="info-ico" aria-hidden="true">📍</span>
+      144 +                <div>
+      145 +                  <span class="info-key">Localisation</span>
+      146 +                  <span class="info-val">Tétouan, Maroc</span>
+      147 +                </div>
+      148 +              </li>
+      149 +              <li>
+      150 +                <span class="info-ico" aria-hidden="true">✉️</span>
+      151 +                <div>
+      152 +                  <span class="info-key">Email</span>
+      153 +                  <a href="mailto:saber03slimani@gmail.com" class="info-val info-link">saber03slimani@
+          +gmail.com</a>
+      154 +                </div>
+      155 +              </li>
+      156 +              <li>
+      157 +                <span class="info-ico" aria-hidden="true">📱</span>
+      158 +                <div>
+      159 +                  <span class="info-key">Téléphone</span>
+      160 +                  <a href="tel:+212658497932" class="info-val info-link">+212 658 497 932</a>
+      161 +                </div>
+      162 +              </li>
+      163 +              <li>
+      164 +                <span class="info-ico" aria-hidden="true">🚗</span>
+      165 +                <div>
+      166 +                  <span class="info-key">Permis</span>
+      167 +                  <span class="info-val">Permis B</span>
+      168 +                </div>
+      169 +              </li>
+      170 +            </ul>
+      171 +
+      172 +            <div class="lang-block">
+      173 +              <p class="lang-title">Langues</p>
+      174 +              <div class="lang-item">
+      175 +                <span class="lang-name">Arabe</span>
+      176 +                <div class="lang-track"><div class="lang-fill" data-w="100"></div></div>
+      177 +                <span class="lang-lvl">Natif</span>
+      178                </div>
+      143 -            </div>
+      144 -            <div class="info-row">
+      145 -              <span class="info-ico">✉️</span>
+      146 -              <div>
+      147 -                <span class="info-lbl">Email</span>
+      148 -                <a href="mailto:saber03slimani@gmail.com" class="info-val info-link">saber03slimani@gm
+          -ail.com</a>
+      179 +              <div class="lang-item">
+      180 +                <span class="lang-name">Français</span>
+      181 +                <div class="lang-track"><div class="lang-fill" data-w="60"></div></div>
+      182 +                <span class="lang-lvl">Intermédiaire</span>
+      183                </div>
+      150 -            </div>
+      151 -            <div class="info-row">
+      152 -              <span class="info-ico">📞</span>
+      153 -              <div>
+      154 -                <span class="info-lbl">Téléphone</span>
+      155 -                <a href="tel:+212658497932" class="info-val info-link">+212 658 497 932</a>
+      184 +              <div class="lang-item">
+      185 +                <span class="lang-name">Anglais</span>
+      186 +                <div class="lang-track"><div class="lang-fill" data-w="80"></div></div>
+      187 +                <span class="lang-lvl">Très bon</span>
+      188                </div>
+      189              </div>
+      158 -            <div class="info-row">
+      159 -              <span class="info-ico">🚗</span>
+      160 -              <div>
+      161 -                <span class="info-lbl">Mobilité</span>
+      162 -                <span class="info-val">Permis B — Mobile multi-sites</span>
+      163 -              </div>
+      164 -            </div>
+      190            </div>
+      166 -
+      167 -          <div class="lang-card">
+      168 -            <h4 class="lang-title">Langues</h4>
+      169 -            <div class="lang-row">
+      170 -              <span class="lang-name">Arabe</span>
+      171 -              <div class="lang-track"><div class="lang-bar" data-width="100"></div></div>
+      172 -              <span class="lang-lvl">Natif</span>
+      173 -            </div>
+      174 -            <div class="lang-row">
+      175 -              <span class="lang-name">Anglais</span>
+      176 -              <div class="lang-track"><div class="lang-bar" data-width="80"></div></div>
+      177 -              <span class="lang-lvl">Très bon</span>
+      178 -            </div>
+      179 -            <div class="lang-row">
+      180 -              <span class="lang-name">Français</span>
+      181 -              <div class="lang-track"><div class="lang-bar" data-width="60"></div></div>
+      182 -              <span class="lang-lvl">Intermédiaire</span>
+      183 -            </div>
+      184 -          </div>
+      191          </div>
+      192        </div>
+      193      </div>
+      194    </section>
+      195
+      190 -  <!-- ══════════════════════════════
+      191 -       SKILLS
+      192 -  ══════════════════════════════ -->
+      193 -  <section id="skills">
+      196 +  <!-- SKILLS -->
+      197 +  <section id="skills" class="section skills">
+      198      <div class="container">
+      195 -      <header class="section-head reveal">
+      196 -        <span class="section-tag">Expertise</span>
+      197 -        <h2>Compétences Techniques</h2>
+      198 -      </header>
+      199 +      <div class="section-header">
+      200 +        <span class="section-tag">Compétences</span>
+      201 +        <h2 class="section-title">Expertise technique</h2>
+      202 +      </div>
+      203
+      204        <div class="skills-grid">
+      205 +
+      206          <div class="skill-card reveal">
+      202 -          <div class="skill-card-icon">⚡</div>
+      207 +          <div class="sk-icon" aria-hidden="true">⚡</div>
+      208            <h3>Électronique Industrielle</h3>
+      204 -          <ul>
+      205 -            <li>Diagnostic et réparation de cartes électroniques (PCB)</li>
+      206 -            <li>Analyse de pannes complexes — défauts cachés, courts-circuits, instabilités</li>
+      207 -            <li>Travail sur composants CMS / SMD</li>
+      208 -            <li>Réparation de pistes, reprises de soudures de précision</li>
+      209 +          <ul class="sk-list">
+      210 +            <li>Diagnostic et réparation de cartes PCB</li>
+      211 +            <li>Analyse de pannes complexes &amp; défauts cachés</li>
+      212 +            <li>Soudure et composants CMS (SMD)</li>
+      213 +            <li>Courts-circuits, instabilités, défauts intermittents</li>
+      214            </ul>
+      215          </div>
+      216 +
+      217          <div class="skill-card reveal">
+      212 -          <div class="skill-card-icon">🔄</div>
+      213 -          <h3>Variateurs &amp; Automatisation</h3>
+      214 -          <ul>
+      215 -            <li>Mise en service et paramétrage de variateurs de fréquence</li>
+      216 -            <li>Maintenance de servo-drives et systèmes de commande</li>
+      217 -            <li>Intervention sur automates industriels</li>
+      218 +          <div class="sk-icon" aria-hidden="true">🔄</div>
+      219 +          <h3>Variateurs &amp; Automation</h3>
+      220 +          <ul class="sk-list">
+      221 +            <li>Mise en service et paramétrage variateurs</li>
+      222 +            <li>Maintenance servo-drives</li>
+      223              <li>Systèmes de sécurité PILZ PNOZ</li>
+      224 +            <li>Modules d'automatisation et commande</li>
+      225            </ul>
+      226 +          <div class="brand-row">
+      227 +            <span class="brand-chip">ABB</span>
+      228 +            <span class="brand-chip">Siemens</span>
+      229 +            <span class="brand-chip">Schneider</span>
+      230 +            <span class="brand-chip">Danfoss</span>
+      231 +            <span class="brand-chip">Allen-Bradley</span>
+      232 +          </div>
+      233          </div>
+      234 +
+      235          <div class="skill-card reveal">
+      222 -          <div class="skill-card-icon">🔌</div>
+      236 +          <div class="sk-icon" aria-hidden="true">🔌</div>
+      237            <h3>Électrotechnique</h3>
+      224 -          <ul>
+      238 +          <ul class="sk-list">
+      239              <li>Lecture et interprétation de schémas électriques</li>
+      226 -            <li>Maintenance d'armoires électriques industrielles</li>
+      227 -            <li>Câblage et recâblage de systèmes</li>
+      228 -            <li>Maintenance d'alimentations industrielles</li>
+      240 +            <li>Maintenance d'armoires électriques</li>
+      241 +            <li>Machines industrielles et alimentations</li>
+      242 +            <li>Câblage et recâblage industriel</li>
+      243            </ul>
+      244          </div>
+      245 +
+      246          <div class="skill-card reveal">
+      232 -          <div class="skill-card-icon">📊</div>
+      233 -          <h3>Méthodologie &amp; Qualité</h3>
+      234 -          <ul>
+      235 -            <li>Diagnostic structuré et analyse technique avancée</li>
+      236 -            <li>Tests fonctionnels et validation après intervention</li>
+      237 -            <li>Utilisation d'instruments de mesure professionnels</li>
+      238 -            <li>Conseil technique et analyse des besoins clients</li>
+      247 +          <div class="sk-icon" aria-hidden="true">🛠️</div>
+      248 +          <h3>Instruments &amp; Mesure</h3>
+      249 +          <ul class="sk-list">
+      250 +            <li>Multimètre professionnel</li>
+      251 +            <li>Oscilloscope</li>
+      252 +            <li>Pinces ampèremétriques</li>
+      253 +            <li>Testeurs CI (analogiques &amp; numériques)</li>
+      254 +            <li>Station de soudure de précision</li>
+      255            </ul>
+      256          </div>
+      241 -      </div>
+      257
+      243 -      <!-- Instruments -->
+      244 -      <div class="subsection reveal">
+      245 -        <h3 class="subsection-title">Instruments &amp; Outils</h3>
+      246 -        <div class="tools-flex">
+      247 -          <div class="tool-pill"><span>📏</span>Multimètre professionnel</div>
+      248 -          <div class="tool-pill"><span>🔌</span>Pinces ampèremétriques</div>
+      249 -          <div class="tool-pill"><span>🔬</span>Testeurs circuits intégrés</div>
+      250 -          <div class="tool-pill"><span>📡</span>Oscilloscope</div>
+      251 -          <div class="tool-pill"><span>🔧</span>Outils de soudure de précision</div>
+      258 +        <div class="skill-card reveal">
+      259 +          <div class="sk-icon" aria-hidden="true">📋</div>
+      260 +          <h3>Méthodologie &amp; Qualité</h3>
+      261 +          <ul class="sk-list">
+      262 +            <li>Diagnostic structuré et analyse avancée</li>
+      263 +            <li>Tests fonctionnels et validation post-intervention</li>
+      264 +            <li>Contrôle qualité et documentation</li>
+      265 +            <li>Conseil technique client sur site</li>
+      266 +          </ul>
+      267          </div>
+      253 -      </div>
+      268
+      255 -      <!-- Brands -->
+      256 -      <div class="subsection reveal">
+      257 -        <h3 class="subsection-title">Marques maîtrisées</h3>
+      258 -        <div class="brands-flex">
+      259 -          <span class="brand">ABB</span>
+      260 -          <span class="brand">Siemens</span>
+      261 -          <span class="brand">Schneider</span>
+      262 -          <span class="brand">Danfoss</span>
+      263 -          <span class="brand">Allen-Bradley</span>
+      264 -          <span class="brand">Lenze</span>
+      265 -          <span class="brand">PILZ</span>
+      266 -          <span class="brand">PROMATECH</span>
+      267 -        </div>
+      269        </div>
+      270      </div>
+      271    </section>
+      272
+      272 -  <!-- ══════════════════════════════
+      273 -       EXPERIENCE
+      274 -  ══════════════════════════════ -->
+      275 -  <section id="experience">
+      273 +  <!-- EXPERIENCE -->
+      274 +  <section id="experience" class="section experience">
+      275      <div class="container">
+      277 -      <header class="section-head reveal">
+      278 -        <span class="section-tag">Parcours</span>
+      279 -        <h2>Expérience Professionnelle</h2>
+      280 -      </header>
+      276 +      <div class="section-header">
+      277 +        <span class="section-tag">Expérience</span>
+      278 +        <h2 class="section-title">Parcours professionnel</h2>
+      279 +      </div>
+      280
+      281        <div class="timeline">
+      283 -        <!-- Job 1 -->
+      282 +
+      283          <div class="tl-item reveal">
+      285 -          <div class="tl-marker">
+      284 +          <div class="tl-marker" aria-hidden="true">
+      285              <div class="tl-dot"></div>
+      286              <div class="tl-line"></div>
+      287            </div>
+      288            <div class="tl-card">
+      289              <div class="tl-head">
+      290                <div>
+      292 -                <h3 class="tl-role">Électronicien en Maintenance Industrielle</h3>
+      293 -                <p class="tl-company">STE MR3E SARL — Tanger</p>
+      291 +                <h3>Électronicien en maintenance industrielle</h3>
+      292 +                <p class="tl-company">STE MR3E SARL — Tanger, Maroc</p>
+      293                </div>
+      295 -              <span class="tl-period">2022 – 2026</span>
+      294 +              <span class="tl-date">2022 – 2026</span>
+      295              </div>
+      297 -            <ul class="tl-tasks">
+      296 +            <ul class="tl-list">
+      297                <li>Intervention technique mobile dans plusieurs entreprises industrielles au Maroc</li>
+      299 -              <li>Diagnostic, maintenance et réparation de variateurs de fréquence (ABB, Siemens, Schn
+          -eider, Danfoss…)</li>
+      300 -              <li>Réparation de cartes électroniques et systèmes de commande</li>
+      298 +              <li>Diagnostic, maintenance et réparation de variateurs de fréquence (ABB, Siemens, Schn
+          +eider, Danfoss, Allen-Bradley…)</li>
+      299 +              <li>Réparation de cartes électroniques, servo-drives et systèmes de commande</li>
+      300                <li>Maintenance d'alimentations industrielles et modules d'automatisation</li>
+      302 -              <li>Taux de résolution à la première intervention : <strong>≈ 80 %</strong></li>
+      303 -              <li>Tests fonctionnels et contrôle qualité après chaque intervention</li>
+      304 -              <li>Conseil technique et analyse des besoins clients sur site</li>
+      301 +              <li>Taux de résolution initiale de <strong>80 %</strong> dès la première intervention</l
+          +i>
+      302 +              <li>Tests fonctionnels, contrôle qualité et documentation après chaque intervention</li>
+      303 +              <li>Conseil technique et analyse des besoins clients directement sur site</li>
+      304              </ul>
+      306 -            <div class="tl-chips">
+      307 -              <span>Variateurs VFD</span><span>PCB Repair</span>
+      308 -              <span>Servo-drives</span><span>Intervention terrain</span>
+      309 -            </div>
+      305            </div>
+      306          </div>
+      307
+      313 -        <!-- Job 2 -->
+      308          <div class="tl-item reveal">
+      315 -          <div class="tl-marker">
+      309 +          <div class="tl-marker" aria-hidden="true">
+      310              <div class="tl-dot"></div>
+      311            </div>
+      312            <div class="tl-card">
+      313              <div class="tl-head">
+      314                <div>
+      321 -                <h3 class="tl-role">
+      322 -                  Technicien de Maintenance
+      323 -                  <span class="badge-stage">Stage</span>
+      324 -                </h3>
+      325 -                <p class="tl-company">Motherson SMRC HM — Tanger</p>
+      315 +                <h3>Technicien de maintenance</h3>
+      316 +                <p class="tl-company">Motherson SMRC HM — Tanger, Maroc</p>
+      317 +                <span class="tl-badge">Stage</span>
+      318                </div>
+      327 -              <span class="tl-period">2022</span>
+      319 +              <span class="tl-date">2022</span>
+      320              </div>
+      329 -            <ul class="tl-tasks">
+      330 -              <li>Maintenance préventive et corrective de machines industrielles</li>
+      331 -              <li>Intervention sur robots et armoires électriques</li>
+      332 -              <li>Diagnostic et résolution de pannes techniques en équipe</li>
+      333 -              <li>Travail dans un environnement industriel structuré à fort volume de production</li>
+      321 +            <ul class="tl-list">
+      322 +              <li>Maintenance de machines industrielles, robots et armoires électriques</li>
+      323 +              <li>Diagnostic et résolution de pannes techniques dans un environnement structuré</li>
+      324 +              <li>Collaboration en équipe dans un cadre industriel multi-postes</li>
+      325              </ul>
+      335 -            <div class="tl-chips">
+      336 -              <span>Maintenance</span><span>Robots industriels</span><span>Armoires électriques</span>
+      337 -            </div>
+      326            </div>
+      327          </div>
+      328 +
+      329        </div>
+      330      </div>
+      331    </section>
+      332
+      344 -  <!-- ══════════════════════════════
+      345 -       PROJECTS
+      346 -  ══════════════════════════════ -->
+      347 -  <section id="projects">
+      333 +  <!-- PROJECTS -->
+      334 +  <section id="projects" class="section projects">
+      335      <div class="container">
+      349 -      <header class="section-head reveal">
+      336 +      <div class="section-header">
+      337          <span class="section-tag">Réalisations</span>
+      351 -        <h2>Projets &amp; Interventions Clés</h2>
+      352 -        <p class="section-sub">Sélection de missions techniques complexes résolues avec succès</p>
+      353 -      </header>
+      338 +        <h2 class="section-title">Projets &amp; Interventions</h2>
+      339 +        <p class="section-sub">Sélection de cas techniques résolus sur le terrain</p>
+      340 +      </div>
+      341
+      342        <div class="projects-grid">
+      356 -        <article class="proj-card reveal">
+      357 -          <span class="proj-num">01</span>
+      358 -          <div class="proj-icon">🎯</div>
+      359 -          <h3>Diagnostic Complexe — Défaut Caché (Servo Lenze)</h3>
+      360 -          <p>Identification d'un défaut non visible malgré des mesures apparemment normales. Analyse a
+          -pprofondie par composant, remplacement ciblé des éléments critiques et remise en service complète du s
+          -ervo-drive.</p>
+      343 +
+      344 +        <div class="proj-card reveal">
+      345 +          <div class="proj-top">
+      346 +            <span class="proj-emoji" aria-hidden="true">🧠</span>
+      347 +            <span class="proj-cat">Servo Drive</span>
+      348 +          </div>
+      349 +          <h3>Défaut caché — Servo Lenze</h3>
+      350 +          <p>Identification d'un défaut non visible malgré des mesures apparemment normales. Analyse a
+          +pprofondie ayant conduit au remplacement ciblé de composants critiques et à la remise en service compl
+          +ète du système.</p>
+      351            <div class="proj-tags">
+      362 -            <span>Lenze</span><span>Servo-drive</span><span>Diagnostic avancé</span>
+      352 +            <span>Servo Lenze</span><span>Diagnostic avancé</span><span>Analyse PCB</span>
+      353            </div>
+      364 -        </article>
+      354 +        </div>
+      355
+      366 -        <article class="proj-card reveal">
+      367 -          <span class="proj-num">02</span>
+      368 -          <div class="proj-icon">⚡</div>
+      369 -          <h3>Réparation Servo Drive PROMATECH</h3>
+      370 -          <p>Détection d'un court-circuit sur le régulateur LM1085. Remplacement préventif de plusieur
+          -s composants fragilisés. Validation complète par tests en charge confirmant la stabilité totale du sys
+          -tème.</p>
+      356 +        <div class="proj-card reveal">
+      357 +          <div class="proj-top">
+      358 +            <span class="proj-emoji" aria-hidden="true">⚡</span>
+      359 +            <span class="proj-cat">Servo Drive</span>
+      360 +          </div>
+      361 +          <h3>Servo Drive PROMATECH — LM1085</h3>
+      362 +          <p>Détection d'un court-circuit sur le régulateur LM1085. Remplacement préventif de plusieur
+          +s composants associés. Tests en charge complets validant la stabilité et la fiabilité du système.</p>
+      363            <div class="proj-tags">
+      372 -            <span>PROMATECH</span><span>LM1085</span><span>Test en charge</span>
+      364 +            <span>PROMATECH</span><span>LM1085</span><span>Court-circuit</span>
+      365            </div>
+      374 -        </article>
+      366 +        </div>
+      367
+      376 -        <article class="proj-card reveal">
+      377 -          <span class="proj-num">03</span>
+      378 -          <div class="proj-icon">🏭</div>
+      379 -          <h3>Arrêt de Production — Variateur Court-circuit</h3>
+      380 -          <p>Identification rapide d'un court-circuit causé par un corps étranger dans le variateur. R
+          -emplacement complet de l'unité et remise en service express pour minimiser l'arrêt de la ligne de prod
+          -uction.</p>
+      368 +        <div class="proj-card reveal">
+      369 +          <div class="proj-top">
+      370 +            <span class="proj-emoji" aria-hidden="true">🏭</span>
+      371 +            <span class="proj-cat">Variateur</span>
+      372 +          </div>
+      373 +          <h3>Arrêt de production — Corps étranger</h3>
+      374 +          <p>Identification rapide d'un court-circuit causé par un corps étranger dans le variateur. R
+          +emplacement complet de l'unité et redémarrage de la ligne de production dans les délais les plus court
+          +s.</p>
+      375            <div class="proj-tags">
+      382 -            <span>VFD</span><span>Court-circuit</span><span>Urgence production</span>
+      376 +            <span>Variateur</span><span>Urgence</span><span>Redémarrage rapide</span>
+      377            </div>
+      384 -        </article>
+      378 +        </div>
+      379
+      386 -        <article class="proj-card reveal">
+      387 -          <span class="proj-num">04</span>
+      388 -          <div class="proj-icon">🛡️</div>
+      389 -          <h3>Système de Sécurité PILZ PNOZ</h3>
+      390 -          <p>Diagnostic d'un défaut critique sur un module de sécurité PILZ PNOZ. Réparation complète
+          -avec recâblage intégral et remise en service sécurisée, avec validation de toutes les fonctions de séc
+          -urité.</p>
+      380 +        <div class="proj-card reveal">
+      381 +          <div class="proj-top">
+      382 +            <span class="proj-emoji" aria-hidden="true">🛡️</span>
+      383 +            <span class="proj-cat">Sécurité industrielle</span>
+      384 +          </div>
+      385 +          <h3>Système de sécurité PILZ PNOZ</h3>
+      386 +          <p>Diagnostic d'un défaut sur un système de sécurité PILZ PNOZ. Réparation complète, recâbla
+          +ge et remise en service sécurisée conforme aux normes de sécurité industrielles en vigueur.</p>
+      387            <div class="proj-tags">
+      392 -            <span>PILZ PNOZ</span><span>Sécurité machine</span><span>Recâblage</span>
+      388 +            <span>PILZ PNOZ</span><span>Sécurité</span><span>Recâblage</span>
+      389            </div>
+      394 -        </article>
+      390 +        </div>
+      391
+      396 -        <article class="proj-card reveal">
+      397 -          <span class="proj-num">05</span>
+      398 -          <div class="proj-icon">🔋</div>
+      399 -          <h3>Réparation Alimentation Industrielle</h3>
+      400 -          <p>Analyse d'une tension instable provoquant des dysfonctionnements intermittents. Identific
+          -ation et remplacement des condensateurs défectueux. Stabilisation complète avec vérification sur toute
+          -s les plages de tension.</p>
+      392 +        <div class="proj-card reveal">
+      393 +          <div class="proj-top">
+      394 +            <span class="proj-emoji" aria-hidden="true">🔋</span>
+      395 +            <span class="proj-cat">Alimentation</span>
+      396 +          </div>
+      397 +          <h3>Alimentation industrielle instable</h3>
+      398 +          <p>Analyse et diagnostic d'une tension instable sur alimentation industrielle. Identificatio
+          +n et remplacement des condensateurs défectueux. Stabilisation totale et vérifiée du système.</p>
+      399            <div class="proj-tags">
+      402 -            <span>Alimentation</span><span>Condensateurs</span><span>Stabilisation</span>
+      400 +            <span>Alimentation</span><span>Condensateurs</span><span>Tension instable</span>
+      401            </div>
+      404 -        </article>
+      402 +        </div>
+      403
+      406 -        <article class="proj-card reveal">
+      407 -          <span class="proj-num">06</span>
+      408 -          <div class="proj-icon">🔬</div>
+      409 -          <h3>Réparation PCB &amp; Microcontrôleurs</h3>
+      410 -          <p>Diagnostic et remplacement de composants critiques sur cartes électroniques industrielles
+          -. Réparation de pistes, reprises de soudures et remplacement de composants CMS. Tests rigoureux avant
+          -remise en service.</p>
+      404 +        <div class="proj-card reveal">
+      405 +          <div class="proj-top">
+      406 +            <span class="proj-emoji" aria-hidden="true">🖥️</span>
+      407 +            <span class="proj-cat">PCB / Microcontrôleurs</span>
+      408 +          </div>
+      409 +          <h3>Réparation cartes électroniques</h3>
+      410 +          <p>Diagnostic et remplacement de composants critiques sur cartes électroniques et microcontr
+          +ôleurs. Réparation PCB (pistes, soudures, composants CMS). Validation complète avant remise en service
+          +.</p>
+      411            <div class="proj-tags">
+      412 -            <span>PCB Repair</span><span>CMS / SMD</span><span>Microcontrôleurs</span>
+      412 +            <span>PCB Repair</span><span>Microcontrôleurs</span><span>Soudure SMD</span>
+      413            </div>
+      414 -        </article>
+      414 +        </div>
+      415 +
+      416        </div>
+      417
+      417 -      <p class="projects-note reveal">
+      418 -        <span>💡</span>
+      419 -        D'autres projets et interventions peuvent être présentés sur demande.
+      420 -      </p>
+      418 +      <p class="proj-note">✶ D'autres projets et interventions sont disponibles sur demande.</p>
+      419      </div>
+      420    </section>
+      421
+      424 -  <!-- ══════════════════════════════
+      425 -       EDUCATION
+      426 -  ══════════════════════════════ -->
+      427 -  <section id="education">
+      422 +  <!-- EDUCATION -->
+      423 +  <section id="education" class="section education">
+      424      <div class="container">
+      429 -      <header class="section-head reveal">
+      425 +      <div class="section-header">
+      426          <span class="section-tag">Formation</span>
+      431 -        <h2>Parcours Académique</h2>
+      432 -      </header>
+      427 +        <h2 class="section-title">Parcours académique</h2>
+      428 +      </div>
+      429
+      430        <div class="edu-grid">
+      431 +
+      432          <div class="edu-card reveal">
+      436 -          <div class="edu-top">
+      437 -            <span class="edu-year">2020 – 2022</span>
+      438 -            <span class="edu-ico">🎓</span>
+      439 -          </div>
+      433 +          <div class="edu-year">2020 – 2022</div>
+      434 +          <div class="edu-ico" aria-hidden="true">🎓</div>
+      435            <h3>Technicien Spécialisé en Électromécanique des Systèmes Automatisés</h3>
+      436            <p class="edu-school">ISTA — Fnideq</p>
+      442 -          <p class="edu-desc">Formation spécialisée en électromécanique industrielle, systèmes automat
+          -isés, maintenance préventive et électronique appliquée. Travaux pratiques sur équipements industriels
+          -réels.</p>
+      437 +          <p class="edu-desc">Formation approfondie en électromécanique, automatisation industrielle,
+          +maintenance de systèmes automatisés et programmation d'automates industriels.</p>
+      438          </div>
+      439
+      440          <div class="edu-card reveal">
+      446 -          <div class="edu-top">
+      447 -            <span class="edu-year">2020</span>
+      448 -            <span class="edu-ico">📚</span>
+      449 -          </div>
+      441 +          <div class="edu-year">2020</div>
+      442 +          <div class="edu-ico" aria-hidden="true">📚</div>
+      443            <h3>Baccalauréat Sciences Physiques</h3>
+      444            <p class="edu-school">Lycée Kadi Ayad — Tétouan</p>
+      452 -          <p class="edu-desc">Sciences physiques, mathématiques et chimie. Base solide pour la compréh
+          -ension et l'analyse des phénomènes électriques, électroniques et mécaniques.</p>
+      445 +          <p class="edu-desc">Formation scientifique rigoureuse avec spécialisation en physique, chimi
+          +e et mathématiques — socle solide pour l'électronique et l'électrotechnique.</p>
+      446          </div>
+      447 +
+      448        </div>
+      449      </div>
+      450    </section>
+      451
+      458 -  <!-- ══════════════════════════════
+      459 -       CONTACT
+      460 -  ══════════════════════════════ -->
+      461 -  <section id="contact">
+      452 +  <!-- CONTACT -->
+      453 +  <section id="contact" class="section contact">
+      454      <div class="container">
+      463 -      <header class="section-head reveal">
+      455 +      <div class="section-header">
+      456          <span class="section-tag">Contact</span>
+      465 -        <h2>Me Contacter</h2>
+      466 -        <p class="section-sub">Disponible pour missions, interventions ou opportunités professionnelle
+          -s</p>
+      467 -      </header>
+      457 +        <h2 class="section-title">Travaillons ensemble</h2>
+      458 +        <p class="section-sub">Disponible pour missions, interventions et collaborations industrielles
+          +</p>
+      459 +      </div>
+      460
+      461        <div class="contact-grid">
+      470 -        <div class="contact-cards reveal">
+      471 -          <a href="mailto:saber03slimani@gmail.com" class="contact-card">
+      472 -            <div class="cc-icon">✉️</div>
+      473 -            <div class="cc-body">
+      462 +        <div class="contact-cards">
+      463 +          <a href="mailto:saber03slimani@gmail.com" class="cc-card">
+      464 +            <span class="cc-ico" aria-hidden="true">✉️</span>
+      465 +            <div>
+      466                <span class="cc-label">Email</span>
+      475 -              <span class="cc-value">saber03slimani@gmail.com</span>
+      467 +              <span class="cc-val">saber03slimani@gmail.com</span>
+      468              </div>
+      477 -            <span class="cc-arrow">→</span>
+      469 +            <span class="cc-arrow" aria-hidden="true">→</span>
+      470            </a>
+      479 -          <a href="tel:+212658497932" class="contact-card">
+      480 -            <div class="cc-icon">📞</div>
+      481 -            <div class="cc-body">
+      471 +          <a href="tel:+212658497932" class="cc-card">
+      472 +            <span class="cc-ico" aria-hidden="true">📱</span>
+      473 +            <div>
+      474                <span class="cc-label">Téléphone</span>
+      483 -              <span class="cc-value">+212 658 497 932</span>
+      475 +              <span class="cc-val">+212 658 497 932</span>
+      476              </div>
+      485 -            <span class="cc-arrow">→</span>
+      477 +            <span class="cc-arrow" aria-hidden="true">→</span>
+      478            </a>
+      487 -          <div class="contact-card no-action">
+      488 -            <div class="cc-icon">📍</div>
+      489 -            <div class="cc-body">
+      479 +          <div class="cc-card cc-static">
+      480 +            <span class="cc-ico" aria-hidden="true">📍</span>
+      481 +            <div>
+      482                <span class="cc-label">Localisation</span>
+      491 -              <span class="cc-value">Tétouan, Maroc</span>
+      483 +              <span class="cc-val">Tétouan, Maroc</span>
+      484              </div>
+      485            </div>
+      486 +          <div class="cc-card cc-static">
+      487 +            <span class="cc-ico" aria-hidden="true">🟢</span>
+      488 +            <div>
+      489 +              <span class="cc-label">Statut</span>
+      490 +              <span class="cc-val">Disponible pour missions</span>
+      491 +            </div>
+      492 +          </div>
+      493          </div>
+      494
+      496 -        <div class="contact-cta reveal">
+      497 -          <div class="cta-box">
+      498 -            <h3>Prêt pour votre prochain projet ?</h3>
+      499 -            <p>
+      500 -              Que ce soit pour une intervention sur site, une réparation d'équipement industriel, une
+          -mise en service ou une mission de maintenance, je suis disponible pour répondre à vos besoins.
+      501 -            </p>
+      502 -            <a href="mailto:saber03slimani@gmail.com" class="btn btn-primary">
+      503 -              Envoyer un message
+      495 +        <div class="contact-pitch">
+      496 +          <div class="pitch-card">
+      497 +            <h3>Besoin d'un expert en maintenance industrielle ?</h3>
+      498 +            <p>Panne urgente, mise en service, maintenance préventive ou diagnostic complexe — j'inter
+          +viens rapidement sur votre site avec les outils et l'expertise nécessaires.</p>
+      499 +            <ul class="pitch-list">
+      500 +              <li><span class="pitch-check" aria-hidden="true">✓</span> Intervention sur site, partout
+          + au Maroc</li>
+      501 +              <li><span class="pitch-check" aria-hidden="true">✓</span> Réponse rapide sous 24h</li>
+      502 +              <li><span class="pitch-check" aria-hidden="true">✓</span> Expérience multi-secteurs indu
+          +striels</li>
+      503 +              <li><span class="pitch-check" aria-hidden="true">✓</span> 80 % de résolution dès la prem
+          +ière visite</li>
+      504 +            </ul>
+      505 +            <a href="mailto:saber03slimani@gmail.com" class="btn btn-primary btn-lg">
+      506 +              Envoyer un message →
+      507              </a>
+      508            </div>
+      509          </div>
+     ...
+      511      </div>
+      512    </section>
+      513
+      511 -  <!-- ══════════════════════════════
+      512 -       FOOTER
+      513 -  ══════════════════════════════ -->
+      514 -  <footer>
+      514 +  <!-- FOOTER -->
+      515 +  <footer class="footer">
+      516      <div class="container">
+      517        <div class="footer-inner">
+      517 -        <p class="footer-name">Saber Slimani</p>
+      518 -        <p class="footer-role">Technicien Spécialisé en Électronique &amp; Maintenance Industrielle</p
+          ->
+      519 -        <p class="footer-copy">© 2026 Saber Slimani — Tétouan, Maroc</p>
+      518 +        <div class="footer-brand">
+      519 +          <span class="footer-logo">Saber Slimani</span>
+      520 +          <p>Technicien Spécialisé en Électronique &amp; Maintenance Industrielle<br />Tétouan, Maroc<
+          +/p>
+      521 +        </div>
+      522 +        <nav class="footer-nav" aria-label="Navigation secondaire">
+      523 +          <a href="#home">Accueil</a>
+      524 +          <a href="#about">À propos</a>
+      525 +          <a href="#skills">Compétences</a>
+      526 +          <a href="#experience">Expérience</a>
+      527 +          <a href="#projects">Projets</a>
+      528 +          <a href="#contact">Contact</a>
+      529 +        </nav>
+      530        </div>
+      531 +      <div class="footer-bottom">
+      532 +        <p>&copy; <span id="year"></span> Saber Slimani — Tous droits réservés</p>
+      533 +        <p>saber03slimani@gmail.com</p>
+      534 +      </div>
+      535      </div>
+      536    </footer>
+      537
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Overwrite file
+ portfolio-saber\styles.css
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+     1  /* ================================================================
+     2 -   SABER SLIMANI PORTFOLIO — styles.css
+     3 -   Dark industrial theme · Blue & amber accents · Mobile-first
+     2 +   SABER SLIMANI — Portfolio
+     3 +   Dark industrial theme · Cyan & purple accents · Mobile-first
+     4     ================================================================ */
+     5
+     6 -/* ── Variables ─────────────────────────────────────────────── */
+     6 +/* ── Variables ─────────────────────────────────────── */
+     7  :root {
+     8 -  --bg:          #07101f;
+     9 -  --bg-2:        #0d1a30;
+    10 -  --bg-card:     #111f38;
+    11 -  --bg-card-h:   #162542;
+     8 +  --bg0:  #04040c;
+     9 +  --bg1:  #09091a;
+    10 +  --bg2:  #0f0f22;
+    11 +  --card: #12122a;
+    12 +  --card-h: #171730;
+    13
+    13 -  --blue:        #3b82f6;
+    14 -  --blue-light:  #60a5fa;
+    15 -  --blue-dim:    rgba(59,130,246,.12);
+    16 -  --blue-border: rgba(59,130,246,.28);
+    14 +  --cyan:  #22d3ee;
+    15 +  --cyan-d: rgba(34,211,238,.12);
+    16 +  --cyan-g: rgba(34,211,238,.28);
+    17 +  --purple: #818cf8;
+    18 +  --purp-d: rgba(129,140,248,.12);
+    19 +  --green:  #34d399;
+    20
+    18 -  --amber:       #f59e0b;
+    19 -  --amber-dim:   rgba(245,158,11,.12);
+    20 -  --amber-border:rgba(245,158,11,.28);
+    21 +  --t1: #f1f5f9;
+    22 +  --t2: #94a3b8;
+    23 +  --t3: #475569;
+    24
+    22 -  --text:        #f0f6ff;
+    23 -  --text-2:      #8fa8cc;
+    24 -  --text-3:      #4d6a8e;
+    25 +  --border:   rgba(34,211,238,.1);
+    26 +  --border-h: rgba(34,211,238,.28);
+    27 +  --shadow-c: 0 0 40px rgba(34,211,238,.12);
+    28
+    26 -  --border:      rgba(255,255,255,.06);
+    29 +  --r:  12px;
+    30 +  --rl: 18px;
+    31 +  --ease: cubic-bezier(.4,0,.2,1);
+    32 +  --dur: .3s;
+    33 +  --nav: 68px;
+    34
+    28 -  --font:        'Inter', sans-serif;
+    29 -  --font-d:      'Space Grotesk', sans-serif;
+    30 -
+    31 -  --r:    14px;
+    32 -  --r-sm: 9px;
+    33 -  --r-lg: 22px;
+    34 -
+    35 -  --nav-h: 68px;
+    36 -  --ease:  cubic-bezier(.4,0,.2,1);
+    37 -  --t:     .28s;
+    35 +  --ff: 'Inter', system-ui, sans-serif;
+    36 +  --fd: 'Space Grotesk', system-ui, sans-serif;
+    37  }
+    38
+    40 -/* ── Reset ──────────────────────────────────────────────────── */
+    39 +/* ── Reset ─────────────────────────────────────────── */
+    40  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    42 -
+    43 -html { scroll-behavior: smooth; font-size: 16px; }
+    44 -
+    45 -body {
+    46 -  font-family: var(--font);
+    47 -  background: var(--bg);
+    48 -  color: var(--text);
+    49 -  line-height: 1.65;
+    50 -  overflow-x: hidden;
+    51 -  -webkit-font-smoothing: antialiased;
+    52 -}
+    53 -
+    41 +html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+    42 +body { font-family: var(--ff); background: var(--bg0); color: var(--t1); line-height: 1.7; overflow-x: hidden;
+       +}
+    43 +::selection { background: var(--cyan); color: var(--bg0); }
+    44 +::-webkit-scrollbar { width: 5px; }
+    45 +::-webkit-scrollbar-track { background: var(--bg0); }
+    46 +::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 3px; }
+    47  a { color: inherit; text-decoration: none; }
+    55 -ul { list-style: none; }
+    48 +h1,h2,h3,h4 { font-family: var(--fd); font-weight: 700; line-height: 1.2; }
+    49  img { display: block; max-width: 100%; }
+    50
+    58 -::-webkit-scrollbar { width: 5px; }
+    59 -::-webkit-scrollbar-track { background: var(--bg); }
+    60 -::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
+    51 +/* ── Layout helpers ────────────────────────────────── */
+    52 +.container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    53 +.section    { padding: 96px 0; }
+    54
+    62 -/* ── Layout ─────────────────────────────────────────────────── */
+    63 -.container {
+    64 -  max-width: 1160px;
+    65 -  margin: 0 auto;
+    66 -  padding: 0 24px;
+    55 +/* ── Navbar ────────────────────────────────────────── */
+    56 +.navbar {
+    57 +  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+    58 +  height: var(--nav);
+    59 +  transition: background var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    60  }
+    68 -
+    69 -/* ── Typography helpers ─────────────────────────────────────── */
+    70 -.grad-text {
+    71 -  background: linear-gradient(135deg, #3b82f6 0%, #a78bfa 100%);
+    72 -  -webkit-background-clip: text;
+    73 -  -webkit-text-fill-color: transparent;
+    74 -  background-clip: text;
+    75 -}
+    76 -
+    77 -/* ── Buttons ─────────────────────────────────────────────────── */
+    78 -.btn {
+    79 -  display: inline-flex;
+    80 -  align-items: center;
+    81 -  gap: 8px;
+    82 -  padding: 13px 28px;
+    83 -  border-radius: var(--r-sm);
+    84 -  font-family: var(--font);
+    85 -  font-size: .93rem;
+    86 -  font-weight: 600;
+    87 -  cursor: pointer;
+    88 -  border: none;
+    89 -  transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease), background var(--t);
+    90 -}
+    91 -.btn-primary {
+    92 -  background: linear-gradient(135deg, #3b82f6, #6366f1);
+    93 -  color: #fff;
+    94 -  box-shadow: 0 4px 18px rgba(59,130,246,.32);
+    95 -}
+    96 -.btn-primary:hover {
+    97 -  transform: translateY(-2px);
+    98 -  box-shadow: 0 8px 28px rgba(59,130,246,.5);
+    99 -}
+   100 -.btn-outline {
+   101 -  background: transparent;
+   102 -  color: var(--text);
+   103 -  border: 1.5px solid var(--blue-border);
+   104 -}
+   105 -.btn-outline:hover {
+   106 -  background: var(--blue-dim);
+   107 -  transform: translateY(-2px);
+   108 -}
+   109 -
+   110 -/* ── Scroll-reveal ───────────────────────────────────────────── */
+   111 -.reveal {
+   112 -  opacity: 0;
+   113 -  transform: translateY(22px);
+   114 -  transition: opacity .55s var(--ease), transform .55s var(--ease);
+   115 -}
+   116 -.reveal.visible {
+   117 -  opacity: 1;
+   118 -  transform: none;
+   119 -}
+   120 -
+   121 -/* ── Section commons ────────────────────────────────────────── */
+   122 -section { padding: 96px 0; }
+   123 -
+   124 -#about, #experience, #education { background: var(--bg); }
+   125 -#skills, #projects, #contact    { background: var(--bg-2); }
+   126 -
+   127 -.section-head {
+   128 -  text-align: center;
+   129 -  margin-bottom: 60px;
+   130 -}
+   131 -.section-tag {
+   132 -  display: inline-block;
+   133 -  font-size: .75rem;
+   134 -  font-weight: 700;
+   135 -  text-transform: uppercase;
+   136 -  letter-spacing: .12em;
+   137 -  color: var(--blue);
+   138 -  background: var(--blue-dim);
+   139 -  border: 1px solid var(--blue-border);
+   140 -  padding: 5px 16px;
+   141 -  border-radius: 100px;
+   142 -  margin-bottom: 14px;
+   143 -}
+   144 -.section-head h2 {
+   145 -  font-family: var(--font-d);
+   146 -  font-size: clamp(1.75rem, 4vw, 2.4rem);
+   147 -  font-weight: 700;
+   148 -  letter-spacing: -.02em;
+   149 -  line-height: 1.2;
+   150 -}
+   151 -.section-sub {
+   152 -  font-size: .97rem;
+   153 -  color: var(--text-2);
+   154 -  margin-top: 10px;
+   155 -}
+   156 -
+   157 -/* ================================================================
+   158 -   NAVIGATION
+   159 -   ================================================================ */
+   160 -#navbar {
+   161 -  position: fixed;
+   162 -  top: 0; left: 0; right: 0;
+   163 -  height: var(--nav-h);
+   164 -  z-index: 900;
+   165 -  transition: background var(--t), border-color var(--t), backdrop-filter var(--t);
+   166 -}
+   167 -#navbar.scrolled {
+   168 -  background: rgba(7,16,31,.9);
+   169 -  backdrop-filter: blur(20px);
+   170 -  -webkit-backdrop-filter: blur(20px);
+    61 +.navbar.scrolled {
+    62 +  background: rgba(4,4,12,.88);
+    63 +  backdrop-filter: blur(18px);
+    64    border-bottom: 1px solid var(--border);
+    65 +  box-shadow: 0 4px 24px rgba(0,0,0,.5);
+    66  }
+   173 -
+   174 -.nav-inner {
+   175 -  max-width: 1160px;
+   176 -  margin: 0 auto;
+   177 -  padding: 0 24px;
+   178 -  height: 100%;
+   179 -  display: flex;
+   180 -  align-items: center;
+   181 -  justify-content: space-between;
+   182 -  gap: 24px;
+    67 +.nav-container {
+    68 +  max-width: 1160px; margin: 0 auto; padding: 0 24px;
+    69 +  height: 100%; display: flex; align-items: center; justify-content: space-between;
+    70  }
+    71
+    72 +/* Logo */
+    73  .nav-logo {
+   186 -  font-family: var(--font-d);
+   187 -  font-size: 1.45rem;
+   188 -  font-weight: 800;
+   189 -  background: linear-gradient(135deg, #3b82f6, #a78bfa);
+   190 -  -webkit-background-clip: text;
+   191 -  -webkit-text-fill-color: transparent;
+   192 -  background-clip: text;
+   193 -  flex-shrink: 0;
+    74 +  width: 40px; height: 40px; border-radius: 10px;
+    75 +  background: linear-gradient(135deg, var(--cyan), var(--purple));
+    76 +  display: flex; align-items: center; justify-content: center;
+    77 +  font-family: var(--fd); font-weight: 800; font-size: 14px; color: var(--bg0);
+    78 +  letter-spacing: .5px; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+    79  }
+    80 +.nav-logo:hover { transform: scale(1.08); box-shadow: 0 0 18px var(--cyan-g); }
+    81
+   196 -.nav-links {
+   197 -  display: flex;
+   198 -  align-items: center;
+   199 -  gap: 4px;
+    82 +/* Menu */
+    83 +.nav-menu { list-style: none; display: flex; gap: 2px; align-items: center; }
+    84 +.nav-link {
+    85 +  padding: 7px 14px; font-size: 13.5px; font-weight: 500;
+    86 +  color: var(--t2); border-radius: 8px;
+    87 +  transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
+    88  }
+   201 -.nav-links a {
+   202 -  font-size: .87rem;
+   203 -  font-weight: 500;
+   204 -  color: var(--text-2);
+   205 -  padding: 7px 13px;
+   206 -  border-radius: var(--r-sm);
+   207 -  transition: color var(--t), background var(--t);
+    89 +.nav-link:hover, .nav-link.active { color: var(--t1); background: rgba(255,255,255,.05); }
+    90 +.nav-link.active { color: var(--cyan); }
+    91 +.nav-cta {
+    92 +  background: var(--cyan-d) !important; color: var(--cyan) !important;
+    93 +  border: 1px solid var(--border-h);
+    94  }
+   209 -.nav-links a:hover,
+   210 -.nav-links a.active {
+   211 -  color: var(--text);
+   212 -  background: var(--blue-dim);
+   213 -}
+   214 -.nav-links a.nav-cta {
+   215 -  background: linear-gradient(135deg, #3b82f6, #6366f1);
+   216 -  color: #fff;
+   217 -  padding: 7px 18px;
+   218 -}
+   219 -.nav-links a.nav-cta:hover { opacity: .88; }
+    95 +.nav-cta:hover { background: var(--cyan) !important; color: var(--bg0) !important; box-shadow: 0 0 18px var(--c
+       +yan-g); }
+    96
+    97 +/* Hamburger */
+    98  .nav-toggle {
+   222 -  display: none;
+   223 -  flex-direction: column;
+   224 -  gap: 5px;
+   225 -  background: none;
+   226 -  border: none;
+   227 -  cursor: pointer;
+   228 -  padding: 6px;
+    99 +  display: none; flex-direction: column; gap: 5px;
+   100 +  background: none; border: none; cursor: pointer; padding: 6px;
+   101  }
+   230 -.nav-toggle span {
+   231 -  display: block;
+   232 -  width: 22px;
+   233 -  height: 2px;
+   234 -  background: var(--text);
+   235 -  border-radius: 2px;
+   236 -  transition: transform var(--t), opacity var(--t);
+   237 -}
+   102 +.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--t1); border-radius: 2px; transit
+       +ion: var(--dur) var(--ease); }
+   103 +.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+   104 +.nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+   105 +.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+   106
+   239 -/* ================================================================
+   240 -   HERO
+   241 -   ================================================================ */
+   242 -#hero {
+   243 -  min-height: 100vh;
+   244 -  display: flex;
+   245 -  align-items: center;
+   246 -  justify-content: center;
+   247 -  flex-direction: column;
+   248 -  text-align: center;
+   249 -  padding: var(--nav-h) 24px 80px;
+   250 -  position: relative;
+   251 -  overflow: hidden;
+   107 +/* ── Hero ──────────────────────────────────────────── */
+   108 +.hero {
+   109 +  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+   110 +  position: relative; overflow: hidden; padding: var(--nav) 24px 60px;
+   111  }
+   253 -
+   254 -/* Background decorations */
+   255 -.hero-bg { position: absolute; inset: 0; pointer-events: none; }
+   256 -
+   257 -.hero-grid {
+   258 -  position: absolute; inset: 0;
+   259 -  background-image:
+   260 -    linear-gradient(rgba(59,130,246,.045) 1px, transparent 1px),
+   261 -    linear-gradient(90deg, rgba(59,130,246,.045) 1px, transparent 1px);
+   262 -  background-size: 56px 56px;
+   263 -  mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 20%, transparent 100%);
+   264 -  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 20%, transparent 100%);
+   265 -}
+   266 -
+   112 +#hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .45; }
+   113  .hero-glow {
+   268 -  position: absolute;
+   269 -  width: 640px; height: 640px;
+   270 -  background: radial-gradient(circle, rgba(59,130,246,.14) 0%, transparent 68%);
+   271 -  top: 50%; left: 50%;
+   272 -  transform: translate(-50%, -50%);
+   273 -  border-radius: 50%;
+   114 +  position: absolute; top: 20%; left: 50%; transform: translateX(-50%);
+   115 +  width: 700px; height: 500px; border-radius: 50%;
+   116 +  background: radial-gradient(ellipse, rgba(34,211,238,.06) 0%, transparent 70%);
+   117 +  pointer-events: none;
+   118  }
+   275 -.hero-glow-2 {
+   276 -  position: absolute;
+   277 -  width: 360px; height: 360px;
+   278 -  background: radial-gradient(circle, rgba(99,102,241,.1) 0%, transparent 70%);
+   279 -  top: 30%; right: 15%;
+   280 -  border-radius: 50%;
+   281 -}
+   282 -
+   283 -/* Content */
+   119  .hero-content {
+   285 -  position: relative;
+   286 -  z-index: 1;
+   287 -  max-width: 780px;
+   120 +  position: relative; z-index: 1; text-align: center; max-width: 820px;
+   121  }
+   122
+   123  .hero-badge {
+   291 -  display: inline-flex;
+   292 -  align-items: center;
+   293 -  gap: 8px;
+   294 -  background: var(--blue-dim);
+   295 -  border: 1px solid var(--blue-border);
+   296 -  color: var(--blue-light);
+   297 -  font-size: .82rem;
+   298 -  font-weight: 600;
+   124 +  display: inline-flex; align-items: center; gap: 8px;
+   125    padding: 7px 18px;
+   300 -  border-radius: 100px;
+   301 -  margin-bottom: 30px;
+   126 +  background: rgba(34,211,238,.07);
+   127 +  border: 1px solid var(--border-h);
+   128 +  border-radius: 100px; font-size: 13px; font-weight: 500; color: var(--cyan);
+   129 +  margin-bottom: 36px;
+   130 +  animation: fadeDown .7s var(--ease) both;
+   131  }
+   303 -.pulse-dot {
+   304 -  width: 8px; height: 8px;
+   305 -  background: #22c55e;
+   306 -  border-radius: 50%;
+   307 -  animation: pulse 2.2s ease-in-out infinite;
+   132 +.badge-dot {
+   133 +  width: 7px; height: 7px; background: var(--green);
+   134 +  border-radius: 50%; animation: pulse 2.2s ease infinite;
+   135  }
+   309 -@keyframes pulse {
+   310 -  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,.45); }
+   311 -  50%      { box-shadow: 0 0 0 7px rgba(34,197,94,0); }
+   312 -}
+   136 +@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.55;transform:scale(.82)} }
+   137
+   138  .hero-name {
+   315 -  font-family: var(--font-d);
+   316 -  font-size: clamp(3.2rem, 9vw, 5.8rem);
+   317 -  font-weight: 800;
+   318 -  line-height: 1.02;
+   319 -  letter-spacing: -.03em;
+   320 -  margin-bottom: 16px;
+   139 +  font-size: clamp(54px,10vw,100px); font-weight: 800; line-height: .95;
+   140 +  margin-bottom: 22px; display: flex; flex-direction: column; gap: 2px;
+   141 +  animation: fadeUp .75s var(--ease) .1s both;
+   142  }
+   322 -.name-first { color: var(--text); margin-right: .18em; }
+   143 +.name-first { color: var(--t1); }
+   144  .name-last {
+   324 -  background: linear-gradient(135deg, #3b82f6 0%, #a78bfa 100%);
+   325 -  -webkit-background-clip: text;
+   326 -  -webkit-text-fill-color: transparent;
+   327 -  background-clip: text;
+   145 +  background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+   146 +  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+   147  }
+   148
+   149  .hero-title {
+   331 -  font-size: clamp(1rem, 2.4vw, 1.22rem);
+   332 -  color: var(--text-2);
+   333 -  font-weight: 400;
+   334 -  line-height: 1.55;
+   335 -  margin-bottom: 20px;
+   150 +  font-size: clamp(15px,2.5vw,20px); font-weight: 400; font-family: var(--ff);
+   151 +  color: var(--t2); margin-bottom: 22px; min-height: 32px;
+   152 +  animation: fadeUp .75s var(--ease) .2s both;
+   153  }
+   337 -.hero-title strong {
+   338 -  color: var(--amber);
+   339 -  font-weight: 600;
+   154 +.typed-wrap { display: inline-block; }
+   155 +.typed-text { color: var(--cyan); font-weight: 600; }
+   156 +.cursor { color: var(--cyan); animation: blink 1.1s step-end infinite; margin-left: 1px; }
+   157 +@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+   158 +
+   159 +.hero-desc {
+   160 +  font-size: 15.5px; color: var(--t2); max-width: 580px;
+   161 +  margin: 0 auto 40px; line-height: 1.85;
+   162 +  animation: fadeUp .75s var(--ease) .3s both;
+   163  }
+   164 +.hero-desc strong { color: var(--t1); }
+   165
+   342 -.hero-description {
+   343 -  font-size: 1.02rem;
+   344 -  color: var(--text-2);
+   345 -  line-height: 1.82;
+   346 -  max-width: 580px;
+   347 -  margin: 0 auto 44px;
+   166 +.hero-actions {
+   167 +  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+   168 +  margin-bottom: 56px;
+   169 +  animation: fadeUp .75s var(--ease) .4s both;
+   170  }
+   171
+   350 -/* Stats */
+   351 -.hero-stats {
+   352 -  display: flex;
+   353 -  align-items: center;
+   354 -  justify-content: center;
+   355 -  gap: 36px;
+   356 -  margin-bottom: 48px;
+   357 -  flex-wrap: wrap;
+   172 +/* Buttons */
+   173 +.btn {
+   174 +  display: inline-flex; align-items: center; gap: 8px;
+   175 +  padding: 13px 26px; border-radius: 10px; font-size: 14.5px; font-weight: 600;
+   176 +  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--
+       +ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+   177 +  cursor: pointer; border: 1px solid transparent;
+   178  }
+   359 -.stat-item {
+   360 -  display: flex;
+   361 -  flex-direction: column;
+   362 -  align-items: center;
+   363 -  gap: 4px;
+   179 +.btn-primary {
+   180 +  background: linear-gradient(135deg, var(--cyan), #0ea5e9);
+   181 +  color: var(--bg0); border-color: transparent;
+   182 +  box-shadow: 0 4px 22px rgba(34,211,238,.28);
+   183  }
+   365 -.stat-val {
+   366 -  font-family: var(--font-d);
+   367 -  font-size: 2.3rem;
+   368 -  font-weight: 800;
+   369 -  line-height: 1;
+   370 -  background: linear-gradient(135deg, #3b82f6, #a78bfa);
+   371 -  -webkit-background-clip: text;
+   372 -  -webkit-text-fill-color: transparent;
+   373 -  background-clip: text;
+   184 +.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(34,211,238,.45); }
+   185 +.btn-ghost {
+   186 +  background: transparent; color: var(--t1);
+   187 +  border: 1px solid rgba(255,255,255,.18);
+   188  }
+   375 -.stat-plus {
+   376 -  font-family: var(--font-d);
+   377 -  font-size: 1.4rem;
+   378 -  font-weight: 700;
+   379 -  color: var(--blue);
+   380 -  line-height: 1;
+   381 -  align-self: flex-start;
+   382 -  margin-top: 2px;
+   383 -}
+   384 -.stat-label {
+   385 -  font-size: .76rem;
+   386 -  color: var(--text-3);
+   387 -  text-transform: uppercase;
+   388 -  letter-spacing: .06em;
+   389 -  font-weight: 500;
+   390 -}
+   391 -.stat-sep {
+   392 -  width: 1px;
+   393 -  height: 44px;
+   394 -  background: var(--border);
+   395 -}
+   189 +.btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-2px); background: var(
+       +--cyan-d); }
+   190 +.btn-lg { padding: 15px 34px; font-size: 15.5px; }
+   191
+   397 -/* CTAs */
+   398 -.hero-ctas {
+   399 -  display: flex;
+   400 -  gap: 14px;
+   401 -  justify-content: center;
+   402 -  flex-wrap: wrap;
+   192 +/* Stats */
+   193 +.hero-stats {
+   194 +  display: flex; align-items: center; justify-content: center; gap: 36px;
+   195 +  animation: fadeUp .75s var(--ease) .5s both;
+   196  }
+   404 -
+   405 -/* Scroll indicator */
+   406 -.hero-scroll {
+   407 -  position: absolute;
+   408 -  bottom: 28px;
+   409 -  left: 50%;
+   410 -  transform: translateX(-50%);
+   197 +.stat { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+   198 +.stat-num {
+   199 +  font-family: var(--fd); font-size: 34px; font-weight: 800;
+   200 +  background: linear-gradient(135deg, var(--cyan), var(--purple));
+   201 +  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+   202  }
+   203 +.stat-label { font-size: 11.5px; color: var(--t3); font-weight: 600; text-transform: uppercase; letter-spacing:
+       + .06em; }
+   204 +.stat-sep { width: 1px; height: 38px; background: var(--border); }
+   205 +
+   206 +/* Scroll mouse */
+   207 +.hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 1; }
+   208  .scroll-mouse {
+   413 -  width: 24px; height: 40px;
+   414 -  border: 2px solid rgba(255,255,255,.14);
+   415 -  border-radius: 12px;
+   416 -  display: flex;
+   417 -  align-items: flex-start;
+   418 -  justify-content: center;
+   419 -  padding-top: 5px;
+   209 +  width: 26px; height: 42px; border: 2px solid var(--border-h);
+   210 +  border-radius: 13px; display: flex; justify-content: center; padding-top: 7px;
+   211  }
+   421 -.scroll-wheel {
+   422 -  width: 4px; height: 8px;
+   423 -  background: var(--blue);
+   424 -  border-radius: 2px;
+   425 -  animation: scrollAnim 2s ease-in-out infinite;
+   212 +.scroll-mouse span {
+   213 +  width: 4px; height: 7px; background: var(--cyan);
+   214 +  border-radius: 2px; animation: scrollDown 2s ease infinite;
+   215  }
+   427 -@keyframes scrollAnim {
+   428 -  0%   { transform: translateY(0); opacity: 1; }
+   429 -  80%  { transform: translateY(14px); opacity: 0; }
+   430 -  100% { transform: translateY(0); opacity: 0; }
+   431 -}
+   216 +@keyframes scrollDown { 0%{transform:translateY(0);opacity:1} 100%{transform:translateY(13px);opacity:0} }
+   217
+   433 -/* ================================================================
+   434 -   ABOUT
+   435 -   ================================================================ */
+   436 -.about-grid {
+   437 -  display: grid;
+   438 -  grid-template-columns: 3fr 2fr;
+   439 -  gap: 56px;
+   440 -  align-items: start;
+   218 +/* ── Section common ────────────────────────────────── */
+   219 +.section-header { text-align: center; margin-bottom: 64px; }
+   220 +.section-tag {
+   221 +  display: inline-block; padding: 5px 15px;
+   222 +  background: var(--cyan-d); color: var(--cyan);
+   223 +  border: 1px solid var(--border); border-radius: 100px;
+   224 +  font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+   225 +  margin-bottom: 14px;
+   226  }
+   227 +.section-title { font-size: clamp(26px,5vw,40px); color: var(--t1); }
+   228 +.section-sub   { margin-top: 10px; font-size: 15px; color: var(--t2); }
+   229
+   443 -.about-lead {
+   444 -  font-size: 1.08rem;
+   445 -  color: var(--text);
+   446 -  line-height: 1.78;
+   447 -  margin-bottom: 18px;
+   448 -}
+   449 -.about-lead strong { color: var(--blue-light); font-weight: 600; }
+   230 +/* ── Reveal animations ─────────────────────────────── */
+   231 +.reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s var(--ease), transform .65s var(--e
+       +ase); }
+   232 +.reveal.visible { opacity: 1; transform: translateY(0); }
+   233
+   451 -.about-body {
+   452 -  font-size: .97rem;
+   453 -  color: var(--text-2);
+   454 -  line-height: 1.8;
+   455 -  margin-bottom: 16px;
+   456 -}
+   457 -.about-body strong { color: var(--text); font-weight: 600; }
+   234 +@keyframes fadeDown { from{opacity:0;transform:translateY(-18px)} to{opacity:1;transform:translateY(0)} }
+   235 +@keyframes fadeUp   { from{opacity:0;transform:translateY(26px)}  to{opacity:1;transform:translateY(0)} }
+   236
+   459 -.about-chips {
+   460 -  display: flex;
+   461 -  flex-wrap: wrap;
+   462 -  gap: 9px;
+   463 -  margin-top: 26px;
+   464 -}
+   465 -.about-chips span {
+   466 -  font-size: .79rem;
+   467 -  font-weight: 500;
+   468 -  color: var(--text-2);
+   469 -  background: var(--bg-card);
+   470 -  border: 1px solid var(--border);
+   471 -  padding: 5px 13px;
+   472 -  border-radius: 100px;
+   473 -  transition: border-color var(--t), color var(--t), background var(--t);
+   474 -  cursor: default;
+   475 -}
+   476 -.about-chips span:hover {
+   477 -  border-color: var(--blue-border);
+   478 -  color: var(--blue-light);
+   479 -  background: var(--blue-dim);
+   480 -}
+   237 +/* ── About ─────────────────────────────────────────── */
+   238 +.about { background: linear-gradient(180deg, var(--bg0), var(--bg1)); }
+   239 +.about-grid { display: grid; grid-template-columns: 1fr 360px; gap: 56px; align-items: start; }
+   240
+   482 -/* Info card */
+   483 -.info-card {
+   484 -  background: var(--bg-card);
+   485 -  border: 1px solid var(--border);
+   486 -  border-radius: var(--r);
+   487 -  padding: 26px;
+   488 -  margin-bottom: 18px;
+   489 -}
+   490 -.info-row {
+   491 -  display: flex;
+   492 -  align-items: center;
+   493 -  gap: 14px;
+   494 -  padding: 11px 0;
+   495 -  border-bottom: 1px solid var(--border);
+   496 -}
+   497 -.info-row:last-child { border-bottom: none; padding-bottom: 0; }
+   498 -.info-row:first-child { padding-top: 0; }
+   241 +.about-lead  { font-size: 17.5px; line-height: 1.8; margin-bottom: 18px; }
+   242 +.about-body p { color: var(--t2); font-size: 15px; margin-bottom: 15px; line-height: 1.85; }
+   243 +.about-body p:last-of-type { margin-bottom: 0; }
+   244 +.about-lead strong, .about-body p strong { color: var(--t1); }
+   245
+   500 -.info-ico { font-size: 1.25rem; width: 32px; text-align: center; flex-shrink: 0; }
+   501 -.info-row > div { display: flex; flex-direction: column; gap: 2px; }
+   502 -.info-lbl {
+   503 -  font-size: .7rem;
+   504 -  text-transform: uppercase;
+   505 -  letter-spacing: .07em;
+   506 -  color: var(--text-3);
+   507 -  font-weight: 600;
+   246 +.about-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 28px; }
+   247 +.tag {
+   248 +  padding: 5px 13px; background: var(--card);
+   249 +  border: 1px solid var(--border); border-radius: 100px;
+   250 +  font-size: 12.5px; font-weight: 500; color: var(--t2);
+   251 +  transition: border-color var(--dur), color var(--dur), background var(--dur);
+   252  }
+   509 -.info-val { font-size: .92rem; color: var(--text); font-weight: 500; }
+   510 -.info-link { color: var(--blue-light); transition: color var(--t); }
+   511 -.info-link:hover { color: var(--blue); }
+   253 +.tag:hover { border-color: var(--cyan); color: var(--cyan); background: var(--cyan-d); }
+   254
+   513 -/* Language card */
+   514 -.lang-card {
+   515 -  background: var(--bg-card);
+   516 -  border: 1px solid var(--border);
+   517 -  border-radius: var(--r);
+   518 -  padding: 24px;
+   255 +.info-card {
+   256 +  background: var(--card); border: 1px solid var(--border);
+   257 +  border-radius: var(--rl); padding: 28px;
+   258  }
+   520 -.lang-title {
+   521 -  font-size: .72rem;
+   522 -  text-transform: uppercase;
+   523 -  letter-spacing: .1em;
+   524 -  color: var(--text-3);
+   525 -  font-weight: 700;
+   526 -  margin-bottom: 18px;
+   259 +.info-card-label {
+   260 +  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em;
+   261 +  color: var(--t3); margin-bottom: 20px;
+   262  }
+   528 -.lang-row {
+   529 -  display: flex;
+   530 -  align-items: center;
+   531 -  gap: 10px;
+   532 -  margin-bottom: 13px;
+   533 -}
+   534 -.lang-row:last-child { margin-bottom: 0; }
+   535 -.lang-name { font-size: .87rem; color: var(--text-2); width: 58px; flex-shrink: 0; }
+   536 -.lang-track {
+   537 -  flex: 1;
+   538 -  height: 5px;
+   539 -  background: rgba(255,255,255,.06);
+   540 -  border-radius: 3px;
+   541 -  overflow: hidden;
+   542 -}
+   543 -.lang-bar {
+   544 -  height: 100%;
+   545 -  width: 0;
+   546 -  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+   547 -  border-radius: 3px;
+   548 -  transition: width 1.1s var(--ease);
+   549 -}
+   550 -.lang-lvl {
+   551 -  font-size: .74rem;
+   552 -  color: var(--text-3);
+   553 -  width: 78px;
+   554 -  text-align: right;
+   555 -  flex-shrink: 0;
+   556 -}
+   263 +.info-list { list-style: none; display: flex; flex-direction: column; gap: 15px; margin-bottom: 26px; }
+   264 +.info-list li { display: flex; align-items: flex-start; gap: 11px; }
+   265 +.info-ico { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+   266 +.info-key { display: block; font-size: 10.5px; color: var(--t3); text-transform: uppercase; letter-spacing: .08
+       +em; font-weight: 700; margin-bottom: 2px; }
+   267 +.info-val { display: block; font-size: 13.5px; font-weight: 500; color: var(--t1); }
+   268 +.info-link:hover { color: var(--cyan); }
+   269
+   558 -/* ================================================================
+   559 -   SKILLS
+   560 -   ================================================================ */
+   561 -.skills-grid {
+   562 -  display: grid;
+   563 -  grid-template-columns: repeat(2, 1fr);
+   564 -  gap: 20px;
+   565 -  margin-bottom: 44px;
+   566 -}
+   270 +.lang-title { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var
+       +(--t3); margin-bottom: 14px; }
+   271 +.lang-item { display: grid; grid-template-columns: 60px 1fr 90px; align-items: center; gap: 10px; margin-bottom
+       +: 11px; }
+   272 +.lang-name { font-size: 13px; font-weight: 500; }
+   273 +.lang-track { height: 3px; background: rgba(255,255,255,.07); border-radius: 2px; overflow: hidden; }
+   274 +.lang-fill { height: 100%; background: linear-gradient(90deg, var(--cyan), var(--purple)); border-radius: 2px;
+       +width: 0; transition: width 1.4s var(--ease); }
+   275 +.lang-lvl { font-size: 11px; color: var(--t3); text-align: right; }
+   276
+   277 +/* ── Skills ────────────────────────────────────────── */
+   278 +.skills { background: var(--bg1); }
+   279 +.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); gap: 22px; }
+   280 +
+   281  .skill-card {
+   569 -  background: var(--bg-card);
+   570 -  border: 1px solid var(--border);
+   571 -  border-radius: var(--r);
+   572 -  padding: 30px;
+   573 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+   282 +  background: var(--card); border: 1px solid var(--border);
+   283 +  border-radius: var(--rl); padding: 26px;
+   284 +  transition: border-color var(--dur), transform var(--dur), box-shadow var(--dur), background var(--dur);
+   285 +  position: relative; overflow: hidden;
+   286  }
+   575 -.skill-card:hover {
+   576 -  transform: translateY(-4px);
+   577 -  border-color: var(--blue-border);
+   578 -  box-shadow: 0 8px 32px rgba(0,0,0,.35);
+   287 +.skill-card::before {
+   288 +  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+   289 +  background: linear-gradient(90deg, var(--cyan), var(--purple));
+   290 +  transform: scaleX(0); transform-origin: left; transition: transform var(--dur) var(--ease);
+   291  }
+   580 -.skill-card-icon { font-size: 2rem; margin-bottom: 14px; }
+   581 -.skill-card h3 {
+   582 -  font-family: var(--font-d);
+   583 -  font-size: 1.05rem;
+   584 -  font-weight: 600;
+   585 -  color: var(--text);
+   586 -  margin-bottom: 16px;
+   587 -}
+   588 -.skill-card ul { display: flex; flex-direction: column; gap: 9px; }
+   589 -.skill-card li {
+   590 -  font-size: .88rem;
+   591 -  color: var(--text-2);
+   592 -  padding-left: 16px;
+   593 -  position: relative;
+   594 -  line-height: 1.55;
+   595 -}
+   596 -.skill-card li::before {
+   597 -  content: '';
+   598 -  position: absolute;
+   599 -  left: 0; top: 8px;
+   600 -  width: 5px; height: 5px;
+   601 -  background: var(--blue);
+   602 -  border-radius: 50%;
+   603 -}
+   292 +.skill-card:hover { border-color: var(--border-h); transform: translateY(-4px); box-shadow: var(--shadow-c); ba
+       +ckground: var(--card-h); }
+   293 +.skill-card:hover::before { transform: scaleX(1); }
+   294
+   605 -/* Subsections (tools + brands) */
+   606 -.subsection { text-align: center; margin-top: 44px; }
+   607 -.subsection-title {
+   608 -  font-size: .78rem;
+   609 -  text-transform: uppercase;
+   610 -  letter-spacing: .1em;
+   611 -  color: var(--text-3);
+   612 -  font-weight: 700;
+   613 -  margin-bottom: 18px;
+   614 -}
+   295 +.sk-icon { font-size: 30px; margin-bottom: 14px; display: block; }
+   296 +.skill-card h3 { font-size: 16px; margin-bottom: 14px; color: var(--t1); }
+   297 +.sk-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+   298 +.sk-list li { font-size: 13.5px; color: var(--t2); padding-left: 15px; position: relative; }
+   299 +.sk-list li::before { content: '→'; position: absolute; left: 0; color: var(--cyan); font-size: 11px; top: 1px;
+       + }
+   300
+   616 -.tools-flex {
+   617 -  display: flex;
+   618 -  flex-wrap: wrap;
+   619 -  gap: 12px;
+   620 -  justify-content: center;
+   301 +.brand-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+   302 +.brand-chip {
+   303 +  padding: 3px 9px; background: var(--cyan-d);
+   304 +  border: 1px solid var(--border); border-radius: 6px;
+   305 +  font-size: 10.5px; font-weight: 800; color: var(--cyan); letter-spacing: .04em;
+   306  }
+   622 -.tool-pill {
+   623 -  display: flex;
+   624 -  align-items: center;
+   625 -  gap: 9px;
+   626 -  background: var(--bg-card);
+   627 -  border: 1px solid var(--border);
+   628 -  border-radius: var(--r-sm);
+   629 -  padding: 10px 18px;
+   630 -  font-size: .87rem;
+   631 -  color: var(--text-2);
+   632 -  transition: border-color var(--t), color var(--t);
+   633 -  cursor: default;
+   634 -}
+   635 -.tool-pill span { font-size: 1.05rem; }
+   636 -.tool-pill:hover { border-color: var(--blue-border); color: var(--text); }
+   307
+   638 -.brands-flex {
+   639 -  display: flex;
+   640 -  flex-wrap: wrap;
+   641 -  gap: 10px;
+   642 -  justify-content: center;
+   643 -}
+   644 -.brand {
+   645 -  background: var(--bg-card);
+   646 -  border: 1px solid var(--border);
+   647 -  border-radius: var(--r-sm);
+   648 -  padding: 9px 20px;
+   649 -  font-size: .88rem;
+   650 -  font-weight: 700;
+   651 -  color: var(--blue-light);
+   652 -  letter-spacing: .04em;
+   653 -  transition: background var(--t), border-color var(--t);
+   654 -  cursor: default;
+   655 -}
+   656 -.brand:hover {
+   657 -  background: var(--blue-dim);
+   658 -  border-color: var(--blue-border);
+   659 -}
+   308 +/* ── Experience ────────────────────────────────────── */
+   309 +.experience { background: var(--bg0); }
+   310 +.timeline { max-width: 880px; margin: 0 auto; }
+   311
+   661 -/* ================================================================
+   662 -   EXPERIENCE — Timeline
+   663 -   ================================================================ */
+   664 -.timeline { max-width: 820px; margin: 0 auto; }
+   665 -
+   666 -.tl-item {
+   667 -  display: flex;
+   668 -  gap: 28px;
+   669 -}
+   670 -.tl-item + .tl-item { margin-top: 36px; }
+   671 -
+   672 -.tl-marker {
+   673 -  display: flex;
+   674 -  flex-direction: column;
+   675 -  align-items: center;
+   676 -  flex-shrink: 0;
+   677 -  padding-top: 4px;
+   678 -}
+   312 +.tl-item { display: grid; grid-template-columns: 44px 1fr; gap: 22px; margin-bottom: 44px; }
+   313 +.tl-marker { display: flex; flex-direction: column; align-items: center; padding-top: 2px; }
+   314  .tl-dot {
+   680 -  width: 15px; height: 15px;
+   681 -  background: var(--blue);
+   682 -  border-radius: 50%;
+   683 -  border: 3px solid var(--bg);
+   684 -  box-shadow: 0 0 0 3px rgba(59,130,246,.28);
+   685 -  z-index: 1;
+   686 -  flex-shrink: 0;
+   315 +  width: 15px; height: 15px; background: var(--cyan); border-radius: 50%;
+   316 +  border: 3px solid var(--bg0); outline: 2px solid var(--cyan);
+   317 +  flex-shrink: 0; box-shadow: 0 0 10px var(--cyan-g);
+   318  }
+   688 -.tl-line {
+   689 -  flex: 1;
+   690 -  width: 2px;
+   691 -  background: linear-gradient(to bottom, var(--blue), transparent);
+   692 -  margin-top: 6px;
+   693 -  min-height: 50px;
+   694 -}
+   319 +.tl-line { width: 2px; flex: 1; background: linear-gradient(to bottom, var(--cyan), transparent); margin-top: 7
+       +px; min-height: 36px; }
+   320
+   321  .tl-card {
+   697 -  flex: 1;
+   698 -  background: var(--bg-card);
+   699 -  border: 1px solid var(--border);
+   700 -  border-radius: var(--r);
+   701 -  padding: 28px 30px;
+   702 -  transition: border-color var(--t), box-shadow var(--t);
+   322 +  background: var(--card); border: 1px solid var(--border);
+   323 +  border-radius: var(--rl); padding: 26px;
+   324 +  transition: border-color var(--dur), box-shadow var(--dur);
+   325  }
+   704 -.tl-card:hover {
+   705 -  border-color: var(--blue-border);
+   706 -  box-shadow: 0 6px 28px rgba(0,0,0,.3);
+   707 -}
+   326 +.tl-card:hover { border-color: var(--border-h); box-shadow: var(--shadow-c); }
+   327
+   328  .tl-head {
+   710 -  display: flex;
+   711 -  justify-content: space-between;
+   712 -  align-items: flex-start;
+   713 -  gap: 14px;
+   714 -  margin-bottom: 18px;
+   715 -  flex-wrap: wrap;
+   329 +  display: flex; justify-content: space-between; align-items: flex-start;
+   330 +  gap: 16px; flex-wrap: wrap; margin-bottom: 18px;
+   331  }
+   717 -
+   718 -.tl-role {
+   719 -  font-family: var(--font-d);
+   720 -  font-size: 1.12rem;
+   721 -  font-weight: 600;
+   722 -  color: var(--text);
+   723 -  margin-bottom: 5px;
+   724 -  display: flex;
+   725 -  align-items: center;
+   726 -  gap: 10px;
+   727 -  flex-wrap: wrap;
+   728 -  line-height: 1.3;
+   332 +.tl-head h3 { font-size: 18px; color: var(--t1); margin-bottom: 4px; }
+   333 +.tl-company { font-size: 13.5px; color: var(--cyan); font-weight: 500; margin-bottom: 6px; }
+   334 +.tl-badge {
+   335 +  display: inline-block; padding: 2px 10px;
+   336 +  background: var(--purp-d); color: var(--purple);
+   337 +  border: 1px solid rgba(129,140,248,.28); border-radius: 100px;
+   338 +  font-size: 11px; font-weight: 700;
+   339  }
+   730 -.badge-stage {
+   731 -  font-size: .69rem;
+   732 -  font-weight: 700;
+   733 -  text-transform: uppercase;
+   734 -  letter-spacing: .07em;
+   735 -  color: var(--amber);
+   736 -  background: var(--amber-dim);
+   737 -  border: 1px solid var(--amber-border);
+   738 -  padding: 3px 10px;
+   739 -  border-radius: 100px;
+   340 +.tl-date {
+   341 +  font-size: 12.5px; color: var(--t3); font-weight: 600;
+   342 +  background: var(--bg1); padding: 5px 13px; border-radius: 100px;
+   343 +  white-space: nowrap; border: 1px solid var(--border); height: fit-content; flex-shrink: 0;
+   344  }
+   741 -.tl-company { font-size: .9rem; color: var(--blue-light); font-weight: 500; }
+   742 -.tl-period {
+   743 -  font-size: .78rem;
+   744 -  font-weight: 600;
+   745 -  color: var(--text-3);
+   746 -  background: var(--bg);
+   747 -  border: 1px solid var(--border);
+   748 -  padding: 5px 13px;
+   749 -  border-radius: 100px;
+   750 -  white-space: nowrap;
+   751 -  flex-shrink: 0;
+   752 -  align-self: flex-start;
+   753 -}
+   345 +.tl-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+   346 +.tl-list li { font-size: 14px; color: var(--t2); padding-left: 18px; position: relative; line-height: 1.65; }
+   347 +.tl-list li::before { content: '▸'; position: absolute; left: 0; color: var(--cyan); }
+   348 +.tl-list strong { color: var(--cyan); font-weight: 600; }
+   349
+   755 -.tl-tasks { display: flex; flex-direction: column; gap: 7px; margin-bottom: 18px; }
+   756 -.tl-tasks li {
+   757 -  font-size: .9rem;
+   758 -  color: var(--text-2);
+   759 -  padding-left: 18px;
+   760 -  position: relative;
+   761 -  line-height: 1.6;
+   762 -}
+   763 -.tl-tasks li::before {
+   764 -  content: '▸';
+   765 -  position: absolute;
+   766 -  left: 0; top: 1px;
+   767 -  color: var(--blue);
+   768 -  font-size: .76rem;
+   769 -}
+   770 -.tl-tasks li strong { color: var(--text); }
+   350 +/* ── Projects ──────────────────────────────────────── */
+   351 +.projects { background: var(--bg1); }
+   352 +.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(308px, 1fr)); gap: 22px; margin-
+       +bottom: 28px; }
+   353
+   772 -.tl-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+   773 -.tl-chips span {
+   774 -  font-size: .75rem;
+   775 -  font-weight: 500;
+   776 -  color: var(--text-3);
+   777 -  background: var(--bg);
+   778 -  border: 1px solid var(--border);
+   779 -  padding: 4px 11px;
+   780 -  border-radius: 100px;
+   781 -}
+   782 -
+   783 -/* ================================================================
+   784 -   PROJECTS
+   785 -   ================================================================ */
+   786 -.projects-grid {
+   787 -  display: grid;
+   788 -  grid-template-columns: repeat(3, 1fr);
+   789 -  gap: 20px;
+   790 -}
+   791 -
+   354  .proj-card {
+   793 -  background: var(--bg-card);
+   794 -  border: 1px solid var(--border);
+   795 -  border-radius: var(--r);
+   796 -  padding: 28px 24px;
+   797 -  position: relative;
+   798 -  overflow: hidden;
+   799 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+   355 +  background: var(--card); border: 1px solid var(--border);
+   356 +  border-radius: var(--rl); padding: 26px;
+   357 +  display: flex; flex-direction: column; gap: 14px;
+   358 +  transition: border-color var(--dur), transform var(--dur), box-shadow var(--dur), background var(--dur);
+   359  }
+   801 -.proj-card::after {
+   802 -  content: '';
+   803 -  position: absolute;
+   804 -  top: 0; left: 0; right: 0;
+   805 -  height: 3px;
+   806 -  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+   807 -  transform: scaleX(0);
+   808 -  transform-origin: left;
+   809 -  transition: transform var(--t) var(--ease);
+   810 -}
+   811 -.proj-card:hover::after { transform: scaleX(1); }
+   812 -.proj-card:hover {
+   813 -  transform: translateY(-6px);
+   814 -  border-color: var(--blue-border);
+   815 -  box-shadow: 0 12px 36px rgba(0,0,0,.4), 0 0 30px rgba(59,130,246,.12);
+   816 -}
+   360 +.proj-card:hover { border-color: var(--border-h); transform: translateY(-6px); box-shadow: 0 20px 56px rgba(0,0
+       +,0,.4), var(--shadow-c); background: var(--card-h); }
+   361
+   818 -.proj-num {
+   819 -  font-family: var(--font-d);
+   820 -  font-size: 3rem;
+   821 -  font-weight: 800;
+   822 -  color: rgba(59,130,246,.07);
+   823 -  line-height: 1;
+   824 -  display: block;
+   825 -  margin-bottom: 8px;
+   826 -  transition: color var(--t);
+   362 +.proj-top { display: flex; align-items: center; justify-content: space-between; }
+   363 +.proj-emoji { font-size: 26px; }
+   364 +.proj-cat {
+   365 +  font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .09em;
+   366 +  color: var(--cyan); background: var(--cyan-d); padding: 3px 11px;
+   367 +  border-radius: 100px; border: 1px solid var(--border);
+   368  }
+   828 -.proj-card:hover .proj-num { color: rgba(59,130,246,.14); }
+   829 -
+   830 -.proj-icon { font-size: 1.9rem; margin-bottom: 14px; }
+   831 -
+   832 -.proj-card h3 {
+   833 -  font-family: var(--font-d);
+   834 -  font-size: .97rem;
+   835 -  font-weight: 600;
+   836 -  color: var(--text);
+   837 -  margin-bottom: 10px;
+   838 -  line-height: 1.4;
+   839 -}
+   840 -.proj-card p {
+   841 -  font-size: .85rem;
+   842 -  color: var(--text-2);
+   843 -  line-height: 1.72;
+   844 -  margin-bottom: 18px;
+   845 -}
+   369 +.proj-card h3 { font-size: 16.5px; color: var(--t1); line-height: 1.35; }
+   370 +.proj-card p  { font-size: 13.5px; color: var(--t2); line-height: 1.72; flex: 1; }
+   371  .proj-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+   372  .proj-tags span {
+   848 -  font-size: .72rem;
+   849 -  font-weight: 600;
+   850 -  color: var(--blue-light);
+   851 -  background: var(--blue-dim);
+   852 -  border: 1px solid rgba(59,130,246,.18);
+   853 -  padding: 3px 10px;
+   854 -  border-radius: 100px;
+   373 +  padding: 3px 11px; background: var(--bg0);
+   374 +  border: 1px solid var(--border); border-radius: 100px;
+   375 +  font-size: 11.5px; color: var(--t3);
+   376 +  transition: color var(--dur), border-color var(--dur);
+   377  }
+   378 +.proj-card:hover .proj-tags span { color: var(--t2); border-color: rgba(34,211,238,.2); }
+   379 +.proj-note { text-align: center; font-size: 13px; color: var(--t3); font-style: italic; }
+   380
+   857 -.projects-note {
+   858 -  display: flex;
+   859 -  align-items: center;
+   860 -  justify-content: center;
+   861 -  gap: 10px;
+   862 -  margin-top: 36px;
+   863 -  padding: 16px 28px;
+   864 -  background: var(--bg-card);
+   865 -  border: 1px solid var(--border);
+   866 -  border-radius: var(--r-sm);
+   867 -  font-size: .87rem;
+   868 -  color: var(--text-2);
+   869 -  max-width: 480px;
+   870 -  margin-left: auto;
+   871 -  margin-right: auto;
+   872 -}
+   381 +/* ── Education ─────────────────────────────────────── */
+   382 +.education { background: var(--bg0); }
+   383 +.edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px; max-width: 8
+       +60px; margin: 0 auto; }
+   384
+   874 -/* ================================================================
+   875 -   EDUCATION
+   876 -   ================================================================ */
+   877 -.edu-grid {
+   878 -  display: grid;
+   879 -  grid-template-columns: repeat(2, 1fr);
+   880 -  gap: 24px;
+   881 -  max-width: 820px;
+   882 -  margin: 0 auto;
+   883 -}
+   884 -
+   385  .edu-card {
+   886 -  background: var(--bg-card);
+   887 -  border: 1px solid var(--border);
+   888 -  border-radius: var(--r);
+   889 -  padding: 32px;
+   890 -  position: relative;
+   891 -  overflow: hidden;
+   892 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+   386 +  background: var(--card); border: 1px solid var(--border);
+   387 +  border-radius: var(--rl); padding: 30px;
+   388 +  transition: border-color var(--dur), transform var(--dur), box-shadow var(--dur);
+   389 +  position: relative; overflow: hidden;
+   390  }
+   391  .edu-card::after {
+   895 -  content: '';
+   896 -  position: absolute;
+   897 -  bottom: 0; left: 0; right: 0;
+   898 -  height: 3px;
+   899 -  background: linear-gradient(90deg, var(--amber), #ef4444);
+   900 -  transform: scaleX(0);
+   901 -  transform-origin: left;
+   902 -  transition: transform var(--t) var(--ease);
+   392 +  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+   393 +  background: linear-gradient(90deg, var(--cyan), var(--purple));
+   394 +  transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
+   395  }
+   396 +.edu-card:hover { border-color: var(--border-h); transform: translateY(-4px); box-shadow: var(--shadow-c); }
+   397  .edu-card:hover::after { transform: scaleX(1); }
+   905 -.edu-card:hover {
+   906 -  transform: translateY(-4px);
+   907 -  border-color: var(--amber-border);
+   908 -  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+   909 -}
+   398
+   911 -.edu-top {
+   912 -  display: flex;
+   913 -  align-items: center;
+   914 -  justify-content: space-between;
+   915 -  margin-bottom: 18px;
+   916 -}
+   399  .edu-year {
+   918 -  font-size: .77rem;
+   919 -  font-weight: 700;
+   920 -  color: var(--amber);
+   921 -  background: var(--amber-dim);
+   922 -  border: 1px solid var(--amber-border);
+   923 -  padding: 4px 13px;
+   924 -  border-radius: 100px;
+   400 +  display: inline-block; font-size: 11px; font-weight: 700;
+   401 +  color: var(--cyan); background: var(--cyan-d);
+   402 +  padding: 3px 12px; border-radius: 100px; border: 1px solid var(--border);
+   403 +  margin-bottom: 14px;
+   404  }
+   926 -.edu-ico { font-size: 2.2rem; }
+   405 +.edu-ico   { font-size: 34px; margin-bottom: 14px; }
+   406 +.edu-card h3 { font-size: 16px; color: var(--t1); line-height: 1.4; margin-bottom: 8px; }
+   407 +.edu-school  { font-size: 13.5px; color: var(--cyan); font-weight: 600; margin-bottom: 10px; }
+   408 +.edu-desc    { font-size: 13.5px; color: var(--t2); line-height: 1.72; }
+   409
+   928 -.edu-card h3 {
+   929 -  font-family: var(--font-d);
+   930 -  font-size: 1rem;
+   931 -  font-weight: 600;
+   932 -  color: var(--text);
+   933 -  margin-bottom: 7px;
+   934 -  line-height: 1.4;
+   935 -}
+   936 -.edu-school {
+   937 -  font-size: .88rem;
+   938 -  color: var(--blue-light);
+   939 -  font-weight: 500;
+   940 -  margin-bottom: 10px;
+   941 -}
+   942 -.edu-desc { font-size: .84rem; color: var(--text-2); line-height: 1.65; }
+   410 +/* ── Contact ───────────────────────────────────────── */
+   411 +.contact { background: var(--bg1); }
+   412 +.contact-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 36px; align-items: start; }
+   413
+   944 -/* ================================================================
+   945 -   CONTACT
+   946 -   ================================================================ */
+   947 -.contact-grid {
+   948 -  display: grid;
+   949 -  grid-template-columns: 1fr 1fr;
+   950 -  gap: 44px;
+   951 -  align-items: start;
+   414 +.contact-cards { display: flex; flex-direction: column; gap: 14px; }
+   415 +.cc-card {
+   416 +  display: flex; align-items: center; gap: 16px;
+   417 +  background: var(--card); border: 1px solid var(--border);
+   418 +  border-radius: var(--r); padding: 18px 22px;
+   419 +  transition: border-color var(--dur), background var(--dur), transform var(--dur), box-shadow var(--dur);
+   420  }
+   421 +a.cc-card:hover { border-color: var(--border-h); background: var(--card-h); transform: translateX(5px); box-sha
+       +dow: var(--shadow-c); }
+   422 +.cc-ico { font-size: 22px; flex-shrink: 0; }
+   423 +.cc-label { display: block; font-size: 10.5px; color: var(--t3); text-transform: uppercase; letter-spacing: .08
+       +em; font-weight: 700; margin-bottom: 3px; }
+   424 +.cc-val { display: block; font-size: 13.5px; font-weight: 500; color: var(--t1); }
+   425 +a.cc-card:hover .cc-val { color: var(--cyan); }
+   426 +.cc-arrow { font-size: 18px; color: var(--t3); margin-left: auto; transition: color var(--dur), transform var(-
+       +-dur); }
+   427 +a.cc-card:hover .cc-arrow { color: var(--cyan); transform: translateX(4px); }
+   428 +.cc-static { cursor: default; }
+   429
+   954 -.contact-card {
+   955 -  display: flex;
+   956 -  align-items: center;
+   957 -  gap: 16px;
+   958 -  background: var(--bg-card);
+   959 -  border: 1px solid var(--border);
+   960 -  border-radius: var(--r);
+   961 -  padding: 18px 22px;
+   962 -  color: inherit;
+   963 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+   964 -  margin-bottom: 12px;
+   430 +.pitch-card {
+   431 +  background: var(--card); border: 1px solid var(--border);
+   432 +  border-radius: var(--rl); padding: 38px;
+   433 +  position: relative; overflow: hidden;
+   434  }
+   966 -.contact-card:last-child { margin-bottom: 0; }
+   967 -.contact-card:not(.no-action):hover {
+   968 -  transform: translateX(6px);
+   969 -  border-color: var(--blue-border);
+   970 -  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+   435 +.pitch-card::before {
+   436 +  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+   437 +  background: linear-gradient(90deg, var(--cyan), var(--purple));
+   438  }
+   439 +.pitch-card h3 { font-size: 21px; color: var(--t1); margin-bottom: 14px; line-height: 1.35; }
+   440 +.pitch-card p  { font-size: 14.5px; color: var(--t2); line-height: 1.78; margin-bottom: 22px; }
+   441 +.pitch-list    { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+   442 +.pitch-list li { font-size: 14px; color: var(--t2); display: flex; align-items: flex-start; gap: 10px; }
+   443 +.pitch-check   { color: var(--green); font-weight: 700; flex-shrink: 0; }
+   444
+   973 -.cc-icon {
+   974 -  font-size: 1.4rem;
+   975 -  width: 46px; height: 46px;
+   976 -  display: flex;
+   977 -  align-items: center;
+   978 -  justify-content: center;
+   979 -  background: var(--bg);
+   980 -  border-radius: var(--r-sm);
+   981 -  flex-shrink: 0;
+   982 -}
+   983 -.cc-body {
+   984 -  flex: 1;
+   985 -  display: flex;
+   986 -  flex-direction: column;
+   987 -  gap: 2px;
+   988 -}
+   989 -.cc-label {
+   990 -  font-size: .7rem;
+   991 -  text-transform: uppercase;
+   992 -  letter-spacing: .07em;
+   993 -  color: var(--text-3);
+   994 -  font-weight: 600;
+   995 -}
+   996 -.cc-value { font-size: .92rem; color: var(--text); font-weight: 500; }
+   445 +/* ── Footer ────────────────────────────────────────── */
+   446 +.footer { background: var(--bg0); border-top: 1px solid var(--border); padding: 44px 0 28px; }
+   447 +.footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 36px; flex-wrap: w
+       +rap; margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+   448 +.footer-logo { display: block; font-family: var(--fd); font-size: 20px; font-weight: 800; background: linear-gr
+       +adient(135deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent
+       +; background-clip: text; margin-bottom: 7px; }
+   449 +.footer-brand p { font-size: 13px; color: var(--t3); line-height: 1.6; max-width: 280px; }
+   450 +.footer-nav { display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center; }
+   451 +.footer-nav a { font-size: 13.5px; color: var(--t2); transition: color var(--dur); }
+   452 +.footer-nav a:hover { color: var(--cyan); }
+   453 +.footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+   454 +.footer-bottom p { font-size: 12.5px; color: var(--t3); }
+   455
+   998 -.cc-arrow {
+   999 -  color: var(--blue);
+  1000 -  font-size: 1.15rem;
+  1001 -  transition: transform var(--t);
+  1002 -}
+  1003 -.contact-card:hover .cc-arrow { transform: translateX(4px); }
+  1004 -
+  1005 -.cta-box {
+  1006 -  background: var(--bg-card);
+  1007 -  border: 1px solid var(--border);
+  1008 -  border-radius: var(--r-lg);
+  1009 -  padding: 44px 40px;
+  1010 -  text-align: center;
+  1011 -}
+  1012 -.cta-box h3 {
+  1013 -  font-family: var(--font-d);
+  1014 -  font-size: 1.45rem;
+  1015 -  font-weight: 700;
+  1016 -  color: var(--text);
+  1017 -  margin-bottom: 14px;
+  1018 -  line-height: 1.3;
+  1019 -}
+  1020 -.cta-box p {
+  1021 -  font-size: .93rem;
+  1022 -  color: var(--text-2);
+  1023 -  line-height: 1.75;
+  1024 -  margin-bottom: 28px;
+  1025 -}
+  1026 -
+  1027 -/* ================================================================
+  1028 -   FOOTER
+  1029 -   ================================================================ */
+  1030 -footer {
+  1031 -  background: var(--bg);
+  1032 -  border-top: 1px solid var(--border);
+  1033 -  padding: 48px 0;
+  1034 -}
+  1035 -.footer-inner {
+  1036 -  text-align: center;
+  1037 -  display: flex;
+  1038 -  flex-direction: column;
+  1039 -  gap: 7px;
+  1040 -  align-items: center;
+  1041 -}
+  1042 -.footer-name {
+  1043 -  font-family: var(--font-d);
+  1044 -  font-size: 1.25rem;
+  1045 -  font-weight: 700;
+  1046 -  background: linear-gradient(135deg, #3b82f6, #a78bfa);
+  1047 -  -webkit-background-clip: text;
+  1048 -  -webkit-text-fill-color: transparent;
+  1049 -  background-clip: text;
+  1050 -}
+  1051 -.footer-role { font-size: .86rem; color: var(--text-2); }
+  1052 -.footer-copy { font-size: .78rem; color: var(--text-3); margin-top: 6px; }
+  1053 -
+  1054 -/* ================================================================
+  1055 -   RESPONSIVE
+  1056 -   ================================================================ */
+   456 +/* ── Responsive ────────────────────────────────────── */
+   457  @media (max-width: 1024px) {
+  1058 -  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+   458 +  .about-grid { grid-template-columns: 1fr; }
+   459 +  .about-sidebar { max-width: 480px; }
+   460  }
+   461
+  1061 -@media (max-width: 820px) {
+  1062 -  section { padding: 72px 0; }
+   462 +@media (max-width: 768px) {
+   463 +  .section { padding: 72px 0; }
+   464
+  1064 -  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  1065 -  .skills-grid { grid-template-columns: 1fr; }
+  1066 -  .edu-grid { grid-template-columns: 1fr; }
+  1067 -  .contact-grid { grid-template-columns: 1fr; }
+  1068 -  .projects-grid { grid-template-columns: 1fr; }
+  1069 -
+  1070 -  /* Mobile nav */
+  1071 -  .nav-links {
+  1072 -    display: none;
+  1073 -    flex-direction: column;
+  1074 -    position: fixed;
+  1075 -    top: var(--nav-h);
+  1076 -    left: 0; right: 0;
+  1077 -    background: rgba(7,16,31,.97);
+  1078 -    backdrop-filter: blur(24px);
+  1079 -    -webkit-backdrop-filter: blur(24px);
+  1080 -    padding: 20px 24px 28px;
+   465 +  .nav-menu {
+   466 +    position: fixed; top: var(--nav); left: 0; right: 0; z-index: 899;
+   467 +    background: rgba(4,4,12,.97); backdrop-filter: blur(20px);
+   468 +    flex-direction: column; padding: 20px; gap: 4px;
+   469 +    transform: translateY(-110%); transition: transform .3s var(--ease);
+   470      border-bottom: 1px solid var(--border);
+  1082 -    gap: 4px;
+  1083 -    z-index: 800;
+   471    }
+  1085 -  .nav-links.open { display: flex; }
+  1086 -  .nav-links a { padding: 11px 16px; font-size: .95rem; }
+   472 +  .nav-menu.open { transform: translateY(0); }
+   473    .nav-toggle { display: flex; }
+   474
+   475    .hero-stats { gap: 20px; }
+   476 +  .stat-num { font-size: 28px; }
+   477
+  1091 -  .tl-card { padding: 22px; }
+  1092 -  .tl-head { flex-direction: column; }
+  1093 -
+  1094 -  .cta-box { padding: 30px 24px; }
+   478 +  .skills-grid    { grid-template-columns: 1fr; }
+   479 +  .tl-item        { grid-template-columns: 34px 1fr; gap: 14px; }
+   478 +  .skills-grid    { grid-template-columns: 1fr; }
+   479 +  .tl-item        { grid-template-columns: 34px 1fr; gap: 14px; }
+      520 +          <p>Technicien Spécialisé en Électronique &amp; Maintenance Industrielle<br />Tétouan, Maroc<
+          +/p>
+      521 +        </div>
+      522 +        <nav class="footer-nav" aria-label="Navigation secondaire">
+      523 +          <a href="#home">Accueil</a>
+      524 +          <a href="#about">À propos</a>
+      525 +          <a href="#skills">Compétences</a>
+      526 +          <a href="#experience">Expérience</a>
+      527 +          <a href="#projects">Projets</a>
+      528 +          <a href="#contact">Contact</a>
+      529 +        </nav>
+      530        </div>
+      531 +      <div class="footer-bottom">
+      532 +        <p>&copy; <span id="year"></span> Saber Slimani — Tous droits réservés</p>
+      533 +        <p>saber03slimani@gmail.com</p>
+      534 +      </div>
+      535      </div>
+      536    </footer>
+      537
+
+● Write(portfolio-saber\styles.css)
+  ⎿  Added 362 lines, removed 972 lines
+         1  /* ================================================================
+         2 -   SABER SLIMANI PORTFOLIO — styles.css
+         3 -   Dark industrial theme · Blue & amber accents · Mobile-first
+         2 +   SABER SLIMANI — Portfolio
+         3 +   Dark industrial theme · Cyan & purple accents · Mobile-first
+         4     ================================================================ */
+         5
+         6 -/* ── Variables ─────────────────────────────────────────────── */
+         6 +/* ── Variables ─────────────────────────────────────── */
+         7  :root {
+         8 -  --bg:          #07101f;
+         9 -  --bg-2:        #0d1a30;
+        10 -  --bg-card:     #111f38;
+        11 -  --bg-card-h:   #162542;
+         8 +  --bg0:  #04040c;
+         9 +  --bg1:  #09091a;
+        10 +  --bg2:  #0f0f22;
+        11 +  --card: #12122a;
+        12 +  --card-h: #171730;
+        13
+        13 -  --blue:        #3b82f6;
+        14 -  --blue-light:  #60a5fa;
+        15 -  --blue-dim:    rgba(59,130,246,.12);
+        16 -  --blue-border: rgba(59,130,246,.28);
+        14 +  --cyan:  #22d3ee;
+        15 +  --cyan-d: rgba(34,211,238,.12);
+        16 +  --cyan-g: rgba(34,211,238,.28);
+        17 +  --purple: #818cf8;
+        18 +  --purp-d: rgba(129,140,248,.12);
+        19 +  --green:  #34d399;
+        20
+        18 -  --amber:       #f59e0b;
+        19 -  --amber-dim:   rgba(245,158,11,.12);
+        20 -  --amber-border:rgba(245,158,11,.28);
+        21 +  --t1: #f1f5f9;
+        22 +  --t2: #94a3b8;
+        23 +  --t3: #475569;
+        24
+        22 -  --text:        #f0f6ff;
+        23 -  --text-2:      #8fa8cc;
+        24 -  --text-3:      #4d6a8e;
+        25 +  --border:   rgba(34,211,238,.1);
+        26 +  --border-h: rgba(34,211,238,.28);
+        27 +  --shadow-c: 0 0 40px rgba(34,211,238,.12);
+        28
+        26 -  --border:      rgba(255,255,255,.06);
+        29 +  --r:  12px;
+        30 +  --rl: 18px;
+        31 +  --ease: cubic-bezier(.4,0,.2,1);
+        32 +  --dur: .3s;
+        33 +  --nav: 68px;
+        34
+        28 -  --font:        'Inter', sans-serif;
+        29 -  --font-d:      'Space Grotesk', sans-serif;
+        30 -
+        31 -  --r:    14px;
+        32 -  --r-sm: 9px;
+        33 -  --r-lg: 22px;
+        34 -
+        35 -  --nav-h: 68px;
+        36 -  --ease:  cubic-bezier(.4,0,.2,1);
+        37 -  --t:     .28s;
+        35 +  --ff: 'Inter', system-ui, sans-serif;
+        36 +  --fd: 'Space Grotesk', system-ui, sans-serif;
+        37  }
+        38
+        40 -/* ── Reset ──────────────────────────────────────────────────── */
+        39 +/* ── Reset ─────────────────────────────────────────── */
+        40  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        42 -
+        43 -html { scroll-behavior: smooth; font-size: 16px; }
+        44 -
+        45 -body {
+        46 -  font-family: var(--font);
+        47 -  background: var(--bg);
+        48 -  color: var(--text);
+        49 -  line-height: 1.65;
+        50 -  overflow-x: hidden;
+        51 -  -webkit-font-smoothing: antialiased;
+        52 -}
+        53 -
+        41 +html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+        42 +body { font-family: var(--ff); background: var(--bg0); color: var(--t1); line-height: 1.7; overflow-x
+           +: hidden; }
+        43 +::selection { background: var(--cyan); color: var(--bg0); }
+        44 +::-webkit-scrollbar { width: 5px; }
+        45 +::-webkit-scrollbar-track { background: var(--bg0); }
+        46 +::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 3px; }
+        47  a { color: inherit; text-decoration: none; }
+        55 -ul { list-style: none; }
+        48 +h1,h2,h3,h4 { font-family: var(--fd); font-weight: 700; line-height: 1.2; }
+        49  img { display: block; max-width: 100%; }
+        50
+        58 -::-webkit-scrollbar { width: 5px; }
+        59 -::-webkit-scrollbar-track { background: var(--bg); }
+        60 -::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
+        51 +/* ── Layout helpers ────────────────────────────────── */
+        52 +.container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+        53 +.section    { padding: 96px 0; }
+        54
+        62 -/* ── Layout ─────────────────────────────────────────────────── */
+        63 -.container {
+        64 -  max-width: 1160px;
+        65 -  margin: 0 auto;
+        66 -  padding: 0 24px;
+        55 +/* ── Navbar ────────────────────────────────────────── */
+        56 +.navbar {
+        57 +  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+        58 +  height: var(--nav);
+        59 +  transition: background var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+        60  }
+        68 -
+        69 -/* ── Typography helpers ─────────────────────────────────────── */
+        70 -.grad-text {
+        71 -  background: linear-gradient(135deg, #3b82f6 0%, #a78bfa 100%);
+        72 -  -webkit-background-clip: text;
+        73 -  -webkit-text-fill-color: transparent;
+        74 -  background-clip: text;
+        75 -}
+        76 -
+        77 -/* ── Buttons ─────────────────────────────────────────────────── */
+        78 -.btn {
+        79 -  display: inline-flex;
+        80 -  align-items: center;
+        81 -  gap: 8px;
+        82 -  padding: 13px 28px;
+        83 -  border-radius: var(--r-sm);
+        84 -  font-family: var(--font);
+        85 -  font-size: .93rem;
+        86 -  font-weight: 600;
+        87 -  cursor: pointer;
+        88 -  border: none;
+        89 -  transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease), background var(--t);
+        90 -}
+        91 -.btn-primary {
+        92 -  background: linear-gradient(135deg, #3b82f6, #6366f1);
+        93 -  color: #fff;
+        94 -  box-shadow: 0 4px 18px rgba(59,130,246,.32);
+        95 -}
+        96 -.btn-primary:hover {
+        97 -  transform: translateY(-2px);
+        98 -  box-shadow: 0 8px 28px rgba(59,130,246,.5);
+        99 -}
+       100 -.btn-outline {
+       101 -  background: transparent;
+       102 -  color: var(--text);
+       103 -  border: 1.5px solid var(--blue-border);
+       104 -}
+       105 -.btn-outline:hover {
+       106 -  background: var(--blue-dim);
+       107 -  transform: translateY(-2px);
+       108 -}
+       109 -
+       110 -/* ── Scroll-reveal ───────────────────────────────────────────── */
+       111 -.reveal {
+       112 -  opacity: 0;
+       113 -  transform: translateY(22px);
+       114 -  transition: opacity .55s var(--ease), transform .55s var(--ease);
+       115 -}
+       116 -.reveal.visible {
+       117 -  opacity: 1;
+       118 -  transform: none;
+       119 -}
+       120 -
+       121 -/* ── Section commons ────────────────────────────────────────── */
+       122 -section { padding: 96px 0; }
+       123 -
+       124 -#about, #experience, #education { background: var(--bg); }
+       125 -#skills, #projects, #contact    { background: var(--bg-2); }
+       126 -
+       127 -.section-head {
+       128 -  text-align: center;
+       129 -  margin-bottom: 60px;
+       130 -}
+       131 -.section-tag {
+       132 -  display: inline-block;
+       133 -  font-size: .75rem;
+       134 -  font-weight: 700;
+       135 -  text-transform: uppercase;
+       136 -  letter-spacing: .12em;
+       137 -  color: var(--blue);
+       138 -  background: var(--blue-dim);
+       139 -  border: 1px solid var(--blue-border);
+       140 -  padding: 5px 16px;
+       141 -  border-radius: 100px;
+       142 -  margin-bottom: 14px;
+       143 -}
+       144 -.section-head h2 {
+       145 -  font-family: var(--font-d);
+       146 -  font-size: clamp(1.75rem, 4vw, 2.4rem);
+       147 -  font-weight: 700;
+       148 -  letter-spacing: -.02em;
+       149 -  line-height: 1.2;
+       150 -}
+       151 -.section-sub {
+       152 -  font-size: .97rem;
+       153 -  color: var(--text-2);
+       154 -  margin-top: 10px;
+       155 -}
+       156 -
+       157 -/* ================================================================
+       158 -   NAVIGATION
+       159 -   ================================================================ */
+       160 -#navbar {
+       161 -  position: fixed;
+       162 -  top: 0; left: 0; right: 0;
+       163 -  height: var(--nav-h);
+       164 -  z-index: 900;
+       165 -  transition: background var(--t), border-color var(--t), backdrop-filter var(--t);
+       166 -}
+       167 -#navbar.scrolled {
+       168 -  background: rgba(7,16,31,.9);
+       169 -  backdrop-filter: blur(20px);
+       170 -  -webkit-backdrop-filter: blur(20px);
+        61 +.navbar.scrolled {
+        62 +  background: rgba(4,4,12,.88);
+        63 +  backdrop-filter: blur(18px);
+        64    border-bottom: 1px solid var(--border);
+        65 +  box-shadow: 0 4px 24px rgba(0,0,0,.5);
+        66  }
+       173 -
+       174 -.nav-inner {
+       175 -  max-width: 1160px;
+       176 -  margin: 0 auto;
+       177 -  padding: 0 24px;
+       178 -  height: 100%;
+       179 -  display: flex;
+       180 -  align-items: center;
+       181 -  justify-content: space-between;
+       182 -  gap: 24px;
+        67 +.nav-container {
+        68 +  max-width: 1160px; margin: 0 auto; padding: 0 24px;
+        69 +  height: 100%; display: flex; align-items: center; justify-content: space-between;
+        70  }
+        71
+        72 +/* Logo */
+        73  .nav-logo {
+       186 -  font-family: var(--font-d);
+       187 -  font-size: 1.45rem;
+       188 -  font-weight: 800;
+       189 -  background: linear-gradient(135deg, #3b82f6, #a78bfa);
+       190 -  -webkit-background-clip: text;
+       191 -  -webkit-text-fill-color: transparent;
+       192 -  background-clip: text;
+       193 -  flex-shrink: 0;
+        74 +  width: 40px; height: 40px; border-radius: 10px;
+        75 +  background: linear-gradient(135deg, var(--cyan), var(--purple));
+        76 +  display: flex; align-items: center; justify-content: center;
+        77 +  font-family: var(--fd); font-weight: 800; font-size: 14px; color: var(--bg0);
+        78 +  letter-spacing: .5px; transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--eas
+           +e);
+        79  }
+        80 +.nav-logo:hover { transform: scale(1.08); box-shadow: 0 0 18px var(--cyan-g); }
+        81
+       196 -.nav-links {
+       197 -  display: flex;
+       198 -  align-items: center;
+       199 -  gap: 4px;
+        82 +/* Menu */
+        83 +.nav-menu { list-style: none; display: flex; gap: 2px; align-items: center; }
+        84 +.nav-link {
+        85 +  padding: 7px 14px; font-size: 13.5px; font-weight: 500;
+        86 +  color: var(--t2); border-radius: 8px;
+        87 +  transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
+        88  }
+       201 -.nav-links a {
+       202 -  font-size: .87rem;
+       203 -  font-weight: 500;
+       204 -  color: var(--text-2);
+       205 -  padding: 7px 13px;
+       206 -  border-radius: var(--r-sm);
+       207 -  transition: color var(--t), background var(--t);
+        89 +.nav-link:hover, .nav-link.active { color: var(--t1); background: rgba(255,255,255,.05); }
+        90 +.nav-link.active { color: var(--cyan); }
+        91 +.nav-cta {
+        92 +  background: var(--cyan-d) !important; color: var(--cyan) !important;
+        93 +  border: 1px solid var(--border-h);
+        94  }
+       209 -.nav-links a:hover,
+       210 -.nav-links a.active {
+       211 -  color: var(--text);
+       212 -  background: var(--blue-dim);
+       213 -}
+       214 -.nav-links a.nav-cta {
+       215 -  background: linear-gradient(135deg, #3b82f6, #6366f1);
+       216 -  color: #fff;
+       217 -  padding: 7px 18px;
+       218 -}
+       219 -.nav-links a.nav-cta:hover { opacity: .88; }
+        95 +.nav-cta:hover { background: var(--cyan) !important; color: var(--bg0) !important; box-shadow: 0 0 18
+           +px var(--cyan-g); }
+        96
+        97 +/* Hamburger */
+        98  .nav-toggle {
+       222 -  display: none;
+       223 -  flex-direction: column;
+       224 -  gap: 5px;
+       225 -  background: none;
+       226 -  border: none;
+       227 -  cursor: pointer;
+       228 -  padding: 6px;
+        99 +  display: none; flex-direction: column; gap: 5px;
+       100 +  background: none; border: none; cursor: pointer; padding: 6px;
+       101  }
+       230 -.nav-toggle span {
+       231 -  display: block;
+       232 -  width: 22px;
+       233 -  height: 2px;
+       234 -  background: var(--text);
+       235 -  border-radius: 2px;
+       236 -  transition: transform var(--t), opacity var(--t);
+       237 -}
+       102 +.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--t1); border-radius: 2p
+           +x; transition: var(--dur) var(--ease); }
+       103 +.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+       104 +.nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+       105 +.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+       106
+       239 -/* ================================================================
+       240 -   HERO
+       241 -   ================================================================ */
+       242 -#hero {
+       243 -  min-height: 100vh;
+       244 -  display: flex;
+       245 -  align-items: center;
+       246 -  justify-content: center;
+       247 -  flex-direction: column;
+       248 -  text-align: center;
+       249 -  padding: var(--nav-h) 24px 80px;
+       250 -  position: relative;
+       251 -  overflow: hidden;
+       107 +/* ── Hero ──────────────────────────────────────────── */
+       108 +.hero {
+       109 +  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+       110 +  position: relative; overflow: hidden; padding: var(--nav) 24px 60px;
+       111  }
+       253 -
+       254 -/* Background decorations */
+       255 -.hero-bg { position: absolute; inset: 0; pointer-events: none; }
+       256 -
+       257 -.hero-grid {
+       258 -  position: absolute; inset: 0;
+       259 -  background-image:
+       260 -    linear-gradient(rgba(59,130,246,.045) 1px, transparent 1px),
+       261 -    linear-gradient(90deg, rgba(59,130,246,.045) 1px, transparent 1px);
+       262 -  background-size: 56px 56px;
+       263 -  mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 20%, transparent 100%);
+       264 -  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 20%, transparent 100%);
+       265 -}
+       266 -
+       112 +#hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .45; }
+       113  .hero-glow {
+       268 -  position: absolute;
+       269 -  width: 640px; height: 640px;
+       270 -  background: radial-gradient(circle, rgba(59,130,246,.14) 0%, transparent 68%);
+       271 -  top: 50%; left: 50%;
+       272 -  transform: translate(-50%, -50%);
+       273 -  border-radius: 50%;
+       114 +  position: absolute; top: 20%; left: 50%; transform: translateX(-50%);
+       115 +  width: 700px; height: 500px; border-radius: 50%;
+       116 +  background: radial-gradient(ellipse, rgba(34,211,238,.06) 0%, transparent 70%);
+       117 +  pointer-events: none;
+       118  }
+       275 -.hero-glow-2 {
+       276 -  position: absolute;
+       277 -  width: 360px; height: 360px;
+       278 -  background: radial-gradient(circle, rgba(99,102,241,.1) 0%, transparent 70%);
+       279 -  top: 30%; right: 15%;
+       280 -  border-radius: 50%;
+       281 -}
+       282 -
+       283 -/* Content */
+       119  .hero-content {
+       285 -  position: relative;
+       286 -  z-index: 1;
+       287 -  max-width: 780px;
+       120 +  position: relative; z-index: 1; text-align: center; max-width: 820px;
+       121  }
+       122
+       123  .hero-badge {
+       291 -  display: inline-flex;
+       292 -  align-items: center;
+       293 -  gap: 8px;
+       294 -  background: var(--blue-dim);
+       295 -  border: 1px solid var(--blue-border);
+       296 -  color: var(--blue-light);
+       297 -  font-size: .82rem;
+       298 -  font-weight: 600;
+       124 +  display: inline-flex; align-items: center; gap: 8px;
+       125    padding: 7px 18px;
+       300 -  border-radius: 100px;
+       301 -  margin-bottom: 30px;
+       126 +  background: rgba(34,211,238,.07);
+       127 +  border: 1px solid var(--border-h);
+       128 +  border-radius: 100px; font-size: 13px; font-weight: 500; color: var(--cyan);
+       129 +  margin-bottom: 36px;
+       130 +  animation: fadeDown .7s var(--ease) both;
+       131  }
+       303 -.pulse-dot {
+       304 -  width: 8px; height: 8px;
+       305 -  background: #22c55e;
+       306 -  border-radius: 50%;
+       307 -  animation: pulse 2.2s ease-in-out infinite;
+       132 +.badge-dot {
+       133 +  width: 7px; height: 7px; background: var(--green);
+       134 +  border-radius: 50%; animation: pulse 2.2s ease infinite;
+       135  }
+       309 -@keyframes pulse {
+       310 -  0%,100% { box-shadow: 0 0 0 0 rgba(34,197,94,.45); }
+       311 -  50%      { box-shadow: 0 0 0 7px rgba(34,197,94,0); }
+       312 -}
+       136 +@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.55;transform:scale(.82)} }
+       137
+       138  .hero-name {
+       315 -  font-family: var(--font-d);
+       316 -  font-size: clamp(3.2rem, 9vw, 5.8rem);
+       317 -  font-weight: 800;
+       318 -  line-height: 1.02;
+       319 -  letter-spacing: -.03em;
+       320 -  margin-bottom: 16px;
+       139 +  font-size: clamp(54px,10vw,100px); font-weight: 800; line-height: .95;
+       140 +  margin-bottom: 22px; display: flex; flex-direction: column; gap: 2px;
+       141 +  animation: fadeUp .75s var(--ease) .1s both;
+       142  }
+       322 -.name-first { color: var(--text); margin-right: .18em; }
+       143 +.name-first { color: var(--t1); }
+       144  .name-last {
+       324 -  background: linear-gradient(135deg, #3b82f6 0%, #a78bfa 100%);
+       325 -  -webkit-background-clip: text;
+       326 -  -webkit-text-fill-color: transparent;
+       327 -  background-clip: text;
+       145 +  background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+       146 +  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+       147  }
+       148
+       149  .hero-title {
+       331 -  font-size: clamp(1rem, 2.4vw, 1.22rem);
+       332 -  color: var(--text-2);
+       333 -  font-weight: 400;
+       334 -  line-height: 1.55;
+       335 -  margin-bottom: 20px;
+       150 +  font-size: clamp(15px,2.5vw,20px); font-weight: 400; font-family: var(--ff);
+       151 +  color: var(--t2); margin-bottom: 22px; min-height: 32px;
+       152 +  animation: fadeUp .75s var(--ease) .2s both;
+       153  }
+       337 -.hero-title strong {
+       338 -  color: var(--amber);
+       339 -  font-weight: 600;
+       154 +.typed-wrap { display: inline-block; }
+       155 +.typed-text { color: var(--cyan); font-weight: 600; }
+       156 +.cursor { color: var(--cyan); animation: blink 1.1s step-end infinite; margin-left: 1px; }
+       157 +@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+       158 +
+       159 +.hero-desc {
+       160 +  font-size: 15.5px; color: var(--t2); max-width: 580px;
+       161 +  margin: 0 auto 40px; line-height: 1.85;
+       162 +  animation: fadeUp .75s var(--ease) .3s both;
+       163  }
+       164 +.hero-desc strong { color: var(--t1); }
+       165
+       342 -.hero-description {
+       343 -  font-size: 1.02rem;
+       344 -  color: var(--text-2);
+       345 -  line-height: 1.82;
+       346 -  max-width: 580px;
+       347 -  margin: 0 auto 44px;
+       166 +.hero-actions {
+       167 +  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+       168 +  margin-bottom: 56px;
+       169 +  animation: fadeUp .75s var(--ease) .4s both;
+       170  }
+       171
+       350 -/* Stats */
+       351 -.hero-stats {
+       352 -  display: flex;
+       353 -  align-items: center;
+       354 -  justify-content: center;
+       355 -  gap: 36px;
+       356 -  margin-bottom: 48px;
+       357 -  flex-wrap: wrap;
+       172 +/* Buttons */
+       173 +.btn {
+       174 +  display: inline-flex; align-items: center; gap: 8px;
+       175 +  padding: 13px 26px; border-radius: 10px; font-size: 14.5px; font-weight: 600;
+       176 +  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--d
+           +ur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+       177 +  cursor: pointer; border: 1px solid transparent;
+       178  }
+       359 -.stat-item {
+       360 -  display: flex;
+       361 -  flex-direction: column;
+       362 -  align-items: center;
+       363 -  gap: 4px;
+       179 +.btn-primary {
+       180 +  background: linear-gradient(135deg, var(--cyan), #0ea5e9);
+       181 +  color: var(--bg0); border-color: transparent;
+       182 +  box-shadow: 0 4px 22px rgba(34,211,238,.28);
+       183  }
+       365 -.stat-val {
+       366 -  font-family: var(--font-d);
+       367 -  font-size: 2.3rem;
+       368 -  font-weight: 800;
+       369 -  line-height: 1;
+       370 -  background: linear-gradient(135deg, #3b82f6, #a78bfa);
+       371 -  -webkit-background-clip: text;
+       372 -  -webkit-text-fill-color: transparent;
+       373 -  background-clip: text;
+       184 +.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(34,211,238,.45); }
+       185 +.btn-ghost {
+       186 +  background: transparent; color: var(--t1);
+       187 +  border: 1px solid rgba(255,255,255,.18);
+       188  }
+       375 -.stat-plus {
+       376 -  font-family: var(--font-d);
+       377 -  font-size: 1.4rem;
+       378 -  font-weight: 700;
+       379 -  color: var(--blue);
+       380 -  line-height: 1;
+       381 -  align-self: flex-start;
+       382 -  margin-top: 2px;
+       383 -}
+       384 -.stat-label {
+       385 -  font-size: .76rem;
+       386 -  color: var(--text-3);
+       387 -  text-transform: uppercase;
+       388 -  letter-spacing: .06em;
+       389 -  font-weight: 500;
+       390 -}
+       391 -.stat-sep {
+       392 -  width: 1px;
+       393 -  height: 44px;
+       394 -  background: var(--border);
+       395 -}
+       189 +.btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-2px); backgr
+           +ound: var(--cyan-d); }
+       190 +.btn-lg { padding: 15px 34px; font-size: 15.5px; }
+       191
+       397 -/* CTAs */
+       398 -.hero-ctas {
+       399 -  display: flex;
+       400 -  gap: 14px;
+       401 -  justify-content: center;
+       402 -  flex-wrap: wrap;
+       192 +/* Stats */
+       193 +.hero-stats {
+       194 +  display: flex; align-items: center; justify-content: center; gap: 36px;
+       195 +  animation: fadeUp .75s var(--ease) .5s both;
+       196  }
+       404 -
+       405 -/* Scroll indicator */
+       406 -.hero-scroll {
+       407 -  position: absolute;
+       408 -  bottom: 28px;
+       409 -  left: 50%;
+       410 -  transform: translateX(-50%);
+       197 +.stat { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+       198 +.stat-num {
+       199 +  font-family: var(--fd); font-size: 34px; font-weight: 800;
+       200 +  background: linear-gradient(135deg, var(--cyan), var(--purple));
+       201 +  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+       202  }
+       203 +.stat-label { font-size: 11.5px; color: var(--t3); font-weight: 600; text-transform: uppercase; lette
+           +r-spacing: .06em; }
+       204 +.stat-sep { width: 1px; height: 38px; background: var(--border); }
+       205 +
+       206 +/* Scroll mouse */
+       207 +.hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 1;
+           +}
+       208  .scroll-mouse {
+       413 -  width: 24px; height: 40px;
+       414 -  border: 2px solid rgba(255,255,255,.14);
+       415 -  border-radius: 12px;
+       416 -  display: flex;
+       417 -  align-items: flex-start;
+       418 -  justify-content: center;
+       419 -  padding-top: 5px;
+       209 +  width: 26px; height: 42px; border: 2px solid var(--border-h);
+       210 +  border-radius: 13px; display: flex; justify-content: center; padding-top: 7px;
+       211  }
+       421 -.scroll-wheel {
+       422 -  width: 4px; height: 8px;
+       423 -  background: var(--blue);
+       424 -  border-radius: 2px;
+       425 -  animation: scrollAnim 2s ease-in-out infinite;
+       212 +.scroll-mouse span {
+       213 +  width: 4px; height: 7px; background: var(--cyan);
+       214 +  border-radius: 2px; animation: scrollDown 2s ease infinite;
+       215  }
+       427 -@keyframes scrollAnim {
+       428 -  0%   { transform: translateY(0); opacity: 1; }
+       429 -  80%  { transform: translateY(14px); opacity: 0; }
+       430 -  100% { transform: translateY(0); opacity: 0; }
+       431 -}
+       216 +@keyframes scrollDown { 0%{transform:translateY(0);opacity:1} 100%{transform:translateY(13px);opacity
+           +:0} }
+       217
+       433 -/* ================================================================
+       434 -   ABOUT
+       435 -   ================================================================ */
+       436 -.about-grid {
+       437 -  display: grid;
+       438 -  grid-template-columns: 3fr 2fr;
+       439 -  gap: 56px;
+       440 -  align-items: start;
+       218 +/* ── Section common ────────────────────────────────── */
+       219 +.section-header { text-align: center; margin-bottom: 64px; }
+       220 +.section-tag {
+       221 +  display: inline-block; padding: 5px 15px;
+       222 +  background: var(--cyan-d); color: var(--cyan);
+       223 +  border: 1px solid var(--border); border-radius: 100px;
+       224 +  font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+       225 +  margin-bottom: 14px;
+       226  }
+       227 +.section-title { font-size: clamp(26px,5vw,40px); color: var(--t1); }
+       228 +.section-sub   { margin-top: 10px; font-size: 15px; color: var(--t2); }
+       229
+       443 -.about-lead {
+       444 -  font-size: 1.08rem;
+       445 -  color: var(--text);
+       446 -  line-height: 1.78;
+       447 -  margin-bottom: 18px;
+       448 -}
+       449 -.about-lead strong { color: var(--blue-light); font-weight: 600; }
+       230 +/* ── Reveal animations ─────────────────────────────── */
+       231 +.reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s var(--ease), transform .6
+           +5s var(--ease); }
+       232 +.reveal.visible { opacity: 1; transform: translateY(0); }
+       233
+       451 -.about-body {
+       452 -  font-size: .97rem;
+       453 -  color: var(--text-2);
+       454 -  line-height: 1.8;
+       455 -  margin-bottom: 16px;
+       456 -}
+       457 -.about-body strong { color: var(--text); font-weight: 600; }
+       234 +@keyframes fadeDown { from{opacity:0;transform:translateY(-18px)} to{opacity:1;transform:translateY(0
+           +)} }
+       235 +@keyframes fadeUp   { from{opacity:0;transform:translateY(26px)}  to{opacity:1;transform:translateY(0
+           +)} }
+       236
+       459 -.about-chips {
+       460 -  display: flex;
+       461 -  flex-wrap: wrap;
+       462 -  gap: 9px;
+       463 -  margin-top: 26px;
+       464 -}
+       465 -.about-chips span {
+       466 -  font-size: .79rem;
+       467 -  font-weight: 500;
+       468 -  color: var(--text-2);
+       469 -  background: var(--bg-card);
+       470 -  border: 1px solid var(--border);
+       471 -  padding: 5px 13px;
+       472 -  border-radius: 100px;
+       473 -  transition: border-color var(--t), color var(--t), background var(--t);
+       474 -  cursor: default;
+       475 -}
+       476 -.about-chips span:hover {
+       477 -  border-color: var(--blue-border);
+       478 -  color: var(--blue-light);
+       479 -  background: var(--blue-dim);
+       480 -}
+       237 +/* ── About ─────────────────────────────────────────── */
+       238 +.about { background: linear-gradient(180deg, var(--bg0), var(--bg1)); }
+       239 +.about-grid { display: grid; grid-template-columns: 1fr 360px; gap: 56px; align-items: start; }
+       240
+       482 -/* Info card */
+       483 -.info-card {
+       484 -  background: var(--bg-card);
+       485 -  border: 1px solid var(--border);
+       486 -  border-radius: var(--r);
+       487 -  padding: 26px;
+       488 -  margin-bottom: 18px;
+       489 -}
+       490 -.info-row {
+       491 -  display: flex;
+       492 -  align-items: center;
+       493 -  gap: 14px;
+       494 -  padding: 11px 0;
+       495 -  border-bottom: 1px solid var(--border);
+       496 -}
+       497 -.info-row:last-child { border-bottom: none; padding-bottom: 0; }
+       498 -.info-row:first-child { padding-top: 0; }
+       241 +.about-lead  { font-size: 17.5px; line-height: 1.8; margin-bottom: 18px; }
+       242 +.about-body p { color: var(--t2); font-size: 15px; margin-bottom: 15px; line-height: 1.85; }
+       243 +.about-body p:last-of-type { margin-bottom: 0; }
+       244 +.about-lead strong, .about-body p strong { color: var(--t1); }
+       245
+       500 -.info-ico { font-size: 1.25rem; width: 32px; text-align: center; flex-shrink: 0; }
+       501 -.info-row > div { display: flex; flex-direction: column; gap: 2px; }
+       502 -.info-lbl {
+       503 -  font-size: .7rem;
+       504 -  text-transform: uppercase;
+       505 -  letter-spacing: .07em;
+       506 -  color: var(--text-3);
+       507 -  font-weight: 600;
+       246 +.about-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 28px; }
+       247 +.tag {
+       248 +  padding: 5px 13px; background: var(--card);
+       249 +  border: 1px solid var(--border); border-radius: 100px;
+       250 +  font-size: 12.5px; font-weight: 500; color: var(--t2);
+       251 +  transition: border-color var(--dur), color var(--dur), background var(--dur);
+       252  }
+       509 -.info-val { font-size: .92rem; color: var(--text); font-weight: 500; }
+       510 -.info-link { color: var(--blue-light); transition: color var(--t); }
+       511 -.info-link:hover { color: var(--blue); }
+       253 +.tag:hover { border-color: var(--cyan); color: var(--cyan); background: var(--cyan-d); }
+       254
+       513 -/* Language card */
+       514 -.lang-card {
+       515 -  background: var(--bg-card);
+       516 -  border: 1px solid var(--border);
+       517 -  border-radius: var(--r);
+       518 -  padding: 24px;
+       255 +.info-card {
+       256 +  background: var(--card); border: 1px solid var(--border);
+       257 +  border-radius: var(--rl); padding: 28px;
+       258  }
+       520 -.lang-title {
+       521 -  font-size: .72rem;
+       522 -  text-transform: uppercase;
+       523 -  letter-spacing: .1em;
+       524 -  color: var(--text-3);
+       525 -  font-weight: 700;
+       526 -  margin-bottom: 18px;
+       259 +.info-card-label {
+       260 +  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em;
+       261 +  color: var(--t3); margin-bottom: 20px;
+       262  }
+       528 -.lang-row {
+       529 -  display: flex;
+       530 -  align-items: center;
+       531 -  gap: 10px;
+       532 -  margin-bottom: 13px;
+       533 -}
+       534 -.lang-row:last-child { margin-bottom: 0; }
+       535 -.lang-name { font-size: .87rem; color: var(--text-2); width: 58px; flex-shrink: 0; }
+       536 -.lang-track {
+       537 -  flex: 1;
+       538 -  height: 5px;
+       539 -  background: rgba(255,255,255,.06);
+       540 -  border-radius: 3px;
+       541 -  overflow: hidden;
+       542 -}
+       543 -.lang-bar {
+       544 -  height: 100%;
+       545 -  width: 0;
+       546 -  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+       547 -  border-radius: 3px;
+       548 -  transition: width 1.1s var(--ease);
+       549 -}
+       550 -.lang-lvl {
+       551 -  font-size: .74rem;
+       552 -  color: var(--text-3);
+       553 -  width: 78px;
+       554 -  text-align: right;
+       555 -  flex-shrink: 0;
+       556 -}
+       263 +.info-list { list-style: none; display: flex; flex-direction: column; gap: 15px; margin-bottom: 26px;
+           + }
+       264 +.info-list li { display: flex; align-items: flex-start; gap: 11px; }
+       265 +.info-ico { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+       266 +.info-key { display: block; font-size: 10.5px; color: var(--t3); text-transform: uppercase; letter-sp
+           +acing: .08em; font-weight: 700; margin-bottom: 2px; }
+       267 +.info-val { display: block; font-size: 13.5px; font-weight: 500; color: var(--t1); }
+       268 +.info-link:hover { color: var(--cyan); }
+       269
+       558 -/* ================================================================
+       559 -   SKILLS
+       560 -   ================================================================ */
+       561 -.skills-grid {
+       562 -  display: grid;
+       563 -  grid-template-columns: repeat(2, 1fr);
+       564 -  gap: 20px;
+       565 -  margin-bottom: 44px;
+       566 -}
+       270 +.lang-title { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em;
+           +color: var(--t3); margin-bottom: 14px; }
+       271 +.lang-item { display: grid; grid-template-columns: 60px 1fr 90px; align-items: center; gap: 10px; mar
+           +gin-bottom: 11px; }
+       272 +.lang-name { font-size: 13px; font-weight: 500; }
+       273 +.lang-track { height: 3px; background: rgba(255,255,255,.07); border-radius: 2px; overflow: hidden; }
+       274 +.lang-fill { height: 100%; background: linear-gradient(90deg, var(--cyan), var(--purple)); border-rad
+           +ius: 2px; width: 0; transition: width 1.4s var(--ease); }
+       275 +.lang-lvl { font-size: 11px; color: var(--t3); text-align: right; }
+       276
+       277 +/* ── Skills ────────────────────────────────────────── */
+       278 +.skills { background: var(--bg1); }
+       279 +.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); gap: 22px;
+           + }
+       280 +
+       281  .skill-card {
+       569 -  background: var(--bg-card);
+       570 -  border: 1px solid var(--border);
+       571 -  border-radius: var(--r);
+       572 -  padding: 30px;
+       573 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+       282 +  background: var(--card); border: 1px solid var(--border);
+       283 +  border-radius: var(--rl); padding: 26px;
+       284 +  transition: border-color var(--dur), transform var(--dur), box-shadow var(--dur), background var(--
+           +dur);
+       285 +  position: relative; overflow: hidden;
+       286  }
+       575 -.skill-card:hover {
+       576 -  transform: translateY(-4px);
+       577 -  border-color: var(--blue-border);
+       578 -  box-shadow: 0 8px 32px rgba(0,0,0,.35);
+       287 +.skill-card::before {
+       288 +  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+       289 +  background: linear-gradient(90deg, var(--cyan), var(--purple));
+       290 +  transform: scaleX(0); transform-origin: left; transition: transform var(--dur) var(--ease);
+       291  }
+       580 -.skill-card-icon { font-size: 2rem; margin-bottom: 14px; }
+       581 -.skill-card h3 {
+       582 -  font-family: var(--font-d);
+       583 -  font-size: 1.05rem;
+       584 -  font-weight: 600;
+       585 -  color: var(--text);
+       586 -  margin-bottom: 16px;
+       587 -}
+       588 -.skill-card ul { display: flex; flex-direction: column; gap: 9px; }
+       589 -.skill-card li {
+       590 -  font-size: .88rem;
+       591 -  color: var(--text-2);
+       592 -  padding-left: 16px;
+       593 -  position: relative;
+       594 -  line-height: 1.55;
+       595 -}
+       596 -.skill-card li::before {
+       597 -  content: '';
+       598 -  position: absolute;
+       599 -  left: 0; top: 8px;
+       600 -  width: 5px; height: 5px;
+       601 -  background: var(--blue);
+       602 -  border-radius: 50%;
+       603 -}
+       292 +.skill-card:hover { border-color: var(--border-h); transform: translateY(-4px); box-shadow: var(--sha
+           +dow-c); background: var(--card-h); }
+       293 +.skill-card:hover::before { transform: scaleX(1); }
+       294
+       605 -/* Subsections (tools + brands) */
+       606 -.subsection { text-align: center; margin-top: 44px; }
+       607 -.subsection-title {
+       608 -  font-size: .78rem;
+       609 -  text-transform: uppercase;
+       610 -  letter-spacing: .1em;
+       611 -  color: var(--text-3);
+       612 -  font-weight: 700;
+       613 -  margin-bottom: 18px;
+       614 -}
+       295 +.sk-icon { font-size: 30px; margin-bottom: 14px; display: block; }
+       296 +.skill-card h3 { font-size: 16px; margin-bottom: 14px; color: var(--t1); }
+       297 +.sk-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+       298 +.sk-list li { font-size: 13.5px; color: var(--t2); padding-left: 15px; position: relative; }
+       299 +.sk-list li::before { content: '→'; position: absolute; left: 0; color: var(--cyan); font-size: 11px;
+           + top: 1px; }
+       300
+       616 -.tools-flex {
+       617 -  display: flex;
+       618 -  flex-wrap: wrap;
+       619 -  gap: 12px;
+       620 -  justify-content: center;
+       301 +.brand-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+       302 +.brand-chip {
+       303 +  padding: 3px 9px; background: var(--cyan-d);
+       304 +  border: 1px solid var(--border); border-radius: 6px;
+       305 +  font-size: 10.5px; font-weight: 800; color: var(--cyan); letter-spacing: .04em;
+       306  }
+       622 -.tool-pill {
+       623 -  display: flex;
+       624 -  align-items: center;
+       625 -  gap: 9px;
+       626 -  background: var(--bg-card);
+       627 -  border: 1px solid var(--border);
+       628 -  border-radius: var(--r-sm);
+       629 -  padding: 10px 18px;
+       630 -  font-size: .87rem;
+       631 -  color: var(--text-2);
+       632 -  transition: border-color var(--t), color var(--t);
+       633 -  cursor: default;
+       634 -}
+       635 -.tool-pill span { font-size: 1.05rem; }
+       636 -.tool-pill:hover { border-color: var(--blue-border); color: var(--text); }
+       307
+       638 -.brands-flex {
+       639 -  display: flex;
+       640 -  flex-wrap: wrap;
+       641 -  gap: 10px;
+       642 -  justify-content: center;
+       643 -}
+       644 -.brand {
+       645 -  background: var(--bg-card);
+       646 -  border: 1px solid var(--border);
+       647 -  border-radius: var(--r-sm);
+       648 -  padding: 9px 20px;
+       649 -  font-size: .88rem;
+       650 -  font-weight: 700;
+       651 -  color: var(--blue-light);
+       652 -  letter-spacing: .04em;
+       653 -  transition: background var(--t), border-color var(--t);
+       654 -  cursor: default;
+       655 -}
+       656 -.brand:hover {
+       657 -  background: var(--blue-dim);
+       658 -  border-color: var(--blue-border);
+       659 -}
+       308 +/* ── Experience ────────────────────────────────────── */
+       309 +.experience { background: var(--bg0); }
+       310 +.timeline { max-width: 880px; margin: 0 auto; }
+       311
+       661 -/* ================================================================
+       662 -   EXPERIENCE — Timeline
+       663 -   ================================================================ */
+       664 -.timeline { max-width: 820px; margin: 0 auto; }
+       665 -
+       666 -.tl-item {
+       667 -  display: flex;
+       668 -  gap: 28px;
+       669 -}
+       670 -.tl-item + .tl-item { margin-top: 36px; }
+       671 -
+       672 -.tl-marker {
+       673 -  display: flex;
+       674 -  flex-direction: column;
+       675 -  align-items: center;
+       676 -  flex-shrink: 0;
+       677 -  padding-top: 4px;
+       678 -}
+       312 +.tl-item { display: grid; grid-template-columns: 44px 1fr; gap: 22px; margin-bottom: 44px; }
+       313 +.tl-marker { display: flex; flex-direction: column; align-items: center; padding-top: 2px; }
+       314  .tl-dot {
+       680 -  width: 15px; height: 15px;
+       681 -  background: var(--blue);
+       682 -  border-radius: 50%;
+       683 -  border: 3px solid var(--bg);
+       684 -  box-shadow: 0 0 0 3px rgba(59,130,246,.28);
+       685 -  z-index: 1;
+       686 -  flex-shrink: 0;
+       315 +  width: 15px; height: 15px; background: var(--cyan); border-radius: 50%;
+       316 +  border: 3px solid var(--bg0); outline: 2px solid var(--cyan);
+       317 +  flex-shrink: 0; box-shadow: 0 0 10px var(--cyan-g);
+       318  }
+       688 -.tl-line {
+       689 -  flex: 1;
+       690 -  width: 2px;
+       691 -  background: linear-gradient(to bottom, var(--blue), transparent);
+       692 -  margin-top: 6px;
+       693 -  min-height: 50px;
+       694 -}
+       319 +.tl-line { width: 2px; flex: 1; background: linear-gradient(to bottom, var(--cyan), transparent); mar
+           +gin-top: 7px; min-height: 36px; }
+       320
+       321  .tl-card {
+       697 -  flex: 1;
+       698 -  background: var(--bg-card);
+       699 -  border: 1px solid var(--border);
+       700 -  border-radius: var(--r);
+       701 -  padding: 28px 30px;
+       702 -  transition: border-color var(--t), box-shadow var(--t);
+       322 +  background: var(--card); border: 1px solid var(--border);
+       323 +  border-radius: var(--rl); padding: 26px;
+       324 +  transition: border-color var(--dur), box-shadow var(--dur);
+       325  }
+       704 -.tl-card:hover {
+       705 -  border-color: var(--blue-border);
+       706 -  box-shadow: 0 6px 28px rgba(0,0,0,.3);
+       707 -}
+       326 +.tl-card:hover { border-color: var(--border-h); box-shadow: var(--shadow-c); }
+       327
+       328  .tl-head {
+       710 -  display: flex;
+       711 -  justify-content: space-between;
+       712 -  align-items: flex-start;
+       713 -  gap: 14px;
+       714 -  margin-bottom: 18px;
+       715 -  flex-wrap: wrap;
+       329 +  display: flex; justify-content: space-between; align-items: flex-start;
+       330 +  gap: 16px; flex-wrap: wrap; margin-bottom: 18px;
+       331  }
+       717 -
+       718 -.tl-role {
+       719 -  font-family: var(--font-d);
+       720 -  font-size: 1.12rem;
+       721 -  font-weight: 600;
+       722 -  color: var(--text);
+       723 -  margin-bottom: 5px;
+       724 -  display: flex;
+       725 -  align-items: center;
+       726 -  gap: 10px;
+       727 -  flex-wrap: wrap;
+       728 -  line-height: 1.3;
+       332 +.tl-head h3 { font-size: 18px; color: var(--t1); margin-bottom: 4px; }
+       333 +.tl-company { font-size: 13.5px; color: var(--cyan); font-weight: 500; margin-bottom: 6px; }
+       334 +.tl-badge {
+       335 +  display: inline-block; padding: 2px 10px;
+       336 +  background: var(--purp-d); color: var(--purple);
+       337 +  border: 1px solid rgba(129,140,248,.28); border-radius: 100px;
+       338 +  font-size: 11px; font-weight: 700;
+       339  }
+       730 -.badge-stage {
+       731 -  font-size: .69rem;
+       732 -  font-weight: 700;
+       733 -  text-transform: uppercase;
+       734 -  letter-spacing: .07em;
+       735 -  color: var(--amber);
+       736 -  background: var(--amber-dim);
+       737 -  border: 1px solid var(--amber-border);
+       738 -  padding: 3px 10px;
+       739 -  border-radius: 100px;
+       340 +.tl-date {
+       341 +  font-size: 12.5px; color: var(--t3); font-weight: 600;
+       342 +  background: var(--bg1); padding: 5px 13px; border-radius: 100px;
+       343 +  white-space: nowrap; border: 1px solid var(--border); height: fit-content; flex-shrink: 0;
+       344  }
+       741 -.tl-company { font-size: .9rem; color: var(--blue-light); font-weight: 500; }
+       742 -.tl-period {
+       743 -  font-size: .78rem;
+       744 -  font-weight: 600;
+       745 -  color: var(--text-3);
+       746 -  background: var(--bg);
+       747 -  border: 1px solid var(--border);
+       748 -  padding: 5px 13px;
+       749 -  border-radius: 100px;
+       750 -  white-space: nowrap;
+       751 -  flex-shrink: 0;
+       752 -  align-self: flex-start;
+       753 -}
+       345 +.tl-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+       346 +.tl-list li { font-size: 14px; color: var(--t2); padding-left: 18px; position: relative; line-height:
+           + 1.65; }
+       347 +.tl-list li::before { content: '▸'; position: absolute; left: 0; color: var(--cyan); }
+       348 +.tl-list strong { color: var(--cyan); font-weight: 600; }
+       349
+       755 -.tl-tasks { display: flex; flex-direction: column; gap: 7px; margin-bottom: 18px; }
+       756 -.tl-tasks li {
+       757 -  font-size: .9rem;
+       758 -  color: var(--text-2);
+       759 -  padding-left: 18px;
+       760 -  position: relative;
+       761 -  line-height: 1.6;
+       762 -}
+       763 -.tl-tasks li::before {
+       764 -  content: '▸';
+       765 -  position: absolute;
+       766 -  left: 0; top: 1px;
+       767 -  color: var(--blue);
+       768 -  font-size: .76rem;
+       769 -}
+       770 -.tl-tasks li strong { color: var(--text); }
+       350 +/* ── Projects ──────────────────────────────────────── */
+       351 +.projects { background: var(--bg1); }
+       352 +.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(308px, 1fr)); gap: 22p
+           +x; margin-bottom: 28px; }
+       353
+       772 -.tl-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+       773 -.tl-chips span {
+       774 -  font-size: .75rem;
+       775 -  font-weight: 500;
+       776 -  color: var(--text-3);
+       777 -  background: var(--bg);
+       778 -  border: 1px solid var(--border);
+       779 -  padding: 4px 11px;
+       780 -  border-radius: 100px;
+       781 -}
+       782 -
+       783 -/* ================================================================
+       784 -   PROJECTS
+       785 -   ================================================================ */
+       786 -.projects-grid {
+       787 -  display: grid;
+       788 -  grid-template-columns: repeat(3, 1fr);
+       789 -  gap: 20px;
+       790 -}
+       791 -
+       354  .proj-card {
+       793 -  background: var(--bg-card);
+       794 -  border: 1px solid var(--border);
+       795 -  border-radius: var(--r);
+       796 -  padding: 28px 24px;
+       797 -  position: relative;
+       798 -  overflow: hidden;
+       799 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+       355 +  background: var(--card); border: 1px solid var(--border);
+       356 +  border-radius: var(--rl); padding: 26px;
+       357 +  display: flex; flex-direction: column; gap: 14px;
+       358 +  transition: border-color var(--dur), transform var(--dur), box-shadow var(--dur), background var(--
+           +dur);
+       359  }
+       801 -.proj-card::after {
+       802 -  content: '';
+       803 -  position: absolute;
+       804 -  top: 0; left: 0; right: 0;
+       805 -  height: 3px;
+       806 -  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+       807 -  transform: scaleX(0);
+       808 -  transform-origin: left;
+       809 -  transition: transform var(--t) var(--ease);
+       810 -}
+       811 -.proj-card:hover::after { transform: scaleX(1); }
+       812 -.proj-card:hover {
+       813 -  transform: translateY(-6px);
+       814 -  border-color: var(--blue-border);
+       815 -  box-shadow: 0 12px 36px rgba(0,0,0,.4), 0 0 30px rgba(59,130,246,.12);
+       816 -}
+       360 +.proj-card:hover { border-color: var(--border-h); transform: translateY(-6px); box-shadow: 0 20px 56p
+           +x rgba(0,0,0,.4), var(--shadow-c); background: var(--card-h); }
+       361
+       818 -.proj-num {
+       819 -  font-family: var(--font-d);
+       820 -  font-size: 3rem;
+       821 -  font-weight: 800;
+       822 -  color: rgba(59,130,246,.07);
+       823 -  line-height: 1;
+       824 -  display: block;
+       825 -  margin-bottom: 8px;
+       826 -  transition: color var(--t);
+       362 +.proj-top { display: flex; align-items: center; justify-content: space-between; }
+       363 +.proj-emoji { font-size: 26px; }
+       364 +.proj-cat {
+       365 +  font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .09em;
+       366 +  color: var(--cyan); background: var(--cyan-d); padding: 3px 11px;
+       367 +  border-radius: 100px; border: 1px solid var(--border);
+       368  }
+       828 -.proj-card:hover .proj-num { color: rgba(59,130,246,.14); }
+       829 -
+       830 -.proj-icon { font-size: 1.9rem; margin-bottom: 14px; }
+       831 -
+       832 -.proj-card h3 {
+       833 -  font-family: var(--font-d);
+       834 -  font-size: .97rem;
+       835 -  font-weight: 600;
+       836 -  color: var(--text);
+       837 -  margin-bottom: 10px;
+       838 -  line-height: 1.4;
+       839 -}
+       840 -.proj-card p {
+       841 -  font-size: .85rem;
+       842 -  color: var(--text-2);
+       843 -  line-height: 1.72;
+       844 -  margin-bottom: 18px;
+       845 -}
+       369 +.proj-card h3 { font-size: 16.5px; color: var(--t1); line-height: 1.35; }
+       370 +.proj-card p  { font-size: 13.5px; color: var(--t2); line-height: 1.72; flex: 1; }
+       371  .proj-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+       372  .proj-tags span {
+       848 -  font-size: .72rem;
+       849 -  font-weight: 600;
+       850 -  color: var(--blue-light);
+       851 -  background: var(--blue-dim);
+       852 -  border: 1px solid rgba(59,130,246,.18);
+       853 -  padding: 3px 10px;
+       854 -  border-radius: 100px;
+       373 +  padding: 3px 11px; background: var(--bg0);
+       374 +  border: 1px solid var(--border); border-radius: 100px;
+       375 +  font-size: 11.5px; color: var(--t3);
+       376 +  transition: color var(--dur), border-color var(--dur);
+       377  }
+       378 +.proj-card:hover .proj-tags span { color: var(--t2); border-color: rgba(34,211,238,.2); }
+       379 +.proj-note { text-align: center; font-size: 13px; color: var(--t3); font-style: italic; }
+       380
+       857 -.projects-note {
+       858 -  display: flex;
+       859 -  align-items: center;
+       860 -  justify-content: center;
+       861 -  gap: 10px;
+       862 -  margin-top: 36px;
+       863 -  padding: 16px 28px;
+       864 -  background: var(--bg-card);
+       865 -  border: 1px solid var(--border);
+       866 -  border-radius: var(--r-sm);
+       867 -  font-size: .87rem;
+       868 -  color: var(--text-2);
+       869 -  max-width: 480px;
+       870 -  margin-left: auto;
+       871 -  margin-right: auto;
+       872 -}
+       381 +/* ── Education ─────────────────────────────────────── */
+       382 +.education { background: var(--bg0); }
+       383 +.edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px; ma
+           +x-width: 860px; margin: 0 auto; }
+       384
+       874 -/* ================================================================
+       875 -   EDUCATION
+       876 -   ================================================================ */
+       877 -.edu-grid {
+       878 -  display: grid;
+       879 -  grid-template-columns: repeat(2, 1fr);
+       880 -  gap: 24px;
+       881 -  max-width: 820px;
+       882 -  margin: 0 auto;
+       883 -}
+       884 -
+       385  .edu-card {
+       886 -  background: var(--bg-card);
+       887 -  border: 1px solid var(--border);
+       888 -  border-radius: var(--r);
+       889 -  padding: 32px;
+       890 -  position: relative;
+       891 -  overflow: hidden;
+       892 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+       386 +  background: var(--card); border: 1px solid var(--border);
+       387 +  border-radius: var(--rl); padding: 30px;
+       388 +  transition: border-color var(--dur), transform var(--dur), box-shadow var(--dur);
+       389 +  position: relative; overflow: hidden;
+       390  }
+       391  .edu-card::after {
+       895 -  content: '';
+       896 -  position: absolute;
+       897 -  bottom: 0; left: 0; right: 0;
+       898 -  height: 3px;
+       899 -  background: linear-gradient(90deg, var(--amber), #ef4444);
+       900 -  transform: scaleX(0);
+       901 -  transform-origin: left;
+       902 -  transition: transform var(--t) var(--ease);
+       392 +  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+       393 +  background: linear-gradient(90deg, var(--cyan), var(--purple));
+       394 +  transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
+       395  }
+       396 +.edu-card:hover { border-color: var(--border-h); transform: translateY(-4px); box-shadow: var(--shado
+           +w-c); }
+       397  .edu-card:hover::after { transform: scaleX(1); }
+       905 -.edu-card:hover {
+       906 -  transform: translateY(-4px);
+       907 -  border-color: var(--amber-border);
+       908 -  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+       909 -}
+       398
+       911 -.edu-top {
+       912 -  display: flex;
+       913 -  align-items: center;
+       914 -  justify-content: space-between;
+       915 -  margin-bottom: 18px;
+       916 -}
+       399  .edu-year {
+       918 -  font-size: .77rem;
+       919 -  font-weight: 700;
+       920 -  color: var(--amber);
+       921 -  background: var(--amber-dim);
+       922 -  border: 1px solid var(--amber-border);
+       923 -  padding: 4px 13px;
+       924 -  border-radius: 100px;
+       400 +  display: inline-block; font-size: 11px; font-weight: 700;
+       401 +  color: var(--cyan); background: var(--cyan-d);
+       402 +  padding: 3px 12px; border-radius: 100px; border: 1px solid var(--border);
+       403 +  margin-bottom: 14px;
+       404  }
+       926 -.edu-ico { font-size: 2.2rem; }
+       405 +.edu-ico   { font-size: 34px; margin-bottom: 14px; }
+       406 +.edu-card h3 { font-size: 16px; color: var(--t1); line-height: 1.4; margin-bottom: 8px; }
+       407 +.edu-school  { font-size: 13.5px; color: var(--cyan); font-weight: 600; margin-bottom: 10px; }
+       408 +.edu-desc    { font-size: 13.5px; color: var(--t2); line-height: 1.72; }
+       409
+       928 -.edu-card h3 {
+       929 -  font-family: var(--font-d);
+       930 -  font-size: 1rem;
+       931 -  font-weight: 600;
+       932 -  color: var(--text);
+       933 -  margin-bottom: 7px;
+       934 -  line-height: 1.4;
+       935 -}
+       936 -.edu-school {
+       937 -  font-size: .88rem;
+       938 -  color: var(--blue-light);
+       939 -  font-weight: 500;
+       940 -  margin-bottom: 10px;
+       941 -}
+       942 -.edu-desc { font-size: .84rem; color: var(--text-2); line-height: 1.65; }
+       410 +/* ── Contact ───────────────────────────────────────── */
+       411 +.contact { background: var(--bg1); }
+       412 +.contact-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 36px; align-items: start; }
+       413
+       944 -/* ================================================================
+       945 -   CONTACT
+       946 -   ================================================================ */
+       947 -.contact-grid {
+       948 -  display: grid;
+       949 -  grid-template-columns: 1fr 1fr;
+       950 -  gap: 44px;
+       951 -  align-items: start;
+       414 +.contact-cards { display: flex; flex-direction: column; gap: 14px; }
+       415 +.cc-card {
+       416 +  display: flex; align-items: center; gap: 16px;
+       417 +  background: var(--card); border: 1px solid var(--border);
+       418 +  border-radius: var(--r); padding: 18px 22px;
+       419 +  transition: border-color var(--dur), background var(--dur), transform var(--dur), box-shadow var(--
+           +dur);
+       420  }
+       421 +a.cc-card:hover { border-color: var(--border-h); background: var(--card-h); transform: translateX(5px
+           +); box-shadow: var(--shadow-c); }
+       422 +.cc-ico { font-size: 22px; flex-shrink: 0; }
+       423 +.cc-label { display: block; font-size: 10.5px; color: var(--t3); text-transform: uppercase; letter-sp
+           +acing: .08em; font-weight: 700; margin-bottom: 3px; }
+       424 +.cc-val { display: block; font-size: 13.5px; font-weight: 500; color: var(--t1); }
+       425 +a.cc-card:hover .cc-val { color: var(--cyan); }
+       426 +.cc-arrow { font-size: 18px; color: var(--t3); margin-left: auto; transition: color var(--dur), trans
+           +form var(--dur); }
+       427 +a.cc-card:hover .cc-arrow { color: var(--cyan); transform: translateX(4px); }
+       428 +.cc-static { cursor: default; }
+       429
+       954 -.contact-card {
+       955 -  display: flex;
+       956 -  align-items: center;
+       957 -  gap: 16px;
+       958 -  background: var(--bg-card);
+       959 -  border: 1px solid var(--border);
+       960 -  border-radius: var(--r);
+       961 -  padding: 18px 22px;
+       962 -  color: inherit;
+       963 -  transition: transform var(--t) var(--ease), border-color var(--t), box-shadow var(--t);
+       964 -  margin-bottom: 12px;
+       430 +.pitch-card {
+       431 +  background: var(--card); border: 1px solid var(--border);
+       432 +  border-radius: var(--rl); padding: 38px;
+       433 +  position: relative; overflow: hidden;
+       434  }
+       966 -.contact-card:last-child { margin-bottom: 0; }
+       967 -.contact-card:not(.no-action):hover {
+       968 -  transform: translateX(6px);
+       969 -  border-color: var(--blue-border);
+       970 -  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+       435 +.pitch-card::before {
+       436 +  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+       437 +  background: linear-gradient(90deg, var(--cyan), var(--purple));
+       438  }
+       439 +.pitch-card h3 { font-size: 21px; color: var(--t1); margin-bottom: 14px; line-height: 1.35; }
+       440 +.pitch-card p  { font-size: 14.5px; color: var(--t2); line-height: 1.78; margin-bottom: 22px; }
+       441 +.pitch-list    { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 3
+           +0px; }
+       442 +.pitch-list li { font-size: 14px; color: var(--t2); display: flex; align-items: flex-start; gap: 10px
+           +; }
+       443 +.pitch-check   { color: var(--green); font-weight: 700; flex-shrink: 0; }
+       444
+       973 -.cc-icon {
+       974 -  font-size: 1.4rem;
+       975 -  width: 46px; height: 46px;
+       976 -  display: flex;
+       977 -  align-items: center;
+       978 -  justify-content: center;
+       979 -  background: var(--bg);
+       980 -  border-radius: var(--r-sm);
+       981 -  flex-shrink: 0;
+       982 -}
+       983 -.cc-body {
+       984 -  flex: 1;
+       985 -  display: flex;
+       986 -  flex-direction: column;
+       987 -  gap: 2px;
+       988 -}
+       989 -.cc-label {
+       990 -  font-size: .7rem;
+       991 -  text-transform: uppercase;
+       992 -  letter-spacing: .07em;
+       993 -  color: var(--text-3);
+       994 -  font-weight: 600;
+       995 -}
+       996 -.cc-value { font-size: .92rem; color: var(--text); font-weight: 500; }
+       445 +/* ── Footer ────────────────────────────────────────── */
+       446 +.footer { background: var(--bg0); border-top: 1px solid var(--border); padding: 44px 0 28px; }
+       447 +.footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 36px; fl
+           +ex-wrap: wrap; margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+       448 +.footer-logo { display: block; font-family: var(--fd); font-size: 20px; font-weight: 800; background:
+           + linear-gradient(135deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fil
+           +l-color: transparent; background-clip: text; margin-bottom: 7px; }
+       449 +.footer-brand p { font-size: 13px; color: var(--t3); line-height: 1.6; max-width: 280px; }
+       450 +.footer-nav { display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center; }
+       451 +.footer-nav a { font-size: 13.5px; color: var(--t2); transition: color var(--dur); }
+       452 +.footer-nav a:hover { color: var(--cyan); }
+       453 +.footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+       454 +.footer-bottom p { font-size: 12.5px; color: var(--t3); }
+       455
+       998 -.cc-arrow {
+       999 -  color: var(--blue);
+      1000 -  font-size: 1.15rem;
+      1001 -  transition: transform var(--t);
+      1002 -}
+      1003 -.contact-card:hover .cc-arrow { transform: translateX(4px); }
+      1004 -
+      1005 -.cta-box {
+      1006 -  background: var(--bg-card);
+      1007 -  border: 1px solid var(--border);
+      1008 -  border-radius: var(--r-lg);
+      1009 -  padding: 44px 40px;
+      1010 -  text-align: center;
+      1011 -}
+      1012 -.cta-box h3 {
+      1013 -  font-family: var(--font-d);
+      1014 -  font-size: 1.45rem;
+      1015 -  font-weight: 700;
+      1016 -  color: var(--text);
+      1017 -  margin-bottom: 14px;
+      1018 -  line-height: 1.3;
+      1019 -}
+      1020 -.cta-box p {
+      1021 -  font-size: .93rem;
+      1022 -  color: var(--text-2);
+      1023 -  line-height: 1.75;
+      1024 -  margin-bottom: 28px;
+      1025 -}
+      1026 -
+      1027 -/* ================================================================
+      1028 -   FOOTER
+      1029 -   ================================================================ */
+      1030 -footer {
+      1031 -  background: var(--bg);
+      1032 -  border-top: 1px solid var(--border);
+      1033 -  padding: 48px 0;
+      1034 -}
+      1035 -.footer-inner {
+      1036 -  text-align: center;
+      1037 -  display: flex;
+      1038 -  flex-direction: column;
+      1039 -  gap: 7px;
+      1040 -  align-items: center;
+      1041 -}
+      1042 -.footer-name {
+      1043 -  font-family: var(--font-d);
+      1044 -  font-size: 1.25rem;
+      1045 -  font-weight: 700;
+      1046 -  background: linear-gradient(135deg, #3b82f6, #a78bfa);
+      1047 -  -webkit-background-clip: text;
+      1048 -  -webkit-text-fill-color: transparent;
+      1049 -  background-clip: text;
+      1050 -}
+      1051 -.footer-role { font-size: .86rem; color: var(--text-2); }
+      1052 -.footer-copy { font-size: .78rem; color: var(--text-3); margin-top: 6px; }
+      1053 -
+      1054 -/* ================================================================
+      1055 -   RESPONSIVE
+      1056 -   ================================================================ */
+       456 +/* ── Responsive ────────────────────────────────────── */
+       457  @media (max-width: 1024px) {
+      1058 -  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+       458 +  .about-grid { grid-template-columns: 1fr; }
+       459 +  .about-sidebar { max-width: 480px; }
+       460  }
+       461
+      1061 -@media (max-width: 820px) {
+      1062 -  section { padding: 72px 0; }
+       462 +@media (max-width: 768px) {
+       463 +  .section { padding: 72px 0; }
+       464
+      1064 -  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+      1065 -  .skills-grid { grid-template-columns: 1fr; }
+      1066 -  .edu-grid { grid-template-columns: 1fr; }
+      1067 -  .contact-grid { grid-template-columns: 1fr; }
+      1068 -  .projects-grid { grid-template-columns: 1fr; }
+      1069 -
+      1070 -  /* Mobile nav */
+      1071 -  .nav-links {
+      1072 -    display: none;
+      1073 -    flex-direction: column;
+      1074 -    position: fixed;
+      1075 -    top: var(--nav-h);
+      1076 -    left: 0; right: 0;
+      1077 -    background: rgba(7,16,31,.97);
+      1078 -    backdrop-filter: blur(24px);
+      1079 -    -webkit-backdrop-filter: blur(24px);
+      1080 -    padding: 20px 24px 28px;
+       465 +  .nav-menu {
+       466 +    position: fixed; top: var(--nav); left: 0; right: 0; z-index: 899;
+       467 +    background: rgba(4,4,12,.97); backdrop-filter: blur(20px);
+       468 +    flex-direction: column; padding: 20px; gap: 4px;
+       469 +    transform: translateY(-110%); transition: transform .3s var(--ease);
+       470      border-bottom: 1px solid var(--border);
+      1082 -    gap: 4px;
+      1083 -    z-index: 800;
+       471    }
+      1085 -  .nav-links.open { display: flex; }
+      1086 -  .nav-links a { padding: 11px 16px; font-size: .95rem; }
+       472 +  .nav-menu.open { transform: translateY(0); }
+       473    .nav-toggle { display: flex; }
+       474
+       475    .hero-stats { gap: 20px; }
+       476 +  .stat-num { font-size: 28px; }
+       477
+      1091 -  .tl-card { padding: 22px; }
+      1092 -  .tl-head { flex-direction: column; }
+      1093 -
+      1094 -  .cta-box { padding: 30px 24px; }
+       478 +  .skills-grid    { grid-template-columns: 1fr; }
+       479 +  .tl-item        { grid-template-columns: 34px 1fr; gap: 14px; }
+       480 +  .tl-head        { flex-direction: column; }
+       481 +  .projects-grid  { grid-template-columns: 1fr; }
+       482 +  .contact-grid   { grid-template-columns: 1fr; }
+       483 +  .edu-grid       { grid-template-columns: 1fr; }
+       484 +  .footer-inner   { flex-direction: column; }
+       485 +  .footer-bottom  { flex-direction: column; text-align: center; }
+       486  }
+       487
+      1097 -@media (max-width: 520px) {
+      1098 -  .hero-name { font-size: clamp(2.6rem, 14vw, 3.5rem); }
+      1099 -  .hero-ctas { flex-direction: column; align-items: center; }
+      1100 -  .btn { width: 100%; max-width: 260px; justify-content: center; }
+      1101 -  .stat-sep { display: none; }
+      1102 -  .hero-stats { flex-direction: column; gap: 18px; }
+      1103 -  .section-head h2 { font-size: 1.65rem; }
+       488 +@media (max-width: 480px) {
+       489 +  .hero-actions { flex-direction: column; align-items: stretch; text-align: center; }
+       490 +  .hero-stats   { flex-direction: column; gap: 14px; }
+       491 +  .stat-sep     { width: 36px; height: 1px; }
+       492 +  .pitch-card   { padding: 26px 20px; }
+       493 +  .lang-item    { grid-template-columns: 56px 1fr 76px; gap: 8px; }
+       494  }
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ Overwrite file
+ portfolio-saber\script.js
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+    1 +'use strict';
+    2 +
+    3  /* ================================================================
+    4     SABER SLIMANI PORTFOLIO — script.js
+    5     ================================================================ */
+    6
+    5 -'use strict';
+    7 +/* ── Navbar scroll effect & active links ─────────────────────── */
+    8 +const navbar   = document.getElementById('navbar');
+    9 +const navLinks = document.querySelectorAll('.nav-link');
+   10 +const sections = Array.from(document.querySelectorAll('section[id]'));
+   11
+    7 -/* ── Navbar scroll effect ─────────────────────────────────── */
+    8 -const navbar = document.getElementById('navbar');
+    9 -window.addEventListener('scroll', () => {
+   10 -  navbar.classList.toggle('scrolled', window.scrollY > 30);
+   11 -}, { passive: true });
+   12 -
+   13 -/* ── Mobile menu ──────────────────────────────────────────── */
+   14 -const navToggle = document.getElementById('navToggle');
+   15 -const navLinks  = document.getElementById('navLinks');
+   16 -
+   17 -navToggle.addEventListener('click', () => {
+   18 -  const open = navLinks.classList.toggle('open');
+   19 -  const [s1, s2, s3] = navToggle.querySelectorAll('span');
+   20 -  if (open) {
+   21 -    s1.style.transform = 'rotate(45deg) translate(5px, 5px)';
+   22 -    s2.style.opacity   = '0';
+   23 -    s3.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+   12 +function onScroll() {
+   13 +  // Sticky style
+   14 +  if (window.scrollY > 40) {
+   15 +    navbar.classList.add('scrolled');
+   16    } else {
+   25 -    s1.style.transform = s2.style.opacity = s3.style.transform = '';
+   17 +    navbar.classList.remove('scrolled');
+   18    }
+   19 +
+   20 +  // Active link highlight
+   21 +  const mid = window.scrollY + window.innerHeight / 3;
+   22 +  let current = '';
+   23 +  sections.forEach(s => {
+   24 +    if (s.offsetTop <= mid) current = s.id;
+   25 +  });
+   26 +  navLinks.forEach(a => {
+   27 +    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+   28 +  });
+   29 +}
+   30 +
+   31 +window.addEventListener('scroll', onScroll, { passive: true });
+   32 +onScroll();
+   33 +
+   34 +/* ── Mobile menu ─────────────────────────────────────────────── */
+   35 +const toggle  = document.getElementById('nav-toggle');
+   36 +const navMenu = document.getElementById('nav-menu');
+   37 +
+   38 +toggle.addEventListener('click', () => {
+   39 +  const open = navMenu.classList.toggle('open');
+   40 +  toggle.classList.toggle('open', open);
+   41 +  toggle.setAttribute('aria-expanded', open);
+   42  });
+   43
+   29 -navLinks.querySelectorAll('a').forEach(a => {
+   44 +// Close on link click
+   45 +navLinks.forEach(a => {
+   46    a.addEventListener('click', () => {
+   31 -    navLinks.classList.remove('open');
+   32 -    navToggle.querySelectorAll('span').forEach(s => (s.style.transform = s.style.opacity = ''));
+   47 +    navMenu.classList.remove('open');
+   48 +    toggle.classList.remove('open');
+   49 +    toggle.setAttribute('aria-expanded', 'false');
+   50    });
+   51  });
+   52
+   36 -/* ── Scroll-reveal (Intersection Observer) ────────────────── */
+   37 -const revealObserver = new IntersectionObserver((entries) => {
+   38 -  entries.forEach(entry => {
+   39 -    if (!entry.isIntersecting) return;
+   53 +/* ── Typed text effect ───────────────────────────────────────── */
+   54 +const phrases = [
+   55 +  'Électronique Industrielle',
+   56 +  'Maintenance Industrielle',
+   57 +  'Variateurs de Fréquence',
+   58 +  'Diagnostic de Pannes',
+   59 +  'Systèmes Automatisés',
+   60 +];
+   61 +let pIdx = 0, cIdx = 0, deleting = false;
+   62 +const typedEl = document.querySelector('.typed-text');
+   63
+   41 -    // Stagger siblings in the same grid/flex parent
+   42 -    const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+   43 -    const idx = siblings.indexOf(entry.target);
+   44 -    const delay = Math.min(idx * 75, 360);
+   64 +function tick() {
+   65 +  const phrase = phrases[pIdx];
+   66 +  typedEl.textContent = phrase.slice(0, cIdx);
+   67
+   46 -    setTimeout(() => entry.target.classList.add('visible'), delay);
+   47 -    revealObserver.unobserve(entry.target);
+   48 -  });
+   49 -}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+   68 +  let delay = deleting ? 55 : 95;
+   69
+   51 -document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+   70 +  if (!deleting && cIdx === phrase.length) {
+   71 +    delay = 2200;
+   72 +    deleting = true;
+   73 +  } else if (deleting && cIdx === 0) {
+   74 +    deleting = false;
+   75 +    pIdx = (pIdx + 1) % phrases.length;
+   76 +    delay = 380;
+   77 +  } else {
+   78 +    cIdx += deleting ? -1 : 1;
+   79 +  }
+   80
+   53 -/* ── Language bars ────────────────────────────────────────── */
+   54 -const langObserver = new IntersectionObserver((entries) => {
+   55 -  entries.forEach(entry => {
+   56 -    if (!entry.isIntersecting) return;
+   57 -    entry.target.querySelectorAll('.lang-bar').forEach((bar, i) => {
+   58 -      const target = bar.dataset.width + '%';
+   59 -      bar.style.width = '0%';
+   60 -      setTimeout(() => { bar.style.width = target; }, 200 + i * 130);
+   81 +  setTimeout(tick, delay);
+   82 +}
+   83 +setTimeout(tick, 1300);
+   84 +
+   85 +/* ── Hero particle canvas ────────────────────────────────────── */
+   86 +(function initCanvas() {
+   87 +  const canvas = document.getElementById('hero-canvas');
+   88 +  if (!canvas) return;
+   89 +  const ctx = canvas.getContext('2d');
+   90 +  let pts = [];
+   91 +  let mouse = { x: -9999, y: -9999 };
+   92 +
+   93 +  function resize() {
+   94 +    canvas.width  = canvas.offsetWidth;
+   95 +    canvas.height = canvas.offsetHeight;
+   96 +  }
+   97 +
+   98 +  function makeParticle() {
+   99 +    return {
+  100 +      x: Math.random() * canvas.width,
+  101 +      y: Math.random() * canvas.height,
+  102 +      vx: (Math.random() - .5) * .38,
+  103 +      vy: (Math.random() - .5) * .38,
+  104 +      r:  Math.random() * 1.4 + .4,
+  105 +      a:  Math.random() * .45 + .08,
+  106 +    };
+  107 +  }
+  108 +
+  109 +  function populate() {
+  110 +    const n = Math.floor(canvas.width * canvas.height / 13000);
+  111 +    pts = Array.from({ length: n }, makeParticle);
+  112 +  }
+  113 +
+  114 +  function draw() {
+  115 +    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  116 +
+  117 +    pts.forEach(p => {
+  118 +      p.x += p.vx;
+  119 +      p.y += p.vy;
+  120 +      if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+  121 +      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+  122 +
+  123 +      ctx.beginPath();
+  124 +      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+  125 +      ctx.fillStyle = `rgba(34,211,238,${p.a})`;
+  126 +      ctx.fill();
+  127      });
+   62 -    langObserver.unobserve(entry.target);
+  128 +
+  129 +    // Lines between nearby particles
+  130 +    for (let i = 0; i < pts.length; i++) {
+  131 +      for (let j = i + 1; j < pts.length; j++) {
+  132 +        const dx = pts[i].x - pts[j].x;
+  133 +        const dy = pts[i].y - pts[j].y;
+  134 +        const d  = Math.hypot(dx, dy);
+  135 +        if (d < 110) {
+  136 +          ctx.beginPath();
+  137 +          ctx.strokeStyle = `rgba(34,211,238,${.11 * (1 - d / 110)})`;
+  138 +          ctx.lineWidth = .5;
+  139 +          ctx.moveTo(pts[i].x, pts[i].y);
+  140 +          ctx.lineTo(pts[j].x, pts[j].y);
+  141 +          ctx.stroke();
+  142 +        }
+  143 +      }
+  144 +      // Mouse attraction
+  145 +      const mx = pts[i].x - mouse.x;
+  146 +      const my = pts[i].y - mouse.y;
+  147 +      const md = Math.hypot(mx, my);
+  148 +      if (md < 170) {
+  149 +        ctx.beginPath();
+  150 +        ctx.strokeStyle = `rgba(34,211,238,${.28 * (1 - md / 170)})`;
+  151 +        ctx.lineWidth = .8;
+  152 +        ctx.moveTo(pts[i].x, pts[i].y);
+  153 +        ctx.lineTo(mouse.x, mouse.y);
+  154 +        ctx.stroke();
+  155 +      }
+  156 +    }
+  157 +
+  158 +    requestAnimationFrame(draw);
+  159 +  }
+  160 +
+  161 +  window.addEventListener('mousemove', e => {
+  162 +    const r = canvas.getBoundingClientRect();
+  163 +    mouse.x = e.clientX - r.left;
+  164 +    mouse.y = e.clientY - r.top;
+  165    });
+   64 -}, { threshold: 0.6 });
+  166
+   66 -document.querySelectorAll('.lang-card').forEach(el => langObserver.observe(el));
+  167 +  window.addEventListener('resize', () => { resize(); populate(); }, { passive: true });
+  168
+   68 -/* ── Hero stat counters ───────────────────────────────────── */
+   69 -function animateCounter(el) {
+   70 -  const target = parseInt(el.dataset.target, 10);
+   71 -  const duration = 1400;
+   72 -  const start = performance.now();
+  169 +  resize();
+  170 +  populate();
+  171 +  draw();
+  172 +})();
+  173
+   74 -  function step(now) {
+   75 -    const progress = Math.min((now - start) / duration, 1);
+   76 -    // Ease-out quart
+   77 -    const eased = 1 - Math.pow(1 - progress, 4);
+   78 -    el.textContent = Math.floor(eased * target);
+   79 -    if (progress < 1) requestAnimationFrame(step);
+   80 -    else el.textContent = target;
+   81 -  }
+   82 -  requestAnimationFrame(step);
+  174 +/* ── Counter animation (hero stats) ─────────────────────────── */
+  175 +function animateNum(el, target, suffix) {
+  176 +  const t0 = performance.now();
+  177 +  const dur = 1800;
+  178 +  (function step(now) {
+  179 +    const p = Math.min((now - t0) / dur, 1);
+  180 +    const v = Math.round((1 - Math.pow(1 - p, 3)) * target);
+  181 +    el.textContent = v + suffix;
+  182 +    if (p < 1) requestAnimationFrame(step);
+  183 +  })(t0);
+  184  }
+  185
+   85 -const statsSection = document.querySelector('.hero-stats');
+   86 -const counterObserver = new IntersectionObserver((entries) => {
+   87 -  entries.forEach(entry => {
+   88 -    if (!entry.isIntersecting) return;
+   89 -    entry.target.querySelectorAll('.stat-val[data-target]').forEach(el => {
+   90 -      setTimeout(() => animateCounter(el), 300);
+  186 +const statsObs = new IntersectionObserver(entries => {
+  187 +  entries.forEach(e => {
+  188 +    if (!e.isIntersecting) return;
+  189 +    document.querySelectorAll('.stat-num').forEach(el => {
+  190 +      animateNum(el, +el.dataset.target, el.dataset.suffix || '');
+  191      });
+   92 -    counterObserver.unobserve(entry.target);
+  192 +    statsObs.disconnect();
+  193    });
+   94 -}, { threshold: 0.6 });
+  194 +}, { threshold: .6 });
+  195
+   96 -if (statsSection) counterObserver.observe(statsSection);
+  196 +const statsEl = document.querySelector('.hero-stats');
+  197 +if (statsEl) statsObs.observe(statsEl);
+  198
+   98 -/* ── Active nav link on scroll ────────────────────────────── */
+   99 -const sections = document.querySelectorAll('section[id]');
+  100 -const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+  199 +/* ── Reveal on scroll (section cards) ───────────────────────── */
+  200 +const revealObs = new IntersectionObserver(entries => {
+  201 +  entries.forEach(e => {
+  202 +    if (e.isIntersecting) {
+  203 +      e.target.classList.add('visible');
+  204 +      revealObs.unobserve(e.target);
+  205 +    }
+  206 +  });
+  207 +}, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
+  208
+  102 -const sectionObserver = new IntersectionObserver((entries) => {
+  103 -  entries.forEach(entry => {
+  104 -    if (!entry.isIntersecting) return;
+  105 -    navAnchors.forEach(a => {
+  106 -      a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+  209 +// Stagger siblings within same parent
+  210 +document.querySelectorAll('.reveal').forEach((el, i, arr) => {
+  211 +  // Find index among siblings with same parent
+  212 +  const siblings = Array.from(el.parentElement.querySelectorAll(':scope > .reveal'));
+  213 +  const si = siblings.indexOf(el);
+  214 +  if (si > 0) el.style.transitionDelay = (si * 80) + 'ms';
+  215 +  revealObs.observe(el);
+  216 +});
+  217 +
+  218 +/* ── Language bars (animate on About entering viewport) ─────── */
+  219 +const langObs = new IntersectionObserver(entries => {
+  220 +  entries.forEach(e => {
+  221 +    if (!e.isIntersecting) return;
+  222 +    e.target.querySelectorAll('.lang-fill').forEach(bar => {
+  223 +      bar.style.width = bar.dataset.w + '%';
+  224      });
+  225 +    langObs.disconnect();
+  226    });
+  109 -}, { threshold: 0.45 });
+  227 +}, { threshold: .3 });
+  228
+  111 -sections.forEach(s => sectionObserver.observe(s));
+  229 +const aboutSec = document.getElementById('about');
+  230 +if (aboutSec) langObs.observe(aboutSec);
+  231
+  113 -/* ── Smooth internal links ────────────────────────────────── */
+  114 -document.querySelectorAll('a[href^="#"]').forEach(link => {
+  115 -  link.addEventListener('click', e => {
+  116 -    const id = link.getAttribute('href').slice(1);
+  117 -    const target = document.getElementById(id);
+  118 -    if (!target) return;
+  119 -    e.preventDefault();
+  120 -    const offset = parseInt(getComputedStyle(document.documentElement)
+  119 -    e.preventDefault();
+  120 -    const offset = parseInt(getComputedStyle(document.documentElement)
+       483 +  .edu-grid       { grid-template-columns: 1fr; }
+       484 +  .footer-inner   { flex-direction: column; }
+       485 +  .footer-bottom  { flex-direction: column; text-align: center; }
+       486  }
+       487
+      1097 -@media (max-width: 520px) {
+      1098 -  .hero-name { font-size: clamp(2.6rem, 14vw, 3.5rem); }
+      1099 -  .hero-ctas { flex-direction: column; align-items: center; }
+      1100 -  .btn { width: 100%; max-width: 260px; justify-content: center; }
+      1101 -  .stat-sep { display: none; }
+      1102 -  .hero-stats { flex-direction: column; gap: 18px; }
+      1103 -  .section-head h2 { font-size: 1.65rem; }
+       488 +@media (max-width: 480px) {
+       489 +  .hero-actions { flex-direction: column; align-items: stretch; text-align: center; }
+       490 +  .hero-stats   { flex-direction: column; gap: 14px; }
+       491 +  .stat-sep     { width: 36px; height: 1px; }
+       492 +  .pitch-card   { padding: 26px 20px; }
+       493 +  .lang-item    { grid-template-columns: 56px 1fr 76px; gap: 8px; }
+       494  }
+
+● Write(portfolio-saber\script.js)
+  ⎿  Added 215 lines, removed 91 lines
+        1 +'use strict';
+        2 +
+        3  /* ================================================================
+        4     SABER SLIMANI PORTFOLIO — script.js
+        5     ================================================================ */
+        6
+        5 -'use strict';
+        7 +/* ── Navbar scroll effect & active links ─────────────────────── */
+        8 +const navbar   = document.getElementById('navbar');
+        9 +const navLinks = document.querySelectorAll('.nav-link');
+       10 +const sections = Array.from(document.querySelectorAll('section[id]'));
+       11
+        7 -/* ── Navbar scroll effect ─────────────────────────────────── */
+        8 -const navbar = document.getElementById('navbar');
+        9 -window.addEventListener('scroll', () => {
+       10 -  navbar.classList.toggle('scrolled', window.scrollY > 30);
+       11 -}, { passive: true });
+       12 -
+       13 -/* ── Mobile menu ──────────────────────────────────────────── */
+       14 -const navToggle = document.getElementById('navToggle');
+       15 -const navLinks  = document.getElementById('navLinks');
+       16 -
+       17 -navToggle.addEventListener('click', () => {
+       18 -  const open = navLinks.classList.toggle('open');
+       19 -  const [s1, s2, s3] = navToggle.querySelectorAll('span');
+       20 -  if (open) {
+       21 -    s1.style.transform = 'rotate(45deg) translate(5px, 5px)';
+       22 -    s2.style.opacity   = '0';
+       23 -    s3.style.transform = 'rotate(-45deg) translate(5px, -5px)';
+       12 +function onScroll() {
+       13 +  // Sticky style
+       14 +  if (window.scrollY > 40) {
+       15 +    navbar.classList.add('scrolled');
+       16    } else {
+       25 -    s1.style.transform = s2.style.opacity = s3.style.transform = '';
+       17 +    navbar.classList.remove('scrolled');
+       18    }
+       19 +
+       20 +  // Active link highlight
+       21 +  const mid = window.scrollY + window.innerHeight / 3;
+       22 +  let current = '';
+       23 +  sections.forEach(s => {
+       24 +    if (s.offsetTop <= mid) current = s.id;
+       25 +  });
+       26 +  navLinks.forEach(a => {
+       27 +    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+       28 +  });
+       29 +}
+       30 +
+       31 +window.addEventListener('scroll', onScroll, { passive: true });
+       32 +onScroll();
+       33 +
+       34 +/* ── Mobile menu ─────────────────────────────────────────────── */
+       35 +const toggle  = document.getElementById('nav-toggle');
+       36 +const navMenu = document.getElementById('nav-menu');
+       37 +
+       38 +toggle.addEventListener('click', () => {
+       39 +  const open = navMenu.classList.toggle('open');
+       40 +  toggle.classList.toggle('open', open);
+       41 +  toggle.setAttribute('aria-expanded', open);
+       42  });
+       43
+       29 -navLinks.querySelectorAll('a').forEach(a => {
+       44 +// Close on link click
+       45 +navLinks.forEach(a => {
+       46    a.addEventListener('click', () => {
+       31 -    navLinks.classList.remove('open');
+       32 -    navToggle.querySelectorAll('span').forEach(s => (s.style.transform = s.style.opacity = ''));
+       47 +    navMenu.classList.remove('open');
+       48 +    toggle.classList.remove('open');
+       49 +    toggle.setAttribute('aria-expanded', 'false');
+       50    });
+       51  });
+       52
+       36 -/* ── Scroll-reveal (Intersection Observer) ────────────────── */
+       37 -const revealObserver = new IntersectionObserver((entries) => {
+       38 -  entries.forEach(entry => {
+       39 -    if (!entry.isIntersecting) return;
+       53 +/* ── Typed text effect ───────────────────────────────────────── */
+       54 +const phrases = [
+       55 +  'Électronique Industrielle',
+       56 +  'Maintenance Industrielle',
+       57 +  'Variateurs de Fréquence',
+       58 +  'Diagnostic de Pannes',
+       59 +  'Systèmes Automatisés',
+       60 +];
+       61 +let pIdx = 0, cIdx = 0, deleting = false;
+       62 +const typedEl = document.querySelector('.typed-text');
+       63
+       41 -    // Stagger siblings in the same grid/flex parent
+       42 -    const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+       43 -    const idx = siblings.indexOf(entry.target);
+       44 -    const delay = Math.min(idx * 75, 360);
+       64 +function tick() {
+       65 +  const phrase = phrases[pIdx];
+       66 +  typedEl.textContent = phrase.slice(0, cIdx);
+       67
+       46 -    setTimeout(() => entry.target.classList.add('visible'), delay);
+       47 -    revealObserver.unobserve(entry.target);
+       48 -  });
+       49 -}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+       68 +  let delay = deleting ? 55 : 95;
+       69
+       51 -document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+       70 +  if (!deleting && cIdx === phrase.length) {
+       71 +    delay = 2200;
+       72 +    deleting = true;
+       73 +  } else if (deleting && cIdx === 0) {
+       74 +    deleting = false;
+       75 +    pIdx = (pIdx + 1) % phrases.length;
+       76 +    delay = 380;
+       77 +  } else {
+       78 +    cIdx += deleting ? -1 : 1;
+       79 +  }
+       80
+       53 -/* ── Language bars ────────────────────────────────────────── */
+       54 -const langObserver = new IntersectionObserver((entries) => {
+       55 -  entries.forEach(entry => {
+       56 -    if (!entry.isIntersecting) return;
+       57 -    entry.target.querySelectorAll('.lang-bar').forEach((bar, i) => {
+       58 -      const target = bar.dataset.width + '%';
+       59 -      bar.style.width = '0%';
+       60 -      setTimeout(() => { bar.style.width = target; }, 200 + i * 130);
+       81 +  setTimeout(tick, delay);
+       82 +}
+       83 +setTimeout(tick, 1300);
+       84 +
+       85 +/* ── Hero particle canvas ────────────────────────────────────── */
+       86 +(function initCanvas() {
+       87 +  const canvas = document.getElementById('hero-canvas');
+       88 +  if (!canvas) return;
+       89 +  const ctx = canvas.getContext('2d');
+       90 +  let pts = [];
+       91 +  let mouse = { x: -9999, y: -9999 };
+       92 +
+       93 +  function resize() {
+       94 +    canvas.width  = canvas.offsetWidth;
+       95 +    canvas.height = canvas.offsetHeight;
+       96 +  }
+       97 +
+       98 +  function makeParticle() {
+       99 +    return {
+      100 +      x: Math.random() * canvas.width,
+      101 +      y: Math.random() * canvas.height,
+      102 +      vx: (Math.random() - .5) * .38,
+      103 +      vy: (Math.random() - .5) * .38,
+      104 +      r:  Math.random() * 1.4 + .4,
+      105 +      a:  Math.random() * .45 + .08,
+      106 +    };
+      107 +  }
+      108 +
+      109 +  function populate() {
+      110 +    const n = Math.floor(canvas.width * canvas.height / 13000);
+      111 +    pts = Array.from({ length: n }, makeParticle);
+      112 +  }
+      113 +
+      114 +  function draw() {
+      115 +    ctx.clearRect(0, 0, canvas.width, canvas.height);
+      116 +
+      117 +    pts.forEach(p => {
+      118 +      p.x += p.vx;
+      119 +      p.y += p.vy;
+      120 +      if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+      121 +      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      122 +
+      123 +      ctx.beginPath();
+      124 +      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      125 +      ctx.fillStyle = `rgba(34,211,238,${p.a})`;
+      126 +      ctx.fill();
+      127      });
+       62 -    langObserver.unobserve(entry.target);
+      128 +
+      129 +    // Lines between nearby particles
+      130 +    for (let i = 0; i < pts.length; i++) {
+      131 +      for (let j = i + 1; j < pts.length; j++) {
+      132 +        const dx = pts[i].x - pts[j].x;
+      133 +        const dy = pts[i].y - pts[j].y;
+      134 +        const d  = Math.hypot(dx, dy);
+      135 +        if (d < 110) {
+      136 +          ctx.beginPath();
+      137 +          ctx.strokeStyle = `rgba(34,211,238,${.11 * (1 - d / 110)})`;
+      138 +          ctx.lineWidth = .5;
+      139 +          ctx.moveTo(pts[i].x, pts[i].y);
+      140 +          ctx.lineTo(pts[j].x, pts[j].y);
+      141 +          ctx.stroke();
+      142 +        }
+      143 +      }
+      144 +      // Mouse attraction
+      145 +      const mx = pts[i].x - mouse.x;
+      146 +      const my = pts[i].y - mouse.y;
+      147 +      const md = Math.hypot(mx, my);
+      148 +      if (md < 170) {
+      149 +        ctx.beginPath();
+      150 +        ctx.strokeStyle = `rgba(34,211,238,${.28 * (1 - md / 170)})`;
+      151 +        ctx.lineWidth = .8;
+      152 +        ctx.moveTo(pts[i].x, pts[i].y);
+      153 +        ctx.lineTo(mouse.x, mouse.y);
+      154 +        ctx.stroke();
+      155 +      }
+      156 +    }
+      157 +
+      158 +    requestAnimationFrame(draw);
+      159 +  }
+      160 +
+      161 +  window.addEventListener('mousemove', e => {
+      162 +    const r = canvas.getBoundingClientRect();
+      163 +    mouse.x = e.clientX - r.left;
+      164 +    mouse.y = e.clientY - r.top;
+      165    });
+       64 -}, { threshold: 0.6 });
+      166
+       66 -document.querySelectorAll('.lang-card').forEach(el => langObserver.observe(el));
+      167 +  window.addEventListener('resize', () => { resize(); populate(); }, { passive: true });
+      168
+       68 -/* ── Hero stat counters ───────────────────────────────────── */
+       69 -function animateCounter(el) {
+       70 -  const target = parseInt(el.dataset.target, 10);
+       71 -  const duration = 1400;
+       72 -  const start = performance.now();
+      169 +  resize();
+      170 +  populate();
+      171 +  draw();
+      172 +})();
+      173
+       74 -  function step(now) {
+       75 -    const progress = Math.min((now - start) / duration, 1);
+       76 -    // Ease-out quart
+       77 -    const eased = 1 - Math.pow(1 - progress, 4);
+       78 -    el.textContent = Math.floor(eased * target);
+       79 -    if (progress < 1) requestAnimationFrame(step);
+       80 -    else el.textContent = target;
+       81 -  }
+       82 -  requestAnimationFrame(step);
+      174 +/* ── Counter animation (hero stats) ─────────────────────────── */
+      175 +function animateNum(el, target, suffix) {
+      176 +  const t0 = performance.now();
+      177 +  const dur = 1800;
+      178 +  (function step(now) {
+      179 +    const p = Math.min((now - t0) / dur, 1);
+      180 +    const v = Math.round((1 - Math.pow(1 - p, 3)) * target);
+      181 +    el.textContent = v + suffix;
+      182 +    if (p < 1) requestAnimationFrame(step);
+      183 +  })(t0);
+      184  }
+      185
+       85 -const statsSection = document.querySelector('.hero-stats');
+       86 -const counterObserver = new IntersectionObserver((entries) => {
+       87 -  entries.forEach(entry => {
+       88 -    if (!entry.isIntersecting) return;
+       89 -    entry.target.querySelectorAll('.stat-val[data-target]').forEach(el => {
+       90 -      setTimeout(() => animateCounter(el), 300);
+      186 +const statsObs = new IntersectionObserver(entries => {
+      187 +  entries.forEach(e => {
+      188 +    if (!e.isIntersecting) return;
+      189 +    document.querySelectorAll('.stat-num').forEach(el => {
+      190 +      animateNum(el, +el.dataset.target, el.dataset.suffix || '');
+      191      });
+       92 -    counterObserver.unobserve(entry.target);
+      192 +    statsObs.disconnect();
+      193    });
+       94 -}, { threshold: 0.6 });
+      194 +}, { threshold: .6 });
+      195
+       96 -if (statsSection) counterObserver.observe(statsSection);
+      196 +const statsEl = document.querySelector('.hero-stats');
+      197 +if (statsEl) statsObs.observe(statsEl);
+      198
+       98 -/* ── Active nav link on scroll ────────────────────────────── */
+       99 -const sections = document.querySelectorAll('section[id]');
+      100 -const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+      199 +/* ── Reveal on scroll (section cards) ───────────────────────── */
+      200 +const revealObs = new IntersectionObserver(entries => {
+      201 +  entries.forEach(e => {
+      202 +    if (e.isIntersecting) {
+      203 +      e.target.classList.add('visible');
+      204 +      revealObs.unobserve(e.target);
+      205 +    }
+      206 +  });
+      207 +}, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
+      208
+      102 -const sectionObserver = new IntersectionObserver((entries) => {
+      103 -  entries.forEach(entry => {
+      104 -    if (!entry.isIntersecting) return;
+      105 -    navAnchors.forEach(a => {
+      106 -      a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+      209 +// Stagger siblings within same parent
+      210 +document.querySelectorAll('.reveal').forEach((el, i, arr) => {
+      211 +  // Find index among siblings with same parent
+      212 +  const siblings = Array.from(el.parentElement.querySelectorAll(':scope > .reveal'));
+      213 +  const si = siblings.indexOf(el);
+      214 +  if (si > 0) el.style.transitionDelay = (si * 80) + 'ms';
+      215 +  revealObs.observe(el);
+      216 +});
+      217 +
+      218 +/* ── Language bars (animate on About entering viewport) ─────── */
+      219 +const langObs = new IntersectionObserver(entries => {
+      220 +  entries.forEach(e => {
+      221 +    if (!e.isIntersecting) return;
+      222 +    e.target.querySelectorAll('.lang-fill').forEach(bar => {
+      223 +      bar.style.width = bar.dataset.w + '%';
+      224      });
+      225 +    langObs.disconnect();
+      226    });
+      109 -}, { threshold: 0.45 });
+      227 +}, { threshold: .3 });
+      228
+      111 -sections.forEach(s => sectionObserver.observe(s));
+      229 +const aboutSec = document.getElementById('about');
+      230 +if (aboutSec) langObs.observe(aboutSec);
+      231
+      113 -/* ── Smooth internal links ────────────────────────────────── */
+      114 -document.querySelectorAll('a[href^="#"]').forEach(link => {
+      115 -  link.addEventListener('click', e => {
+      116 -    const id = link.getAttribute('href').slice(1);
+      117 -    const target = document.getElementById(id);
+      118 -    if (!target) return;
+      119 -    e.preventDefault();
+      120 -    const offset = parseInt(getComputedStyle(document.documentElement)
+      121 -      .getPropertyValue('--nav-h'), 10) || 68;
+      122 -    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      123 -    window.scrollTo({ top, behavior: 'smooth' });
+      232 +/* ── Subtle tilt on project & skill cards ────────────────────── */
+      233 +function addTilt(sel) {
+      234 +  document.querySelectorAll(sel).forEach(card => {
+      235 +    card.addEventListener('mousemove', e => {
+      236 +      const r = card.getBoundingClientRect();
+      237 +      const x = (e.clientX - r.left) / r.width  - .5;
+      238 +      const y = (e.clientY - r.top)  / r.height - .5;
+      239 +      card.style.transform = `translateY(-6px) rotateX(${-y * 5}deg) rotateY(${x * 5}deg)`;
+      240 +    });
+      241 +    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+      242    });
+      125 -});
+      243 +}
+      244 +addTilt('.proj-card');
+      245 +addTilt('.skill-card');
+      246 +
+      247 +/* ── Footer year ─────────────────────────────────────────────── */
+      248 +const yearEl = document.getElementById('year');
+      249 +if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+● All three files are written. Let me verify the final file sizes look right:
+
+● PowerShell(Get-ChildItem "C:\Users\pro\portfolio-saber" | Select-Object Name, Length, LastWriteTime)
+  ⎿  (No output)
+
+● PowerShell(Get-ChildItem -Path "C:\Users\pro\portfolio-saber" | Format-Table Name, Length, LastWriteTime -AutoSize)
+  ⎿  Name       Length LastWriteTime
+     ----       ------ -------------
+     index.html  23781 03/05/2026 01:22:04
+     … +2 lines (ctrl+o to expand)
+
+● All three files are complete. Let me do a quick sanity check on a few key parts to make sure everything is consistent:
+
+  Searched for 4 patterns (ctrl+o to expand)
+
+● Everything is consistent across all three files. Here's what's been built:
+
+  ---
+  ✅ Portfolio complet — C:\Users\pro\portfolio-saber\
+
+  Fichiers créés
+
+  ┌────────────┬────────┬────────────────────────────────────────────────────┐
+  │  Fichier   │ Taille │                        Rôle                        │
+  ├────────────┼────────┼────────────────────────────────────────────────────┤
+  │ index.html │ 23 KB  │ Structure complète, sémantique HTML5, meta/OG tags │
+  ├────────────┼────────┼────────────────────────────────────────────────────┤
+  │ styles.css │ 24 KB  │ Design premium dark, responsive, animations        │
+  ├────────────┼────────┼────────────────────────────────────────────────────┤
+  │ script.js  │ 8 KB   │ Canvas particules, typed text, scroll, compteurs   │
+  └────────────┴────────┴────────────────────────────────────────────────────┘
+
+  Ce que contient le site
+
+  - Hero — nom animé avec dégradé, texte typé rotatif (5 phrases), canvas de particules interactif, stats comptées en
+  direct
+  - À propos — texte en deux colonnes, tags de compétences, carte info avec barres de langues animées
+  - Compétences — 5 cartes avec animation au survol, ligne colorée, chips des marques (ABB, Siemens…)
+  - Expérience — timeline verticale avec ligne lumineuse animée
+  - Projets — grille de 6 cartes avec tilt 3D au survol
+  - Formation — 2 cartes avec ligne de soulignement colorée
+  - Contact — cartes cliquables (email/téléphone) + pitch card avec CTA
+  - Footer — liens de navigation + copyright auto
+
+  ---
+  🚀 Déploiement — GitHub Pages (gratuit)
+
+  Étape 1 — Créer un compte GitHub
+
+  Aller sur https://github.com → créer un compte gratuit
+
+  Étape 2 — Créer un repository
+
+  Nom : saber-portfolio   (ou saberslimani.github.io pour URL courte)
+  Visibilité : Public
+
+  Étape 3 — Uploader les fichiers
+
+  1. Cliquer Add file → Upload files
+  2. Glisser-déposer les 3 fichiers : index.html, styles.css, script.js
+  3. Cliquer Commit changes
+
+  Étape 4 — Activer GitHub Pages
+
+  1. Settings → Pages (menu de gauche)
+  2. Source : Deploy from a branch
+  3. Branch : main / dossier : / (root)
+  4. Cliquer Save
+
+  Résultat
+
+  URL publique obtenue en ~2 minutes :
+  https://<votre-username>.github.io/saber-portfolio/
+
+  ---
+  💻 Tester en local
+
+  Ouvrir index.html directement dans Chrome/Edge — aucun serveur nécessaire.
+
+✻ Churned for 10m 6s
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+> Nom: Saber Slimani
+  Titre: Technicien Spécialisé en Électronique & Maintenance Industrielle
+
+  Contact:
+  Email: saber03slimani@gmail.com
+  Téléphone: +212 658 497 932
+  Adresse: Tétouan, Maroc
+
+  ---
+
+  ## À propos
+
+  Électronicien en maintenance industrielle avec plus de 3 ans d’expérience dans le diagnostic, la réparation et la
+  mise en service d’équipements industriels complexes.
+
+  Spécialisé dans les variateurs de fréquence (ABB, Siemens, Schneider, Danfoss, Allen-Bradley) ainsi que dans les
+  systèmes automatisés et servo-drives.
+  Intervient directement sur site auprès de multiples entreprises industrielles avec une forte capacité d’analyse et
+  de résolution rapide des pannes.
+
+  Taux élevé de diagnostic efficace dès la première intervention (≈80%).
+
+  ---
+
+  ## Compétences
+
+  ### Électronique industrielle
+  - Diagnostic et réparation de cartes électroniques (PCB)
+  - Analyse de pannes complexes (défauts cachés, courts-circuits, instabilités)
+  - Travail sur composants CMS (SMD)
+
+  ### Variateurs & Automation
+  - Mise en service et paramétrage de variateurs de fréquence
+  - Maintenance de servo-drives et systèmes de commande
+  - Intervention sur automates et systèmes de sécurité (PILZ PNOZ)
+
+  ### Électrotechnique
+  - Lecture et interprétation de schémas électriques
+  - Maintenance d’armoires électriques et machines industrielles
+
+  ### Méthodologie & Qualité
+  - Diagnostic structuré et analyse technique avancée
+  - Tests fonctionnels et validation après intervention
+  - Utilisation d’instruments de mesure professionnels
+
+  ---
+
+  ## Expérience Professionnelle
+
+  ### Électronicien en maintenance industrielle
+  STE MR3E SARL – Tanger | 2022 – 2026
+
+  - Intervention technique mobile dans plusieurs entreprises industrielles au Maroc
+  - Diagnostic, maintenance et réparation de variateurs de fréquence (ABB, Siemens, Schneider, Danfoss…)
+  - Réparation de cartes électroniques et systèmes de commande
+  - Maintenance d’alimentations industrielles et modules d’automatisation
+  - Analyse rapide des pannes avec un taux de résolution initiale de 80 %
+  - Tests fonctionnels et contrôle qualité après intervention
+  - Conseil technique et analyse des besoins clients sur site
+
+  ---
+
+  ### Technicien de maintenance (Stage)
+  Motherson SMRC HM – Tanger | 2022
+
+  - Maintenance de machines industrielles, robots et armoires électriques
+  - Diagnostic et résolution de pannes techniques
+  - Travail en équipe dans un environnement industriel structuré
+
+  ---
+
+  ## Projets & Réalisations Techniques
+
+  ### Diagnostic complexe – Défaut caché (Servo Lenze)
+  - Identification d’un défaut non visible malgré mesures normales
+  - Remplacement ciblé de composants critiques
+  - Remise en service complète après analyse approfondie
+
+  ---
+
+  ### Réparation Servo Drive PROMATECH
+  - Détection d’un court-circuit sur régulateur LM1085
+  - Remplacement préventif de plusieurs composants
+  - Tests en charge validant la stabilité du système
+
+  ---
+
+  ### Intervention sur variateur – arrêt de production
+  - Identification d’un court-circuit causé par un corps étranger
+  - Remplacement complet du variateur
+  - Redémarrage rapide de la production
+
+  ---
+
+  ### Système de sécurité PILZ PNOZ
+  - Diagnostic d’un défaut système
+  - Réparation et recâblage complet
+  - Remise en service sécurisée
+
+  ---
+
+  ### Réparation alimentation industrielle
+  - Analyse d’une tension instable
+  - Remplacement de condensateurs défectueux
+  - Stabilisation complète du système
+
+  ---
+
+  ### Réparation cartes électroniques & microcontrôleurs
+  - Diagnostic et remplacement de composants critiques
+  - Réparation PCB (pistes, soudures, composants)
+  - Tests et validation avant remise en service
+
+  ---
+
+  ## Outils & Instruments
+
+  - Multimètre professionnel
+  - Pinces ampèremétriques
+  - Testeurs de circuits intégrés (analogiques & numériques)
+  - Oscilloscope
+  - Outils de soudure de précision
+
+  ---
+
+  ## Formation
+  - Testeurs de circuits intégrés (analogiques & numériques)
+  - Oscilloscope
+  - Outils de soudure de précision
+
+  ---
+
+  ## Formation
+      100 +      x: Math.random() * canvas.width,
+      101 +      y: Math.random() * canvas.height,
+      102 +      vx: (Math.random() - .5) * .38,
+      103 +      vy: (Math.random() - .5) * .38,
+      104 +      r:  Math.random() * 1.4 + .4,
+      105 +      a:  Math.random() * .45 + .08,
+      106 +    };
+      107 +  }
+      108 +
+      109 +  function populate() {
+      110 +    const n = Math.floor(canvas.width * canvas.height / 13000)
+          +;
+      111 +    pts = Array.from({ length: n }, makeParticle);
+      112 +  }
+      113 +
+      114 +  function draw() {
+      115 +    ctx.clearRect(0, 0, canvas.width, canvas.height);
+      116 +
+      117 +    pts.forEach(p => {
+      118 +      p.x += p.vx;
+      119 +      p.y += p.vy;
+      120 +      if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+      121 +      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      122 +
+      123 +      ctx.beginPath();
+      124 +      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      125 +      ctx.fillStyle = `rgba(34,211,238,${p.a})`;
+      126 +      ctx.fill();
+      127      });
+       62 -    langObserver.unobserve(entry.target);
+      128 +
+      129 +    // Lines between nearby particles
+      130 +    for (let i = 0; i < pts.length; i++) {
+      131 +      for (let j = i + 1; j < pts.length; j++) {
+      132 +        const dx = pts[i].x - pts[j].x;
+      133 +        const dy = pts[i].y - pts[j].y;
+      134 +        const d  = Math.hypot(dx, dy);
+      135 +        if (d < 110) {
+      136 +          ctx.beginPath();
+      137 +          ctx.strokeStyle = `rgba(34,211,238,${.11 * (1 - d /
+          +110)})`;
+      138 +          ctx.lineWidth = .5;
+      139 +          ctx.moveTo(pts[i].x, pts[i].y);
+      140 +          ctx.lineTo(pts[j].x, pts[j].y);
+      141 +          ctx.stroke();
+      142 +        }
+      143 +      }
+      144 +      // Mouse attraction
+      145 +      const mx = pts[i].x - mouse.x;
+      146 +      const my = pts[i].y - mouse.y;
+      147 +      const md = Math.hypot(mx, my);
+      148 +      if (md < 170) {
+      149 +        ctx.beginPath();
+      150 +        ctx.strokeStyle = `rgba(34,211,238,${.28 * (1 - md / 1
+          +70)})`;
+      151 +        ctx.lineWidth = .8;
+      152 +        ctx.moveTo(pts[i].x, pts[i].y);
+      153 +        ctx.lineTo(mouse.x, mouse.y);
+      154 +        ctx.stroke();
+      155 +      }
+      156 +    }
+      157 +
+      158 +    requestAnimationFrame(draw);
+      159 +  }
+      160 +
+      161 +  window.addEventListener('mousemove', e => {
+      162 +    const r = canvas.getBoundingClientRect();
+      163 +    mouse.x = e.clientX - r.left;
+      164 +    mouse.y = e.clientY - r.top;
+      165    });
+       64 -}, { threshold: 0.6 });
+      166
+       66 -document.querySelectorAll('.lang-card').forEach(el => langObse
+          -rver.observe(el));
+      167 +  window.addEventListener('resize', () => { resize(); populate
+          +(); }, { passive: true });
+      168
+       68 -/* ── Hero stat counters ─────────────────────────────────────
+          - */
+       69 -function animateCounter(el) {
+       70 -  const target = parseInt(el.dataset.target, 10);
+       71 -  const duration = 1400;
+       72 -  const start = performance.now();
+      169 +  resize();
+      170 +  populate();
+      171 +  draw();
+      172 +})();
+      173
+       74 -  function step(now) {
+       75 -    const progress = Math.min((now - start) / duration, 1);
+       76 -    // Ease-out quart
+       77 -    const eased = 1 - Math.pow(1 - progress, 4);
+       78 -    el.textContent = Math.floor(eased * target);
+       79 -    if (progress < 1) requestAnimationFrame(step);
+       80 -    else el.textContent = target;
+       81 -  }
+       82 -  requestAnimationFrame(step);
+      174 +/* ── Counter animation (hero stats) ─────────────────────────
+          +── */
+      175 +function animateNum(el, target, suffix) {
+      176 +  const t0 = performance.now();
+      177 +  const dur = 1800;
+      178 +  (function step(now) {
+      179 +    const p = Math.min((now - t0) / dur, 1);
+      180 +    const v = Math.round((1 - Math.pow(1 - p, 3)) * target);
+      181 +    el.textContent = v + suffix;
+      182 +    if (p < 1) requestAnimationFrame(step);
+      183 +  })(t0);
+      184  }
+      185
+       85 -const statsSection = document.querySelector('.hero-stats');
+       86 -const counterObserver = new IntersectionObserver((entries) =>
+          -{
+       87 -  entries.forEach(entry => {
+       88 -    if (!entry.isIntersecting) return;
+       89 -    entry.target.querySelectorAll('.stat-val[data-target]').fo
+          -rEach(el => {
+       90 -      setTimeout(() => animateCounter(el), 300);
+      186 +const statsObs = new IntersectionObserver(entries => {
+      187 +  entries.forEach(e => {
+      188 +    if (!e.isIntersecting) return;
+      189 +    document.querySelectorAll('.stat-num').forEach(el => {
+      190 +      animateNum(el, +el.dataset.target, el.dataset.suffix ||
+          +'');
+      191      });
+       92 -    counterObserver.unobserve(entry.target);
+      192 +    statsObs.disconnect();
+      193    });
+       94 -}, { threshold: 0.6 });
+      194 +}, { threshold: .6 });
+      195
+       96 -if (statsSection) counterObserver.observe(statsSection);
+      196 +const statsEl = document.querySelector('.hero-stats');
+      197 +if (statsEl) statsObs.observe(statsEl);
+      198
+       98 -/* ── Active nav link on scroll ──────────────────────────────
+          - */
+       99 -const sections = document.querySelectorAll('section[id]');
+      100 -const navAnchors = document.querySelectorAll('.nav-links a[hre
+          -f^="#"]');
+      199 +/* ── Reveal on scroll (section cards) ───────────────────────
+          +── */
+      200 +const revealObs = new IntersectionObserver(entries => {
+      201 +  entries.forEach(e => {
+      202 +    if (e.isIntersecting) {
+      203 +      e.target.classList.add('visible');
+      204 +      revealObs.unobserve(e.target);
+      205 +    }
+      206 +  });
+      207 +}, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
+      208
+      102 -const sectionObserver = new IntersectionObserver((entries) =>
+          -{
+      103 -  entries.forEach(entry => {
+      104 -    if (!entry.isIntersecting) return;
+      105 -    navAnchors.forEach(a => {
+      106 -      a.classList.toggle('active', a.getAttribute('href') ===
+          -'#' + entry.target.id);
+      209 +// Stagger siblings within same parent
+      210 +document.querySelectorAll('.reveal').forEach((el, i, arr) => {
+      211 +  // Find index among siblings with same parent
+      212 +  const siblings = Array.from(el.parentElement.querySelectorAl
+          +l(':scope > .reveal'));
+      213 +  const si = siblings.indexOf(el);
+      214 +  if (si > 0) el.style.transitionDelay = (si * 80) + 'ms';
+      215 +  revealObs.observe(el);
+      216 +});
+      217 +
+      218 +/* ── Language bars (animate on About entering viewport) ─────
+          +── */
+      219 +const langObs = new IntersectionObserver(entries => {
+      220 +  entries.forEach(e => {
+      221 +    if (!e.isIntersecting) return;
+      222 +    e.target.querySelectorAll('.lang-fill').forEach(bar => {
+      223 +      bar.style.width = bar.dataset.w + '%';
+      224      });
+      225 +    langObs.disconnect();
+      226    });
+      109 -}, { threshold: 0.45 });
+      227 +}, { threshold: .3 });
+      228
+      111 -sections.forEach(s => sectionObserver.observe(s));
+      229 +const aboutSec = document.getElementById('about');
+      230 +if (aboutSec) langObs.observe(aboutSec);
+      231
+      113 -/* ── Smooth internal links ──────────────────────────────────
+          - */
+      114 -document.querySelectorAll('a[href^="#"]').forEach(link => {
+      115 -  link.addEventListener('click', e => {
+      116 -    const id = link.getAttribute('href').slice(1);
+      117 -    const target = document.getElementById(id);
+      118 -    if (!target) return;
+      119 -    e.preventDefault();
+      120 -    const offset = parseInt(getComputedStyle(document.document
+          -Element)
+      121 -      .getPropertyValue('--nav-h'), 10) || 68;
+      122 -    const top = target.getBoundingClientRect().top + window.sc
+          -rollY - offset;
+      123 -    window.scrollTo({ top, behavior: 'smooth' });
+      232 +/* ── Subtle tilt on project & skill cards ───────────────────
+          +─── */
+      233 +function addTilt(sel) {
+      234 +  document.querySelectorAll(sel).forEach(card => {
+      235 +    card.addEventListener('mousemove', e => {
+      236 +      const r = card.getBoundingClientRect();
+      237 +      const x = (e.clientX - r.left) / r.width  - .5;
+      238 +      const y = (e.clientY - r.top)  / r.height - .5;
+      239 +      card.style.transform = `translateY(-6px) rotateX(${-y *
+          +5}deg) rotateY(${x * 5}deg)`;
+      240 +    });
+      241 +    card.addEventListener('mouseleave', () => { card.style.tra
+          +nsform = ''; });
+      242    });
+      125 -});
+      243 +}
+      244 +addTilt('.proj-card');
+      245 +addTilt('.skill-card');
+      246 +
+      247 +/* ── Footer year ────────────────────────────────────────────
+          +─── */
+      248 +const yearEl = document.getElementById('year');
+      249 +if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+● All three files are written. Let me verify the final file sizes look right:
+
+● PowerShell(Get-ChildItem "C:\Users\pro\portfolio-saber" | Select-Object Name,
+            Length, LastWriteTime)
+  ⎿  (No output)
+
+● PowerShell(Get-ChildItem -Path "C:\Users\pro\portfolio-saber" | Format-Table
+            Name, Length, LastWriteTime -AutoSize)
+  ⎿  Name       Length LastWriteTime
+     ----       ------ -------------
+     index.html  23781 03/05/2026 01:22:04
+     … +2 lines (ctrl+o to expand)
+
+● All three files are complete. Let me do a quick sanity check on a few key
+  parts to make sure everything is consistent:
+
+  Searched for 4 patterns (ctrl+o to expand)
+
+● Everything is consistent across all three files. Here's what's been built:
+
+  ---
+  ✅ Portfolio complet — C:\Users\pro\portfolio-saber\
+
+  Fichiers créés
+
+  ┌────────────┬────────┬────────────────────────────────────────────────────┐
+  │  Fichier   │ Taille │                        Rôle                        │
+  ├────────────┼────────┼────────────────────────────────────────────────────┤
+  │ index.html │ 23 KB  │ Structure complète, sémantique HTML5, meta/OG tags │
+  ├────────────┼────────┼────────────────────────────────────────────────────┤
+  │ styles.css │ 24 KB  │ Design premium dark, responsive, animations        │
+  ├────────────┼────────┼────────────────────────────────────────────────────┤
+  │ script.js  │ 8 KB   │ Canvas particules, typed text, scroll, compteurs   │
+  └────────────┴────────┴────────────────────────────────────────────────────┘
+
+  Ce que contient le site
+
+  - Hero — nom animé avec dégradé, texte typé rotatif (5 phrases), canvas de
+  particules interactif, stats comptées en direct
+  - À propos — texte en deux colonnes, tags de compétences, carte info avec
+  barres de langues animées
+  - Compétences — 5 cartes avec animation au survol, ligne colorée, chips des
+  marques (ABB, Siemens…)
+  - Expérience — timeline verticale avec ligne lumineuse animée
+  - Projets — grille de 6 cartes avec tilt 3D au survol
+  - Formation — 2 cartes avec ligne de soulignement colorée
+  - Contact — cartes cliquables (email/téléphone) + pitch card avec CTA
+  - Footer — liens de navigation + copyright auto
+
+  ---
+  🚀 Déploiement — GitHub Pages (gratuit)
+
+  Étape 1 — Créer un compte GitHub
+
+  Aller sur https://github.com → créer un compte gratuit
+
+  Étape 2 — Créer un repository
+
+  Nom : saber-portfolio   (ou saberslimani.github.io pour URL courte)
+  Visibilité : Public
+
+  Étape 3 — Uploader les fichiers
+
+  1. Cliquer Add file → Upload files
+  2. Glisser-déposer les 3 fichiers : index.html, styles.css, script.js
+  3. Cliquer Commit changes
+
+  Étape 4 — Activer GitHub Pages
+
+  1. Settings → Pages (menu de gauche)
+  2. Source : Deploy from a branch
+  3. Branch : main / dossier : / (root)
+  4. Cliquer Save
+
+  Résultat
+
+  URL publique obtenue en ~2 minutes :
+  https://<votre-username>.github.io/saber-portfolio/
+
+  ---
+  💻 Tester en local
+
+  Ouvrir index.html directement dans Chrome/Edge — aucun serveur nécessaire.
+
+✻ Churned for 10m 6s
+
+────────────────────────────────────────────────────────────────────────────────
+> Nom: Saber Slimani
+  Titre: Technicien Spécialisé en Électronique & Maintenance Industrielle
+
+  Contact:
+  Email: saber03slimani@gmail.com
+  Téléphone: +212 658 497 932
+  Adresse: Tétouan, Maroc
+
+  ---
+
+  ## À propos
+
+  Électronicien en maintenance industrielle avec plus de 3 ans d’expérience
+  dans le diagnostic, la réparation et la mise en service d’équipements
+  industriels complexes.
+
+  Spécialisé dans les variateurs de fréquence (ABB, Siemens, Schneider,
+  Danfoss, Allen-Bradley) ainsi que dans les systèmes automatisés et
+  servo-drives.
+  Intervient directement sur site auprès de multiples entreprises
+  industrielles avec une forte capacité d’analyse et de résolution rapide des
+  pannes.
+
+  Taux élevé de diagnostic efficace dès la première intervention (≈80%).
+
+  ---
+
+  ## Compétences
+
+  ### Électronique industrielle
+  - Diagnostic et réparation de cartes électroniques (PCB)
+  - Analyse de pannes complexes (défauts cachés, courts-circuits,
+  instabilités)
+  - Travail sur composants CMS (SMD)
+
+  ### Variateurs & Automation
+  - Mise en service et paramétrage de variateurs de fréquence
+  - Maintenance de servo-drives et systèmes de commande
+  - Intervention sur automates et systèmes de sécurité (PILZ PNOZ)
+
+  ### Électrotechnique
+  - Lecture et interprétation de schémas électriques
+  - Maintenance d’armoires électriques et machines industrielles
+
+  ### Méthodologie & Qualité
+  - Diagnostic structuré et analyse technique avancée
+  - Tests fonctionnels et validation après intervention
+  - Utilisation d’instruments de mesure professionnels
+
+  ---
+
+  ## Expérience Professionnelle
+
+  ### Électronicien en maintenance industrielle
+  STE MR3E SARL – Tanger | 2022 – 2026
+
+  - Intervention technique mobile dans plusieurs entreprises industrielles au
+  Maroc
+  - Diagnostic, maintenance et réparation de variateurs de fréquence (ABB,
+  Siemens, Schneider, Danfoss…)
+  - Réparation de cartes électroniques et systèmes de commande
+  - Maintenance d’alimentations industrielles et modules d’automatisation
+  - Analyse rapide des pannes avec un taux de résolution initiale de 80 %
+  - Tests fonctionnels et contrôle qualité après intervention
+  - Conseil technique et analyse des besoins clients sur site
+
+  ---
+
+  ### Technicien de maintenance (Stage)
+  Motherson SMRC HM – Tanger | 2022
+
+  - Maintenance de machines industrielles, robots et armoires électriques
+  - Diagnostic et résolution de pannes techniques
+  - Travail en équipe dans un environnement industriel structuré
+
+  ---
+
+  ## Projets & Réalisations Techniques
+
+  ### Diagnostic complexe – Défaut caché (Servo Lenze)
+  - Identification d’un défaut non visible malgré mesures normales
+  - Remplacement ciblé de composants critiques
+  - Remise en service complète après analyse approfondie
+
+  ---
+
+  ### Réparation Servo Drive PROMATECH
+  - Détection d’un court-circuit sur régulateur LM1085
+  - Remplacement préventif de plusieurs composants
+  - Tests en charge validant la stabilité du système
+
+  ---
+
+  ### Intervention sur variateur – arrêt de production
+  - Identification d’un court-circuit causé par un corps étranger
+  - Remplacement complet du variateur
+  - Redémarrage rapide de la production
+
+  ---
+
+  ### Système de sécurité PILZ PNOZ
+  - Diagnostic d’un défaut système
+  - Réparation et recâblage complet
+  - Remise en service sécurisée
+
+  ---
+
+  ### Réparation alimentation industrielle
+  - Analyse d’une tension instable
+  - Remplacement de condensateurs défectueux
+  - Stabilisation complète du système
+
+  ---
+
+  ### Réparation cartes électroniques & microcontrôleurs
+  - Diagnostic et remplacement de composants critiques
+  - Réparation PCB (pistes, soudures, composants)
+  - Tests et validation avant remise en service
+
+  ---
+
+  ## Outils & Instruments
+
+  - Multimètre professionnel
+  - Pinces ampèremétriques
+  - Testeurs de circuits intégrés (analogiques & numériques)
+  - Oscilloscope
+  - Outils de soudure de précision
+
+  ---
+
+  ## Formation
+
+  Technicien Spécialisé en Électromécanique des Systèmes Automatisés
+  ISTA – Fnideq | 2020 – 2022
+
+  Baccalauréat Sciences Physiques
+  Lycée Kadi Ayad – Tétouan | 2020
+
+  ---
+
+  ## Langues
+
+  - Arabe : langue maternelle
+  - Français : intermédiaire
+  - Anglais : très bon niveau
+
+  ---
+
+  ## Permis
+
+  Permis B
+
+  ---
+
+  ## Note finale
+
+  Ce portfolio représente une partie de mon expérience.
+  D’autres projets et interventions peuvent être présentés sur demande.
+────────────────────────────────────────────────────────────────────────────────
+                        control this session from your phone · /remote-control
